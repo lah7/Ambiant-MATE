@@ -1,0 +1,14 @@
+[Icon Theme]
+Name=Ambiant-MATE
+Comment=Smooth modern theme designed to be intuitive.
+Inherits=ubuntu-mono-dark,humanity-dark,humanity,gnome,hicolor
+
+Example=start-here
+
+#Directory list
+Directories=apps/22
+
+[apps/22]
+Size=22
+Context=Applications
+Type=Fixed
