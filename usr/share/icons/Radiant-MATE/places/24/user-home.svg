@@ -272,11 +272,11 @@
        id="linearGradient3390-178-986-453">
       <stop
          id="stop3624"
-         style="stop-color:#bb2b12;stop-opacity:1"
+         style="stop-color:#2E4705;stop-opacity:1"
          offset="0" />
       <stop
          id="stop3626"
-         style="stop-color:#cd7233;stop-opacity:1"
+         style="stop-color:#4A6A17;stop-opacity:1"
          offset="1" />
     </linearGradient>
     <linearGradient
@@ -292,15 +292,15 @@
        id="linearGradient7012-661-145-733-759-865-745-661-970-94">
       <stop
          id="stop3618"
-         style="stop-color:#edb763;stop-opacity:1"
+         style="stop-color:#ADC980;stop-opacity:1"
          offset="0" />
       <stop
          id="stop3270"
-         style="stop-color:#de7f32;stop-opacity:1"
+         style="stop-color:#87A752;stop-opacity:1"
          offset="0.5" />
       <stop
          id="stop3620"
-         style="stop-color:#d24413;stop-opacity:1"
+         style="stop-color:#688933;stop-opacity:1"
          offset="1" />
     </linearGradient>
     <radialGradient
@@ -436,7 +436,7 @@
          x="2"
          y="4"
          id="rect2545"
-         style="fill:#eda374;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:block;overflow:visible;enable-background:accumulate" />
+         style="fill:#87A752;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:block;overflow:visible;enable-background:accumulate" />
     </g>
   </g>
   <path
@@ -446,5 +446,5 @@
   <path
      d="M 8.0513142,14.051248 L 8.0061972,19.979629 L 13.000852,19.981329 L 12.999752,16.030185 L 16.000125,16.000115 L 15.978907,20 L 20.017464,19.98543 L 20.029364,14.046571 L 22,14.047557 L 13.985344,7.9999999 L 6.0000002,14.0595 L 8.0513142,14.0512 L 8.0513142,14.051248 z"
      id="path892-2"
-     style="opacity:0.9;fill:#bb2b12;fill-opacity:1;fill-rule:evenodd;stroke:none;display:inline" />
+     style="opacity:0.9;fill:#2E4705;fill-opacity:1;fill-rule:evenodd;stroke:none;display:inline" />
 </svg>

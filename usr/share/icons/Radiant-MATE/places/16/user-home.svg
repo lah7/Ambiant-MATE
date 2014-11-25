@@ -328,11 +328,11 @@
        id="linearGradient3390-178-986-453">
       <stop
          id="stop3624"
-         style="stop-color:#bb2b12;stop-opacity:1"
+         style="stop-color:#2E4705;stop-opacity:1"
          offset="0" />
       <stop
          id="stop3626"
-         style="stop-color:#cd7233;stop-opacity:1"
+         style="stop-color:#4A6A17;stop-opacity:1"
          offset="1" />
     </linearGradient>
     <linearGradient
@@ -348,15 +348,15 @@
        id="linearGradient7012-661-145-733-759-865-745-661-970-94">
       <stop
          id="stop3618"
-         style="stop-color:#edb763;stop-opacity:1"
+         style="stop-color:#ADC980;stop-opacity:1"
          offset="0" />
       <stop
          id="stop3270"
-         style="stop-color:#de7f32;stop-opacity:1"
+         style="stop-color:#87A752;stop-opacity:1"
          offset="0.5" />
       <stop
          id="stop3620"
-         style="stop-color:#d24413;stop-opacity:1"
+         style="stop-color:#688933;stop-opacity:1"
          offset="1" />
     </linearGradient>
     <radialGradient
@@ -480,5 +480,5 @@
   <path
      d="M 13.008579,13 L 12.965699,9.951972 L 15.008581,9.951972 L 9.4973189,5.9262139 L 4.000004,9.951972 L 5.977706,9.951972 L 5.977706,12.963979 L 8.967372,12.978399 L 8.995189,9.962697 L 11.008581,9.948537 L 10.998001,12.985511 L 13.008579,13 z"
      id="path3625-5"
-     style="opacity:0.9;fill:#bd3416;fill-opacity:1;fill-rule:evenodd;stroke:none;display:inline" />
+     style="opacity:0.9;fill:#4A6A17;fill-opacity:1;fill-rule:evenodd;stroke:none;display:inline" />
 </svg>

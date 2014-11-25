@@ -130,15 +130,15 @@
        id="linearGradient7012-661-145-733-759-865-745-661-970-94">
       <stop
          id="stop3618"
-         style="stop-color:#f0c178;stop-opacity:1"
+         style="stop-color:#ADC980;stop-opacity:1"
          offset="0" />
       <stop
          id="stop3270"
-         style="stop-color:#e18941;stop-opacity:1"
+         style="stop-color:#87A752;stop-opacity:1"
          offset="0.5" />
       <stop
          id="stop3620"
-         style="stop-color:#ec4f18;stop-opacity:1"
+         style="stop-color:#688933;stop-opacity:1"
          offset="1" />
     </linearGradient>
     <radialGradient
@@ -216,11 +216,11 @@
        id="linearGradient3390-178-986-453">
       <stop
          id="stop3624"
-         style="stop-color:#bb2b12;stop-opacity:1"
+         style="stop-color:#2E4705;stop-opacity:1"
          offset="0" />
       <stop
          id="stop3626"
-         style="stop-color:#cd7233;stop-opacity:1"
+         style="stop-color:#4A6A17;stop-opacity:1"
          offset="1" />
     </linearGradient>
     <linearGradient
@@ -329,7 +329,7 @@
      x="4.0000014"
      y="8"
      id="rect2892"
-     style="fill:#eda374;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:block;overflow:visible;enable-background:accumulate" />
+     style="fill:#87A752;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:block;overflow:visible;enable-background:accumulate" />
   <path
      d="M 1.9268353,11.499999 C 1.2357878,11.579625 1.604879,12.402582 1.5497817,12.865354 C 1.6299747,13.164415 2.1474964,28.583337 2.1474964,29.112792 C 2.1474964,29.572969 2.3741638,29.495006 2.9485023,29.495006 C 11.447903,29.495006 20.846581,29.495006 29.345982,29.495006 C 29.964708,29.509351 29.833949,29.502483 29.833949,29.105535 C 29.879172,28.902853 30.473875,12.127064 30.496766,11.862096 C 30.496766,11.583102 30.554865,11.499999 30.191836,11.499999 C 21.115334,11.499999 11.00334,11.499999 1.9268353,11.499999 z"
      id="path2931"
