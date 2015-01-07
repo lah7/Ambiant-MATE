@@ -3,7 +3,7 @@
 @define-color fg_color #4c4c4c;
 @define-color base_color #ffffff;
 @define-color text_color #3C3C3C;
-@define-color selected_bg_color #87A752;
+@define-color selected_bg_color #f07746;
 @define-color selected_fg_color #ffffff;
 @define-color tooltip_bg_color #000000;
 @define-color tooltip_fg_color #ffffff;
@@ -17,7 +17,7 @@
 @define-color question_bg_color rgb (138, 173, 212);
 @define-color error_fg_color rgb (235, 235, 235);
 @define-color error_bg_color rgb (223, 56, 44);
-@define-color link_color #A7BB85;
+@define-color link_color @selected_bg_color;
 @define-color success_color #4e9a06;
 @define-color error_color #df382c;
 
@@ -49,3 +49,5 @@
 @import url("apps/gnome-system-log.css");
 @import url("apps/unity-greeter.css");
 @import url("apps/glade.css");
+@import url("apps/california.css");
+@import url("public-colors.css");
