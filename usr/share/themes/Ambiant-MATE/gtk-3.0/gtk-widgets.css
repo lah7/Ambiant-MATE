@@ -62,6 +62,8 @@
      */
     outline-color: alpha (@selected_bg_color, 0.5);
     outline-offset: 5px;
+
+    -gtk-icon-style: regular; /* disable symbolic icons */
 }
 
 .background {
