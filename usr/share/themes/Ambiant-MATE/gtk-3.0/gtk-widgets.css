@@ -11,8 +11,8 @@
     -GtkEntry-inner-border: 2;
     -GtkEntry-progress-border: 0;
     -GtkExpander-expander-size: 8;
-    -GtkHTML-link-color: @link_color;
-    -GtkIMHtml-hyperlink-color: @link_color;
+    -GtkHTML-link-color: #a7bb85; /* @link_color */
+    -GtkIMHtml-hyperlink-color: #a7bb85; /* @link_color */
     -GtkMenu-horizontal-padding: 0;
     -GtkMenu-vertical-padding: 5px;
     -GtkMenuBar-internal-padding: 0;
@@ -34,7 +34,7 @@
     -GtkScrolledWindow-scrollbars-within-bevel: 1;
     -GtkSeparatorMenuItem-horizontal-padding: 0;
     -GtkStatusbar-shadow-type: none;
-    -GtkTextView-error-underline-color: @error_color;
+    -GtkTextView-error-underline-color: #df382c; /* @error_color doesn't work due to a gtk bug */
     -GtkToolButton-icon-spacing: 6;
     -GtkToolItemGroup-expander-size: 11;
     -GtkToolbar-internal-padding: 0;
@@ -43,8 +43,8 @@
     -GtkWidget-separator-width: 2;
     -GtkWidget-separator-height: 2;
     -GtkWidget-wide-separators: true;
-    -GtkWidget-link-color: @link_color;
-    -GtkWidget-visited-link-color: @link_color;
+    -GtkWidget-link-color: #a7bb85; /* @link_color */
+    -GtkWidget-visited-link-color: #a7bb85; /* @link_color */
     -GtkWindow-resize-grip-width: 0;
     -GtkWindow-resize-grip-height: 0;
     -WnckTasklist-fade-overlay-rect: 0;
@@ -1016,7 +1016,7 @@ GtkProgressBar {
     border-radius: 8px;
     border-width: 0px;
     background-image: none;
-    background-color: #87A752;
+    background-color: #8FAF53;
     border-style: solid;
 }
 
@@ -1086,7 +1086,7 @@ GtkLevelBar.vertical {
     border-style: solid;
 
     border-color: @selected_bg_color;
-    background-color: #87A752;
+    background-color: #8FAF53;
 }
 
 .level-bar.indicator-continuous.fill-block {
@@ -1151,7 +1151,7 @@ GtkScale.vertical {
 }
 
 .scale.trough.highlight {
-    background-color: #df784e;
+    background-color: #8FAF53;
     background-image: none;
     background-clip: content-box;
 }
@@ -2017,6 +2017,32 @@ GtkViewport.frame {
     margin-right: 9px;
 }
 
+/*************
+ * overshoot *
+ *************/
+.overshoot.top {
+    background: -gtk-gradient(radial, center top, 0, center top, 0.7, from(shade(@bg_color, 0.92)), to(alpha(@bg_color, 0.0)));
+}
+
+.overshoot.right {
+    background: -gtk-gradient(radial, right center, 0, right center, 0.7, from(shade(@bg_color, 0.92)), to(alpha(@bg_color, 0.0)));
+}
+
+.overshoot.bottom {
+    background: -gtk-gradient(radial, center bottom, 0, center bottom, 0.7, from(shade(@bg_color, 0.92)), to(alpha(@bg_color, 0.0)));
+}
+
+.overshoot.left {
+    background: -gtk-gradient(radial, left center, 0, left center, 0.7, from(shade(@bg_color, 0.92)), to(alpha(@bg_color, 0.0)));
+}
+
+/**************
+ * undershoot *
+ **************/
+.undershoot {
+    background: none;
+}
+
 /*****************************************************************************
  * states [please keep this section at the end of the file (CSS precedence)] *
  *****************************************************************************/
@@ -2039,3 +2065,7 @@ GtkViewport.frame {
     color: @backdrop_selected_fg_color;
 }
 
+*:link,
+*:visited {
+    color: #a7bb85; /* @link_color */
+}
