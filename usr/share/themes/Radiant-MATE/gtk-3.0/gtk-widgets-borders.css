@@ -180,17 +180,6 @@ GtkSwitch.trough:backdrop,
     border-image: url("assets/progressbar-horizontal-trough.png") 6 7 6 7 / 6px 7px 6px 7px stretch;
 }
 
-.trough.vertical {
-    border-image: url("assets/progressbar-vertical-trough.png") 7 6 7 6 / 7px 6px 7px 6px stretch;
-}
-
-.trough row {
-}
-
-.trough.vertical {
-    border-image: url("assets/progressbar-vertical-trough.png") 7 6 7 6 / 7px 6px 7px 6px stretch;
-}
-
 GtkSwitch.trough {
     border-image: url("assets/switch-trough-off.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }

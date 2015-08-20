@@ -55,7 +55,6 @@
 @import url("gtk-widgets-assets-radiance.css");
 @import url("gtk-widgets.css");
 @import url("gtk-widgets-radiance.css");
-@import url("apps/geary.css");
 @import url("apps/unity.css");
 @import url("apps/unity-greeter.css");
 @import url("apps/baobab.css");
@@ -65,6 +64,4 @@
 @import url("apps/gnome-terminal.css");
 @import url("apps/gnome-system-log.css");
 @import url("apps/glade.css");
-@import url("apps/california.css");
-@import url("apps/software-center.css");
 @import url("public-colors.css");
