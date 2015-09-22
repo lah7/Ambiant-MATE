@@ -984,7 +984,7 @@ GtkProgressBar {
     border-radius: 8px;
     border-width: 0px;
     background-image: none;
-    background-color: #b0b0b0;
+    background-color: @backdrop_filling_bg;
 }
 
 .scale.highlight.left:insensitive {
@@ -1051,8 +1051,8 @@ GtkLevelBar.vertical {
 .level-bar.fill-block:backdrop,
 .level-bar.fill-block.level-high:backdrop,
 .level-bar.fill-block.level-low:backdrop {
-    background-color: #b0b0b0;
-    border-color: #b0b0b0;
+    background-color: @backdrop_filling_bg;
+    border-color: @backdrop_filling_bg;
     background-image: none;
 }
 
@@ -1146,10 +1146,10 @@ GtkScale.mark {
     border: none;
 }
 
-.scrollbar.hovering,
+.scrollbar:hover,
 .scrollbar.dragging {
     -GtkRange-slider-width: 10;
-    background-color: alpha(@bg_color, 0.8);
+    background-color: @scrollbar_track_color;
 }
 
 .scrollbar.slider {
@@ -1159,6 +1159,18 @@ GtkScale.mark {
 
 .scrollbar.slider:active {
     background-color: @selected_bg_color;
+}
+
+.scrollbar.slider:backdrop {
+    background-color: alpha(@backdrop_filling_bg, 0.8);
+}
+
+.scrollbar.slider:hover:backdrop {
+    background-color: alpha(@backdrop_filling_bg, 0.85);
+}
+
+.scrollbar.slider:active:backdrop {
+    background-color: @backdrop_filling_bg;
 }
 
 /*******************
