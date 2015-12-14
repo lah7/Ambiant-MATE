@@ -1313,6 +1313,11 @@ GtkPlacesSidebar.sidebar row:selected:backdrop {
     text-shadow: 0 1px shade (shade (@bg_color, 0.95), 0.96);
 }
 
+GtkPlacesSidebar.sidebar .sidebar-icon {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
 /**************
  * spinbutton *
  **************/
@@ -1564,6 +1569,7 @@ GtkTextView {
     border-style: none;
     padding: 1px;
 
+    background-color: @bg_color;
     color: @fg_color;
     text-shadow: none;
 }
@@ -1968,11 +1974,23 @@ GtkViewport.frame {
     transition: all 100ms ease-in-out;
 }
 
+/* buttons that are not part of an osd toolbar need a background */
+.button.osd,
+.button.osd:hover,
+.button.osd:active {
+    background: @osd_bg_color;
+    padding: 12px;
+    box-shadow: none;
+    border-image: none;
+}
+
+.button.osd:hover,
 .osd .button:hover {
     color: lighter(@osd_fg_color);
     icon-shadow: 0 0 3px @osd_fg_color;
 }
 
+.button.osd:active,
 .osd .button:active {
     color: darker(@osd_fg_color);
     icon-shadow: none;

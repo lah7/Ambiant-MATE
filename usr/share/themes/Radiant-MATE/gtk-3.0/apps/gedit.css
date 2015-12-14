@@ -58,3 +58,113 @@ GeditFileBrowserWidget .toolbar  {
     margin: 2px;
     padding: 2px;
 }
+
+
+/* Things from Adwaita start here...*/
+
+GeditOpenDocumentSelector .open-document-selector-treeview:prelight {
+    background-color: alpha(@selected_bg_color, 0.4);
+}
+
+/* Only normal state is handle */
+.open-document-selector-path-label {
+    color: @backdrop_text_color;
+    font-size: smaller;
+}
+
+.gedit-document-panel-group-row,
+.gedit-document-panel-group-row:hover {
+    border-top: 1px solid shade(@bg_color, 0.90);
+    background-color: shade(@bg_color,0.95);
+}
+
+.gedit-document-panel-document-row:hover {
+    background-color: shade(@bg_color,1.1);
+}
+
+
+.gedit-document-panel-document-row:selected,
+.gedit-document-panel-document-row:selected:hover {
+    background-color: @selected_bg_color;
+}
+
+/* sidepane close button styling (copied from the gtk tab close button) */
+.gedit-document-panel .list-row .button {
+    color: transparent;
+    border-image: none;
+    background-image: none;
+    background-color: transparent;
+    border-radius: 3px;
+    border-style: solid;
+    border-color: transparent;
+    border-width: 1px;
+    padding: 1px;
+    icon-shadow: none;
+}
+
+.gedit-document-panel .prelight-row .button  {
+    color: black;
+    border-color: transparent;
+}
+
+.gedit-document-panel .prelight-row:selected .button {
+    color:  white;
+}
+
+.gedit-document-panel .prelight-row .button:backdrop {
+    color: black;
+}
+
+.gedit-document-panel-placeholder-row {
+    border: none;
+    background-color: mix(@bg_color, @selected_bg_color, 0.20);
+}
+
+GeditStatusbar {
+    border-top: 1px solid @borders;
+}
+
+GeditStatusbar .button.flat {
+    border-radius: 0;
+    border-bottom: none;
+}
+
+.notebook GeditCloseButton.button GtkImage { 
+    padding: 1px;
+}
+
+.notebook GeditCloseButton.button {
+    background-color: transparent;
+    background-image: none;
+    border-image: none;
+    border-radius: 3px;
+}
+
+.gedit-document-panel-document-row {
+    padding: 5px;
+}
+
+
+.notebook GeditCloseButton.button:prelight{
+    border-color: shade(@bg_color,0.65);
+}
+
+.notebook GeditTabLabel.active-page GeditCloseButton.button:prelight{
+    border-color: darker(@bg_color);
+}
+
+.notebook GeditCloseButton:backdrop.button:prelight{
+    border-color: shade(@bg_color,0.75);
+    border-image: none;
+    border-style: solid;
+    background-color: transparent;
+}
+
+.notebook GeditTabLabel.active-page GeditCloseButton:backdrop.button:prelight{
+    border-color: shade(@bg_color,0.85);
+    border-image: none;
+    border-style: solid;
+    background-color: transparent;
+}
+
+
