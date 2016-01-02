@@ -465,6 +465,15 @@ GdMainIconView.content-view {
     color: @selected_fg_color;
 }
 
+/* Application notification */
+.app-notification,
+.app-notification.frame {
+    padding: 3px;
+    border-width: 0 1px 1px;
+    border-style: solid;
+    background-color: @bg_color;
+}
+
 /************
  * expander *
  ************/
