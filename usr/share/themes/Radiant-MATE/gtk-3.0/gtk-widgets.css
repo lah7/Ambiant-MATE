@@ -529,6 +529,13 @@ GdMainIconView.content-view {
     box-shadow: 0 3px 8px @shadow_color;
 }
 
+.window-frame.solid-csd {
+  border-radius: 0;
+  background-color: @bg_color;
+  border: 1px solid darker(@bg_color);
+  box-shadow: none;
+}
+
 /************
  * iconview *
  ************/
@@ -1525,6 +1532,7 @@ GtkTextView {
     border-top-color: @dark_bg_color;
 }
 
+.solid-csd .titlebar.header-bar,
 .maximized .titlebar.header-bar {
     border-radius: 0;
     border: none;
