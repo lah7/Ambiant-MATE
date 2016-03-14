@@ -1172,24 +1172,24 @@ GtkScale.mark {
     -GtkScrollbar-has-forward-stepper: 1;
     -GtkScrollbar-trough-border: 0;
     -GtkScrollbar-min-slider-length: 31;
-    -GtkRange-slider-width: 10;
+    -GtkRange-slider-width: 13;
 
     border: none;
 }
 
 .scrollbar:hover,
 .scrollbar.dragging {
-    -GtkRange-slider-width: 10;
-    background-color: @scrollbar_track_color;
+    -GtkRange-slider-width: 13;
+    background-color: alpha( shade(@bg_color, 0.90), 0.4);
 }
 
 .scrollbar.slider {
-    background-color: alpha(@selected_bg_color, 0.8);
-    border-radius: 8px;
+    background-color: alpha( shade(@bg_color, 0.76), 0.8);
+    border-radius: 12px;
 }
 
 .scrollbar.slider:active {
-    background-color: @selected_bg_color;
+    background-color: alpha( shade(@bg_color, 0.72), 0.8);
 }
 
 .scrollbar.slider:backdrop {
