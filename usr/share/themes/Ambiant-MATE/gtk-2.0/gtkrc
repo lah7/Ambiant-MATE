@@ -99,7 +99,7 @@ style "default" {
 		reliefstyle = 3
 		highlight_shade = 1.0
 		glazestyle = 0
-		default_button_color = shade (1.1, @selected_bg_color)
+		default_button_color = shade (1.1, @bg_color)
 		gradient_shades = {1.1, 1.0, 1.0, 0.9}
 		roundness = 4
 		lightborder_shade = 1.26
