@@ -106,7 +106,8 @@
 .primary-toolbar .toolbar,
 .primary-toolbar.toolbar,
 .menubar.toolbar,
-.header-bar {
+.header-bar,
+.maximized .titlebar.header-bar.toolbar-mode:not(:backdrop) {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 0.96)),
                                      to (shade (@dark_bg_color, 1.1)));

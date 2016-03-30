@@ -287,6 +287,13 @@ GtkAssistant .sidebar {
     box-shadow: none;
 }
 
+/* Make linked dialog buttons look like they are not linked */
+.message-dialog .linked.dialog-action-area .button {
+    border-image-width: 6px;
+    box-shadow: none;
+    border-radius: 7px;
+}
+
 /****************
  * cell and row *
  ****************/
@@ -444,6 +451,10 @@ GdMainIconView.content-view {
     padding: 5px 7px;
 
     color: @text_color;
+}
+
+.entry.flat, .entry.flat:focus {
+    padding: 2px;
 }
 
 .entry:backdrop {
@@ -1582,6 +1593,10 @@ GtkTextView {
     border: none;
 }
 
+.maximized .titlebar.header-bar.toolbar-mode {
+    box-shadow: none;
+}
+
 .titlebar.header-bar .button.titlebutton {
     background-clip: padding-box;
     border: 1px solid #d0c7bf;
@@ -1643,7 +1658,8 @@ GtkTextView {
  * primary-toolbar *
  *******************/
 .primary-toolbar,
-.header-bar {
+.header-bar,
+.maximized .titlebar.header-bar.toolbar-mode:not(:backdrop) {
     -GtkWidget-window-dragging: true;
 
     background-image: -gtk-gradient (linear, left top, left bottom,
@@ -1659,6 +1675,10 @@ GtkTextView {
     text-shadow: 0 -1px shade (@dark_bg_color, 0.7);
 
     box-shadow: inset 0 1px shade (@dark_bg_color, 0.94);
+}
+
+.maximized .titlebar.header-bar.toolbar-mode:not(:backdrop) {
+    border-width: 0;
 }
 
 .primary-toolbar:backdrop,
