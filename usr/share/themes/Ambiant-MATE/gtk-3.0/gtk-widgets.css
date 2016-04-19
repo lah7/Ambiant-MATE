@@ -869,7 +869,7 @@ GtkComboBox .menu .menuitem *:insensitive {
     border-radius: 0;
     border-style: solid;
     border-width: 0;
-    padding: 0;
+    padding: 1px;
 
     color: @dark_fg_color;
 }
