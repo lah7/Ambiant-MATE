@@ -27,4 +27,4 @@ class "PanelToplevel*"            style "panel"
 widget_class "*notif*"            style "panel"
 widget_class "*PanelApplet*"      style "panel_default"	# workaround for right click menu corrupted bg
 widget_class "*Tray*"             style "panel"		# workaround for StarDict, gnubiff... tray icon bg
-class "GtkScrollbar"              style "scrollbar"
+class "GtkScrollbar"              style "murrine-scrollbar"

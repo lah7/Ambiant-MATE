@@ -8,6 +8,26 @@
 @define-color tooltip_bg_color #000000;
 @define-color tooltip_fg_color #ffffff;
 
+@define-color theme_fg_color @fg_color;
+@define-color theme_bg_color @bg_color;
+@define-color theme_base_color @base_color;
+@define-color theme_selected_bg_color @selected_bg_color;
+@define-color theme_selected_fg_color @selected_fg_color;
+@define-color insensitive_bg_color shade(@theme_bg_color, 0.95);
+@define-color insensitive_fg_color shade(@theme_bg_color, 0.6);
+@define-color insensitive_base_color @base_color;
+@define-color theme_unfocused_fg_color @backdrop_fg_color;
+@define-color theme_unfocused_bg_color @bg_color;
+@define-color theme_unfocused_base_color @base_color;
+@define-color theme_unfocused_selected_bg_color @selected_bg_color;
+@define-color theme_unfocused_selected_fg_color @selected_fg_color;
+@define-color borders shade(@bg_color, 0.82);
+@define-color unfocused_borders transparent;
+
+@define-color warning_color @warning_fg_color;
+@define-color error_color @error_fg_color;
+@define-color success_color @success_color;
+
 /* misc colors used by gtk+
  *
  * Gtk doesn't currently expand color variables for style properties. Thus,
@@ -44,6 +64,7 @@
 
 @define-color focus_color alpha (@selected_bg_color, 0.5);
 @define-color focus_bg_color alpha (@selected_bg_color, 0.1);
+@define-color focus_color_dialog alpha (@selected_bg_color, 0.9);
 
 @define-color shadow_color alpha(black, 0.5);
 
@@ -52,6 +73,17 @@
 @define-color osd_border_color alpha(black, 0.7);
 
 @define-color scrollbar_track_color mix(@base_color, black, 0.1); /* #e6e6e6 */
+
+@define-color scrollbar_trough shade(@theme_bg_color, 0.98);
+@define-color scrollbar_slider @theme_bg_color;
+
+@define-color progressbar_fill_a shade(@theme_selected_bg_color, 1.07);
+@define-color progressbar_fill_b shade(mix(@theme_selected_bg_color, green, 0.10), 0.91);
+@define-color button_border_active shade(@theme_selected_bg_color, 0.95);
+
+@define-color progressbar_backdrop_fill_a shade(@backdrop_selected_bg_color, 1.07);
+@define-color progressbar_backdrop_fill_b shade(mix(@backdrop_selected_bg_color, grey, 0.10), 0.91);
+@define-color button_border_backdrop_active shade(@backdrop_selected_bg_color, 0.95);
 
 @import url("gtk-widgets-borders.css");
 @import url("gtk-widgets-assets.css");
@@ -67,4 +99,5 @@
 @import url("apps/glade.css");
 @import url("apps/software-center.css");
 @import url("apps/calendar.css");
-@import url("public-colors.css");
+@import url("apps/other-applications.css");
+@import url("apps/mate-applications.css");

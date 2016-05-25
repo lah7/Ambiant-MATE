@@ -1,0 +1,178 @@
+/********
+ * Caja *
+ ********/
+
+/* caja sidebar */
+.caja-navigation-window .caja-side-pane FMTreeView.frame .view,
+.caja-navigation-window .caja-side-pane FMTreeView.frame .view .row,
+.caja-navigation-window .caja-side-pane CajaNotesViewer.frame GtkTextView,
+.caja-navigation-window .caja-side-pane CajaPlacesSidebar .view,
+.caja-navigation-window .caja-side-pane CajaHistorySidebar .view,
+.caja-navigation-window .caja-side-pane CajaInformationPanel,
+.caja-navigation-window .caja-side-pane CajaEmblemSidebar {
+    background-color: shade (@bg_color, 0.95);
+}
+
+.caja-navigation-window .caja-side-pane CajaInformationPanel > GtkBox,
+.caja-navigation-window .caja-side-pane CajaEmblemSidebar > GtkScrolledWindow {
+    border-color: shade (@bg_color, 0.82);
+    border-style: solid;
+    border-width: 1px;
+}
+
+/* notebook */
+.caja-notebook .header {
+    border-width: 1px 1px 0px 1px;
+    border-radius: 3px 3px 0px 0px;
+}
+
+.caja-notebook tab.top {
+    padding: 6px 4px 6px 6px;
+    border-width: 1px 1px 0px 1px;
+}
+
+#caja-tab-close-button {
+    border-image: none;
+    background-image: none;
+    background-color: transparent;
+    border-style: none;
+    border-width: 0px;
+    icon-shadow: none;
+    padding: 0px;
+}
+
+.caja-canvas-item {
+    border-radius: 3px;
+}
+
+/* desktop mode */
+.caja-desktop.caja-canvas-item {
+    color: #ffffff;
+    text-shadow: 1px 1px alpha (#000000, 0.8);
+}
+
+.caja-desktop.caja-canvas-item:selected,
+.caja-desktop.caja-canvas-item:active,
+.caja-desktop.caja-canvas-item:hover {
+    text-shadow: none;
+}
+
+/* EelEditableLabel (icon labels) */
+.caja-desktop.view .entry,
+.caja-desktop.view .entry:focus,
+.caja-desktop.view .entry:backdrop,
+.caja-navigation-window .view .entry,
+.caja-navigation-window .view .entry:active,
+.caja-navigation-window .view .entry:focus,
+.caja-navigation-window .view .entry:backdrop {
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #000000;
+    border-radius: 3px;
+    color: #000000;
+    text-shadow: none;
+    background-image: -gtk-gradient(linear,
+                                    left top, left bottom,
+                                    from       (shade(rgba(255,255,255,1), 0.86)),
+                                    color-stop (0.15, shade(rgba(255,255,255,1), 0.96)),
+                                    color-stop (0.50, shade(rgba(255,255,255,1), 0.98)),
+                                    to         (shade(rgba(255,255,255,1), 1.00)));
+}
+
+.caja-desktop.view .entry:selected,
+.caja-desktop.view .entry:focus:selected,
+.caja-desktop.view .entry:backdrop:selected
+.caja-navigation-window .view .entry:active,
+.caja-navigation-window .view .entry:selected,
+.caja-navigation-window .view .entry:focus:selected,
+.caja-navigation-window .view .entry:backdrop:selected {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+    text-shadow: none;
+}
+
+/**************
+ * Mate-Panel *
+ **************/
+
+/* volume applet */
+.mate-panel-applet-slider {
+    background: transparent;
+}
+
+.mate-panel-applet-slider .frame {
+    background-color: @theme_bg_color;
+    border-image: none;
+    border-style: none;
+    border-radius:3px;
+    padding: 1px;
+    margin: 0px;
+    box-shadow: inset  0px  1px shade (@theme_bg_color, 0.8),
+                inset  1px  0px shade (@theme_bg_color, 0.8),
+                inset -1px  0px shade (@theme_bg_color, 0.8),
+                inset  0px -1px shade (@theme_bg_color, 0.8);
+}
+
+.mate-panel-applet-slider .frame .frame{
+    background-color:transparent;
+    box-shadow: none;
+}
+
+/* brightness applet */
+.mate-panel-applet-slider .frame .button {
+    padding: 4px 5px 4px 0px;
+    background-image: none;
+    background-color: transparent;
+    border-style: none;
+    border-image: none;
+    color: @theme_fg_color;
+    margin: 0px 0px 0px -4px;
+}
+
+CalendarWindow#MatePanelPopupWindow {
+	border-radius: 3px;
+}
+
+/* FIXME, does not work */
+CalendarWindow#MatePanelPopupWindow ClockMap {
+	border-style: solid;
+	border-width: 1px;
+    border-color: shade (@bg_color, 0.82);
+}
+
+/*****************
+ * Mate-terminal *
+ *****************/
+
+TerminalWindow.mate-terminal TerminalScreen,
+TerminalWindow.mate-terminal .entry {
+    -TerminalScreen-background-darkness: 0.95;
+    background-color: #373633;
+    color: @dark_fg_color;
+}
+
+/*********
+ * Pluma *
+ *********/
+
+.pluma-window .notebook .header {
+    border-width: 1px 1px 0px 1px;
+    border-radius: 0px;
+}
+
+.pluma-window .notebook tab.top {
+    padding: 5px 3px 5px 6px;
+    border-width: 1px 1px 0px 1px;
+}
+#caja-tab-close-button,
+PlumaCloseButton.button.flat {
+    border-image: none;
+    background-image: none;
+    background-color: transparent;
+    border-style: none;
+    border-width: 0px;
+    icon-shadow: none;
+    padding: 0px;
+}
+

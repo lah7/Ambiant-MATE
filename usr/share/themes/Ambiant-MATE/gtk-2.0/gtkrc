@@ -30,16 +30,21 @@ style "default" {
 	GtkScale::slider-length = 14
 	GtkScale::trough-side-details = 1
 
-	GtkScrollbar::activate-slider = 1
-	GtkScrollbar::trough-border = 0
-	GtkScrollbar::slider-width = 13
-	GtkScrollbar::min-slider-length = 31
+	GtkScrollbar	::has-backward-stepper		= 1
+	GtkScrollbar	::has-forward-stepper		= 1
+	GtkScrollbar	::min-slider-length		= 15
+	GtkScrollbar	::slider-width			= 13
+	GtkScrollbar	::trough-border			= 0
+	GtkScrollbar	::activate-slider		= 1
+
+	GtkScrolledWindow ::scrollbar-spacing		= 0
+	GtkScrolledWindow ::scrollbars-within-bevel	= 0
 
 	GtkMenuBar::internal-padding = 0
 	GtkMenuBar::shadow-type = GTK_SHADOW_NONE
 	GtkExpander::expander-size = 11
 	GtkToolbar::internal-padding = 1
-	GtkToolbar::shadow-type = GTK_SHADOW_NONE
+#	GtkToolbar::shadow-type = GTK_SHADOW_NONE
 	GtkTreeView::expander-size = 7
 	GtkTreeView::vertical-separator = 0
 #	GtkTreeView::odd-row-color = shade (0.96, @base_color)
@@ -107,14 +112,17 @@ style "default" {
 		listviewstyle = 2
 		progressbarstyle = 0
 		colorize_scrollbar = FALSE
+		prelight_shade		= .95			# shade level for scrollbar's slider, comboboxstyle(1), and prelight state with gradient_colors
+		trough_shades		= {0.98, 1.06}		# draw gradient on trough of GtkScrollbar and GtkProgressbar
 		menubaritemstyle = 1
 		menubarstyle = 1
 		menustyle = 0
 		focusstyle = 3
 		handlestyle = 1
 		sliderstyle = 3
-		scrollbarstyle = 2
+		scrollbarstyle = 0
 		stepperstyle = 3
+		toolbarstyle = 2     # 0 = flat, 1 = glassy, 2 = gradient
 #		rgba = TRUE
 	}
 }
@@ -125,23 +133,27 @@ style "dark"
 	color["fg_color_dark"] 	= "#dfdbd2"
 	color["selected_fg_color_dark"] = "#ffffff"
 
+	base[NORMAL]		= @bg_color_dark
+	base[PRELIGHT]		= shade (1.0, "#4D4C48")
+	base[INSENSITIVE]	= shade (0.10, @bg_color_dark)
+
 	fg[NORMAL]        = @fg_color_dark
 	fg[PRELIGHT]	  = shade (1.15, @fg_color_dark)
 	fg[ACTIVE]	  = @fg_color_dark
 	fg[SELECTED]	  = @selected_fg_color_dark
-	fg[INSENSITIVE]	  = shade (0.5, @fg_color_dark)
+	fg[INSENSITIVE]	  = shade (0.85, @fg_color_dark)
   
 	bg[NORMAL]        = @bg_color_dark
 	bg[ACTIVE]	  = shade (0.8, @bg_color_dark)
 	bg[SELECTED]      = @selected_bg_color
 	bg[PRELIGHT]      = shade (1.0, "#4D4C48")
-	bg[INSENSITIVE]   = shade (0.85, @bg_color_dark)
+	bg[INSENSITIVE]   = shade (0.95, @bg_color_dark)
   	
 	text[NORMAL]      = @fg_color_dark
 	text[PRELIGHT]	  = shade (1.15, @fg_color_dark)
 	text[SELECTED]	  = @selected_fg_color_dark
 	text[ACTIVE]      = @fg_color_dark
-	text[INSENSITIVE] = mix (0.5, @bg_color, @bg_color_dark)
+	text[INSENSITIVE] = shade (0.85, @fg_color_dark)
 }
 
 style "wide" {
@@ -225,40 +237,31 @@ style "spinbutton" = "notebook_button" {
 	}
 }
 
-style "scrollbar" = "button" {
-	xthickness = 2
-	ythickness = 2
-
-	bg[NORMAL] = @bg_color
-	bg[PRELIGHT] = shade (1.04, @bg_color)
+style "murrine-scrollbar" {
+	bg[NORMAL]	= shade (0.90, @bg_color)
+	bg[SELECTED]	= shade (0.6, @base_color)
+	bg[ACTIVE]	= shade (0.8, @bg_color)
+	bg[PRELIGHT]	= shade (0.8, @bg_color)
 	
-	bg[ACTIVE] = shade (0.96, @bg_color)
-
-	engine "murrine"
-	{
-		border_shades = {0.95, 0.90}
-		roundness = 20
-		contrast = 1.0
-		trough_shades = {0.92, 0.98}
-		lightborder_shade = 1.3
-		glowstyle = 5
-		glow_shade = 1.02
-		gradient_shades = {1.2, 1.0, 1.0, 0.86}
-		trough_border_shades = {0.9, 0.98}
+	engine "murrine" {
+		roundness	= 8
+		border_shades	= {0.80, 0.80}
+		contrast	= 0.0
 	}
-}
-
-style "hscrollbar" {
-}
-
-style "vscrollbar" {
 }
 
 style "overlay_scrollbar"
 {
-	bg[SELECTED] = shade (1.0, @selected_bg_color)
-	bg[INSENSITIVE] = shade (0.85, @bg_color)
-	bg[ACTIVE] = shade (0.6, @bg_color)
+	bg[NORMAL]	= shade (0.90, @bg_color)
+	bg[SELECTED]	= shade (0.6, @base_color)
+	bg[ACTIVE]	= shade (0.8, @bg_color)
+	bg[PRELIGHT]	= shade (0.8, @bg_color)
+
+	engine "murrine" {
+		roundness	= 8
+		border_shades	= {0.80, 0.80}
+		contrast	= 0.0
+	}
 }
 
 style "scale" = "button" {
@@ -327,7 +330,7 @@ style "menubar" = "dark" {
 	}
 }
 
-style "toolbar" {
+style "toolbar" = "dark" {
 	engine "murrine" {
 		textstyle = 1
 		text_shade = 1.32
@@ -335,8 +338,30 @@ style "toolbar" {
 	}
 }
 
-style "toolbar-button" = "notebook_button" {
+style "toolbar-button" = "dark" {
+	xthickness = 4
+	ythickness = 3
+
 	engine "murrine" {
+		#contrast = 1.0
+		textstyle = 1
+		border_shades = {1.01, 0.8}
+		reliefstyle = 0
+		shadow_shades = {1.0, 1.1}
+		glowstyle = 5
+		glow_shade = 1.02
+		lightborder_shade = 1.32
+#		lightborderstyle = 0
+		#text_shade = 1.04
+	}
+}
+
+style "toolbar-entry" = "entry" { # text
+	base[NORMAL]			= shade(0.93, @base_color)
+	engine "murrine" {
+		contrast			= 0.6
+		border_shades		= {1.2, 1.0}
+		focus_color 		= shade (1.0, @selected_bg_color)
 	}
 }
 
@@ -419,6 +444,8 @@ style "separator_tool_item" {
 	GtkWidget::wide-separators = 1
 	GtkWidget::separator-width = 7
 	GtkWidget::separator-height = 1
+
+	bg[NORMAL] = shade (0.80, @bg_color)
 
 	engine "murrine" {
 		contrast = 0.6
@@ -509,6 +536,7 @@ style "radiocheck"  = "button" {
 style "tooltips" {
 	xthickness = 4
 	ythickness = 4
+	tooltips::border-width = 2
 
 	bg[NORMAL]        = @tooltip_bg_color
 	fg[NORMAL]        = @tooltip_fg_color
@@ -516,6 +544,12 @@ style "tooltips" {
 
 	engine "murrine" {
 		rgba = TRUE
+		roundness = 0
+		lightborder_shade = 1.26
+		lightborderstyle = 1
+		border_shades = {1.16, 1.16}
+		border_colors	= { "#888A85", "#888A85" }
+		text_shade = 1.00
 	}
 }
 
@@ -609,9 +643,9 @@ class "GtkSpinButton" style "spinbutton"
 class "GtkScale" style "scale"
 class "GtkVScale" style "vscale"
 class "GtkHScale" style "hscale"
-class "GtkScrollbar" style "scrollbar"
-class "GtkHScrollbar" style "hscrollbar"
-class "GtkVScrollbar" style "vscrollbar"
+class "GtkScrollbar"	style "murrine-scrollbar"
+class "GtkVScrollbar"	style "murrine-scrollbar"
+class "GtkHScrollbar"	style "murrine-scrollbar"
 class "GtkCalendar" style "calendar"
 class "GtkInfoBar" style "infobar"
 class "GtkIconView" style "iconview"
@@ -628,11 +662,13 @@ widget_class "*<GtkNotebook>*<GtkLayout>" style "notebook_bg"
 widget_class "*<GtkNotebook>*<GtkLabel>" style "notebook_bg"
 
 widget_class "*<GtkToolbar>*" style "toolbar"
+widget_class "*<GtkHandleBox>"              style "toolbar"
 widget_class "*<GtkScrolledWindow>*" style "scrolledwindow"
 
 widget_class "*<GtkButton>" style "button"
 widget_class "*<GtkButton>*<GtkLabel>" style "button"
-widget_class "*<GtkToolbar>.*.<GtkButton>*" style "notebook_button"
+widget_class "*<GtkToolbar>.*.<GtkButton>*" style "toolbar-button"
+widget_class "*<GtkToolbar>.*.<GtkEntry>*"  style "toolbar-entry"
 widget_class "*<GtkNotebook>" style "notebook"
 widget_class "*<GtkStatusbar>" style "statusbar"
 widget_class "*<GtkSpinButton>*" style "spinbutton"
@@ -722,11 +758,24 @@ widget "*IdoEntryMenuItem*" style "wide"
 # See the documentation of the style.
 widget_class "EShellWindow.GtkVBox.BonoboDock.BonoboDockBand.BonoboDockItem*" style "evo_new_button_workaround"
 
+# Various performance fixes if murrine textstyle is on by default in the theme.
+style "performance-fix" {
+	engine "murrine" {
+		textstyle = 0
+		contrast = 0.5
+	}
+}
+
+widget_class "*gtkmm__GtkWindow*"	style "performance-fix" # Inkscape
+widget_class "*GimpDisplayShell*"	style "performance-fix" # Gimp
+widget_class "*GimpToolbox*"		style "performance-fix"
+widget_class "*GimpMenuDock*"		style "performance-fix"
+widget "*OOoFixed*"					style "performance-fix" # Openoffice/Libreoffice
+widget_class "*MozContainer*"		style "performance-fix" # Firefox (Not sure if this one does anything though.)
+
 # Includes
 #include "apps/banshee.rc"
 include "apps/chromium.rc"
 include "apps/ff.rc"
-include "apps/gnome-terminal.rc"
-include "apps/nautilus.rc"
 include "apps/caja.rc"
 include "apps/mate-panel.rc"

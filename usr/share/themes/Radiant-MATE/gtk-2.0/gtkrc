@@ -30,10 +30,15 @@ style "default" {
 	GtkScale::slider-length = 14
 	GtkScale::trough-side-details = 1
 
-	GtkScrollbar::activate-slider = 1
-	GtkScrollbar::trough-border = 0
-	GtkScrollbar::slider-width = 13
-	GtkScrollbar::min-slider-length = 31
+	GtkScrollbar	::has-backward-stepper		= 1
+	GtkScrollbar	::has-forward-stepper		= 1
+	GtkScrollbar	::min-slider-length		= 15
+	GtkScrollbar	::slider-width			= 13
+	GtkScrollbar	::trough-border			= 0
+	GtkScrollbar	::activate-slider		= 1
+
+	GtkScrolledWindow ::scrollbar-spacing		= 0
+	GtkScrolledWindow ::scrollbars-within-bevel	= 0
 
 	GtkMenuBar::internal-padding = 0
 	GtkMenuBar::shadow-type = GTK_SHADOW_NONE
@@ -113,7 +118,7 @@ style "default" {
 		focusstyle = 3
 		handlestyle = 1
 		sliderstyle = 3
-		scrollbarstyle = 2
+		scrollbarstyle = 0
 		stepperstyle = 3
 #		rgba = TRUE
 	}
@@ -187,39 +192,31 @@ style "spinbutton" = "notebook_button" {
 	}
 }
 
-style "scrollbar" = "button" {
-	xthickness = 2
-	ythickness = 2
-
-	bg[NORMAL] = @bg_color
-	bg[PRELIGHT] = shade (1.04, @bg_color)
-	bg[ACTIVE] = shade (0.96, @bg_color)
-
-	engine "murrine"
-	{
-		border_shades = {0.95, 0.90}
-		roundness = 20
-		contrast = 1.0
-		trough_shades = {0.92, 0.98}
-		lightborder_shade = 1.3
-		glowstyle = 5
-		glow_shade = 1.02
-		gradient_shades = {1.2, 1.0, 1.0, 0.86}
-		trough_border_shades = {0.9, 0.98}
+style "murrine-scrollbar" {
+	bg[NORMAL]	= shade (0.90, @bg_color)
+	bg[SELECTED]	= shade (0.6, @base_color)
+	bg[ACTIVE]	= shade (0.8, @bg_color)
+	bg[PRELIGHT]	= shade (0.8, @bg_color)
+	
+	engine "murrine" {
+		roundness	= 8
+		border_shades	= {0.80, 0.80}
+		contrast	= 0.0
 	}
-}
-
-style "hscrollbar" {
-}
-
-style "vscrollbar" {
 }
 
 style "overlay_scrollbar"
 {
-	bg[SELECTED] = shade (1.0, @selected_bg_color)
-	bg[INSENSITIVE] = shade (0.85, @bg_color)
-	bg[ACTIVE] = shade (0.6, @bg_color)
+	bg[NORMAL]	= shade (0.90, @bg_color)
+	bg[SELECTED]	= shade (0.6, @base_color)
+	bg[ACTIVE]	= shade (0.8, @bg_color)
+	bg[PRELIGHT]	= shade (0.8, @bg_color)
+
+	engine "murrine" {
+		roundness	= 8
+		border_shades	= {0.80, 0.80}
+		contrast	= 0.0
+	}
 }
 
 style "scale" = "button" {
@@ -469,6 +466,7 @@ style "radiocheck"  = "button" {
 style "tooltips" {
 	xthickness = 4
 	ythickness = 4
+	tooltips::border-width = 2
 
 	bg[NORMAL]        = @tooltip_bg_color
 	fg[NORMAL]        = @tooltip_fg_color
@@ -476,6 +474,12 @@ style "tooltips" {
 
 	engine "murrine" {
 		rgba = TRUE
+		roundness = 0
+		lightborder_shade = 1.26
+		lightborderstyle = 1
+		border_shades = {1.16, 1.16}
+		border_colors	= { "#888A85", "#888A85" }
+		text_shade = 1.00
 	}
 }
 
@@ -559,9 +563,9 @@ class "GtkSpinButton" style "spinbutton"
 class "GtkScale" style "scale"
 class "GtkVScale" style "vscale"
 class "GtkHScale" style "hscale"
-class "GtkScrollbar" style "scrollbar"
-class "GtkHScrollbar" style "hscrollbar"
-class "GtkVScrollbar" style "vscrollbar"
+class "GtkScrollbar"	style "murrine-scrollbar"
+class "GtkVScrollbar"	style "murrine-scrollbar"
+class "GtkHScrollbar"	style "murrine-scrollbar"
 class "GtkCalendar" style "calendar"
 class "GtkInfoBar" style "infobar"
 
@@ -675,7 +679,5 @@ widget_class "EShellWindow.GtkVBox.BonoboDock.BonoboDockBand.BonoboDockItem*" st
 #include "apps/banshee.rc"
 include "apps/chromium.rc"
 include "apps/ff.rc"
-include "apps/gnome-terminal.rc"
-include "apps/nautilus.rc"
 include "apps/caja.rc"
 include "apps/mate-panel.rc"

@@ -1,0 +1,8 @@
+/* nemo */
+
+.sidebar > NemoPlacesSidebar,
+.sidebar > NemoPlacesSidebar > .frame > GtkBox.vertical .view.places-treeview,
+.sidebar > FMTreeView.frame .view {
+    background-color: shade (@bg_color, 0.95);
+}
+
