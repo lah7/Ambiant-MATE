@@ -1,4 +1,4 @@
-/* Fallback Mode Panel */
+/* Fallback Mode Panel *//*
 PanelWidget :backdrop,
 PanelApplet :backdrop,
 PanelToplevel :backdrop,
@@ -95,3 +95,4 @@ ClockBox {
 WnckPager, WnckTasklist {
     background-color: @dark_bg_color;
 }
+*/

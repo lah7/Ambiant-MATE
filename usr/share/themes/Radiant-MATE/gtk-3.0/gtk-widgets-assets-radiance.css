@@ -1,23 +1,23 @@
-.menu .check {
+menu check {
     -gtk-icon-source: url("assets/check-menuitem-unselected.png");
 }
 
-.menu .radio {
+menu radio {
     -gtk-icon-source: url("assets/check-menuitem-unselected.png");
 }
 
-.menu .check:checked {
+menu check:checked {
     -gtk-icon-source: url("assets/check-menuitem-dark.png");
 }
 
-.menu .check:checked:insensitive {
+menu check:checked:disabled {
     -gtk-icon-source: url("assets/check-menuitem-insensitive-dark.png");
 }
 
-.menu .radio:checked {
+menu radio:checked {
     -gtk-icon-source: url("assets/radio-menuitem-dark.png");
 }
 
-.menu .radio:checked:insensitive {
+menu radio:checked:disabled {
     -gtk-icon-source: url("assets/radio-menuitem-insensitive-dark.png");
 }

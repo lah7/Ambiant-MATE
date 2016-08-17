@@ -1,6 +1,6 @@
 /* gnome-terminal */
 
-TerminalScreen {
+vte-terminal {
     -TerminalScreen-background-darkness: 0.95;
     background-color: #373633;
     color: @dark_fg_color;

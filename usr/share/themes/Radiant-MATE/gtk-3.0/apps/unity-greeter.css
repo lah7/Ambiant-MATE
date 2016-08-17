@@ -1,38 +1,48 @@
-.lightdm.menu {
+.lightdm menu {
     background-image: none;
-    background-color: alpha (black, 0.6);
-    border-color: alpha (white, 0.2);
-    border-radius: 4px;
+    background-color: shade (@dark_bg_color, 1.08);
+    border: none;
+    border-radius: 0px;
     padding: 1px;
 
-    color: white;
+    color: @dark_fg_color;
 }
 
-.lightdm-combo .menu {
+.lightdm-combo menu {
     background-color: shade (@dark_bg_color, 1.08);
     border-radius: 0px;
     padding: 0px;
 
-    color: white;
+    color: @dark_fg_color;
 }
 
-.lightdm.menu .menuitem *,
-.lightdm.menu .menuitem.check:active,
-.lightdm.menu .menuitem.radio:active {
-    color: white;
+.lightdm menu menuitem *,
+.lightdm menu menuitem.check:active,
+.lightdm menu menuitem.radio:active {
+    color: @dark_fg_color;
 }
 
-.lightdm.menubar {
+.lightdm menu menuitem *:disabled {
+    color: inherit;
+    text-shadow: inherit;
+}
+
+.lightdm menu separator {
+    border: inherit;
+    background-color: alpha(black, 0.05);
+    border-color: alpha(black, 0.07);
+}
+
+.lightdm menubar {
     background-image: none;
     background-color: alpha (black, 0.5);
 }
 
-.lightdm-combo.combobox-entry .button,
-.lightdm-combo .cell,
-.lightdm-combo .button,
-.lightdm-combo .entry,
-.lightdm.button,
-.lightdm.entry {
+.lightdm-combo cell,
+.lightdm-combo button,
+.lightdm-combo entry,
+.lightdm button,
+.lightdm entry {
     background-image: none;
     background-color: alpha (black, 0.3);
     border-color: alpha (white, 0.6);
@@ -43,20 +53,20 @@
     text-shadow: none;
 }
 
-.lightdm.button,
-.lightdm.button:hover,
-.lightdm.button:active,
-.lightdm.button:active:focused,
-.lightdm.entry,
-.lightdm.entry:hover,
-.lightdm.entry:active,
-.lightdm.entry:active:focused {
+.lightdm button,
+.lightdm button:hover,
+.lightdm button:active,
+.lightdm button:active:focus,
+.lightdm entry,
+.lightdm entry:hover,
+.lightdm entry:active,
+.lightdm entry:active:focus {
     background-image: none;
     border-image: none;
 }
 
-.lightdm.button:focused,
-.lightdm.entry:focused {
+.lightdm button:focus,
+.lightdm entry:focus {
     border-color: alpha (white, 0.9);
     border-width: 1px;
     border-style: solid;
@@ -64,7 +74,7 @@
     color: white;
 }
 
-.lightdm.entry:selected {
+.lightdm entry:selected {
     background-color: alpha (white, 0.2);
 }
 
@@ -72,23 +82,24 @@
     to { -gtk-icon-transform: rotate(1turn); }
 }
 
-.lightdm.entry:active {
+.lightdm entry:active {
     -gtk-icon-source: -gtk-icontheme("process-working-symbolic");
     animation: dashentry_spinner 1s infinite linear;
 }
 
-.lightdm.option-button {
+.lightdm .option-button {
     padding: 2px;
     background: none;
     border: 0;
 }
 
-.lightdm.toggle-button {
+.lightdm .toggle-button {
     background: none;
     border-width: 0;
 }
 
-.lightdm.toggle-button.selected {
+.lightdm .toggle-button.selected {
     background-color: alpha (black, 0.3);
     border-width: 1px;
 }
+

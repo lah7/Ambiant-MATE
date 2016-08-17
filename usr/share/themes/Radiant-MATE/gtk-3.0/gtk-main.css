@@ -67,14 +67,75 @@
 
 @define-color shadow_color alpha(black, 0.5);
 
-@define-color osd_fg_color #eeeeec;
-@define-color osd_bg_color alpha(#202526, 0.7);
-@define-color osd_border_color alpha(black, 0.7);
+/*******
+ * OSD *
+ *******/
+@define-color osd_highlight #ffffff;
+@define-color osd_lowlight #515152;
+@define-color osd_base @theme_selected_bg_color;
+
+@define-color osd_fg #ededed;
+@define-color osd_bg alpha(@osd_base, 0.80);
+
+@define-color osd_bg_backdrop alpha(shade(@osd_base, 1.40), 0.90);
+
+@define-color osd_text_shadow alpha(black, 0.75);
+
+@define-color osd_toolbar_bg_a alpha(@osd_base, 0.80);
+@define-color osd_toolbar_bg_b alpha(#101010, 0.80);
+@define-color osd_toolbar_bg_c alpha(shade(@osd_base, 1.02), 0.80);
+
+@define-color osd_button_bg_a alpha(@osd_highlight, 0.16);
+@define-color osd_button_bg_b alpha(@osd_lowlight, 0.05);
+@define-color osd_button_bg_c alpha(@osd_highlight, 0.12);
+
+@define-color osd_button_bg_insensitive alpha(@osd_highlight, 0.25);
+@define-color osd_button_bg_insensitive_active alpha(@osd_highlight, 0.16);
+
+@define-color osd_button_bg_hover_a alpha(@osd_highlight, 0.28);
+@define-color osd_button_bg_hover_b alpha(@osd_lowlight, 0.14);
+@define-color osd_button_bg_hover_c alpha(@osd_highlight, 0.14);
+
+@define-color osd_button_bg_active_a alpha(@osd_lowlight, 0.18);
+@define-color osd_button_bg_active_b alpha(@osd_highlight, 0.23);
+@define-color osd_button_bg_active_c alpha(@osd_lowlight, 0.17);
+
+@define-color osd_button_bg_backdrop alpha(@osd_highlight, 0.18);
+@define-color osd_button_bg_backdrop_hover alpha(@osd_highlight, 0.25);
+@define-color osd_button_bg_backdrop_active alpha(@osd_highlight, 0.35);
+@define-color osd_button_bg_backdrop_insensitive alpha(@osd_highlight, 0.08);
+
+@define-color osd_button_fg_backdrop shade(@osd_fg, 0.70);
+@define-color osd_button_fg_backdrop_active shade(@osd_fg, 0.95);
+
+@define-color osd_button_fg shade(@osd_fg, 0.85);
+@define-color osd_button_fg_hover shade(@osd_fg, 0.96);
+@define-color osd_button_fg_active shade(@osd_fg, 1.10);
+@define-color osd_button_fg_insensitive shade(@osd_fg, 0.70);
+
+@define-color osd_button_border shade (@theme_selected_bg_color, 0.8);
+@define-color osd_button_inset shade(@osd_fg, 0.67);
+@define-color osd_button_shadow alpha(black, 0.35);
+
+@define-color osd_trough_bg alpha(@osd_button_fg, 0.10);
 
 @define-color scrollbar_track_color mix(@base_color, black, 0.1); /* #e6e6e6 */
 
 @define-color scrollbar_trough shade(@theme_bg_color, 0.98);
 @define-color scrollbar_slider @theme_bg_color;
+
+@define-color progressbar_fill_a shade(@theme_selected_bg_color, 1.07);
+@define-color progressbar_fill_b shade(mix(@theme_selected_bg_color, green, 0.10), 0.91);
+@define-color button_border_active shade(@theme_selected_bg_color, 0.95);
+
+@define-color progressbar_backdrop_fill_a shade(@backdrop_selected_bg_color, 1.07);
+@define-color progressbar_backdrop_fill_b shade(mix(@backdrop_selected_bg_color, grey, 0.10), 0.91);
+@define-color button_border_backdrop_active shade(@backdrop_selected_bg_color, 0.95);
+
+@define-color inset_light_color alpha(white, 0.45);
+@define-color inset_dark_color alpha(black, 0.07);
+
+@define-color wm_shadow alpha(black, 0.5);
 
 @import url("gtk-widgets-borders.css");
 @import url("gtk-widgets-borders-radiance.css");
@@ -84,7 +145,6 @@
 @import url("gtk-widgets-radiance.css");
 @import url("apps/unity.css");
 @import url("apps/unity-greeter.css");
-@import url("apps/baobab.css");
 @import url("apps/gedit.css");
 @import url("apps/nautilus.css");
 @import url("apps/gnome-panel.css");

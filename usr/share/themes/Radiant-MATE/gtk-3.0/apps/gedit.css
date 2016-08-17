@@ -62,7 +62,7 @@ GeditFileBrowserWidget .toolbar  {
 
 /* Things from Adwaita start here...*/
 
-GeditOpenDocumentSelector .open-document-selector-treeview:prelight {
+GeditOpenDocumentSelector .open-document-selector-treeview:hover {
     background-color: alpha(@selected_bg_color, 0.4);
 }
 
@@ -99,7 +99,7 @@ GeditOpenDocumentSelector .open-document-selector-treeview:prelight {
     border-color: transparent;
     border-width: 1px;
     padding: 1px;
-    icon-shadow: none;
+    -gtk-icon-shadow: none;
 }
 
 .gedit-document-panel .prelight-row .button  {
@@ -145,22 +145,22 @@ GeditStatusbar .button.flat {
 }
 
 
-.notebook GeditCloseButton.button:prelight{
+.notebook GeditCloseButton.button:hover{
     border-color: shade(@bg_color,0.65);
 }
 
-.notebook GeditTabLabel.active-page GeditCloseButton.button:prelight{
+.notebook GeditTabLabel.active-page GeditCloseButton.button:hover{
     border-color: darker(@bg_color);
 }
 
-.notebook GeditCloseButton:backdrop.button:prelight{
+.notebook GeditCloseButton:backdrop.button:hover{
     border-color: shade(@bg_color,0.75);
     border-image: none;
     border-style: solid;
     background-color: transparent;
 }
 
-.notebook GeditTabLabel.active-page GeditCloseButton:backdrop.button:prelight{
+.notebook GeditTabLabel.active-page GeditCloseButton:backdrop.button:hover{
     border-color: shade(@bg_color,0.85);
     border-image: none;
     border-style: solid;

@@ -675,6 +675,21 @@ widget "*IdoEntryMenuItem*" style "wide"
 # See the documentation of the style.
 widget_class "EShellWindow.GtkVBox.BonoboDock.BonoboDockBand.BonoboDockItem*" style "evo_new_button_workaround"
 
+# Various performance fixes if murrine textstyle is on by default in the theme.
+style "performance-fix" {
+	engine "murrine" {
+		textstyle = 0
+		contrast = 0.5
+	}
+}
+
+widget_class "*gtkmm__GtkWindow*"	style "performance-fix" # Inkscape
+widget_class "*GimpDisplayShell*"	style "performance-fix" # Gimp
+widget_class "*GimpToolbox*"		style "performance-fix"
+widget_class "*GimpMenuDock*"		style "performance-fix"
+widget "*OOoFixed*"					style "performance-fix" # Openoffice/Libreoffice
+widget_class "*MozContainer*"		style "performance-fix" # Firefox (Not sure if this one does anything though.)
+
 # Includes
 #include "apps/banshee.rc"
 include "apps/chromium.rc"

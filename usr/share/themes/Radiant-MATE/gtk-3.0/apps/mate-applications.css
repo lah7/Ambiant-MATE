@@ -31,16 +31,6 @@
     border-width: 1px 1px 0px 1px;
 }
 
-#caja-tab-close-button {
-    border-image: none;
-    background-image: none;
-    background-color: transparent;
-    border-style: none;
-    border-width: 0px;
-    icon-shadow: none;
-    padding: 0px;
-}
-
 .caja-canvas-item {
     border-radius: 3px;
 }
@@ -58,13 +48,13 @@
 }
 
 /* EelEditableLabel (icon labels) */
-.caja-desktop.view .entry,
-.caja-desktop.view .entry:focus,
-.caja-desktop.view .entry:backdrop,
-.caja-navigation-window .view .entry,
-.caja-navigation-window .view .entry:active,
-.caja-navigation-window .view .entry:focus,
-.caja-navigation-window .view .entry:backdrop {
+.caja-desktop.view entry,
+.caja-desktop.view entry:focus,
+.caja-desktop.view entry:backdrop,
+.caja-navigation-window .view entry,
+.caja-navigation-window .view entry:active,
+.caja-navigation-window .view entry:focus,
+.caja-navigation-window .view entry:backdrop {
     border-image: none;
     border-style: solid;
     border-width: 1px;
@@ -80,13 +70,13 @@
                                     to         (shade(rgba(255,255,255,1), 1.00)));
 }
 
-.caja-desktop.view .entry:selected,
-.caja-desktop.view .entry:focus:selected,
-.caja-desktop.view .entry:backdrop:selected
-.caja-navigation-window .view .entry:active,
-.caja-navigation-window .view .entry:selected,
-.caja-navigation-window .view .entry:focus:selected,
-.caja-navigation-window .view .entry:backdrop:selected {
+.caja-desktop.view entry:selected,
+.caja-desktop.view entry:focus:selected,
+.caja-desktop.view entry:backdrop:selected
+.caja-navigation-window .view entry:active,
+.caja-navigation-window .view entry:selected,
+.caja-navigation-window .view entry:focus:selected,
+.caja-navigation-window .view entry:backdrop:selected {
     background-color: @theme_selected_bg_color;
     color: @theme_selected_fg_color;
     text-shadow: none;
@@ -96,17 +86,31 @@
  * Mate-Panel *
  **************/
 
+/* set normal menubar menuitem */
+.mate-panel-menu-bar menubar,
+.mate-panel-menu-bar menubar > menuitem {
+    background-color: transparent;
+}
+
+PanelWidget > PanelSeparator {
+    border-width: 0;
+    background-color: transparent;
+    color: shade (@theme_bg_color, 0.85);
+}
+
 /* volume applet */
-.mate-panel-applet-slider {
+.mate-panel-applet-slider,
+.mate-panel-applet-slider.background {
     background: transparent;
 }
 
-.mate-panel-applet-slider .frame {
+.mate-panel-applet-slider frame,
+.mate-panel-applet-slider.background frame {
     background-color: @theme_bg_color;
     border-image: none;
     border-style: none;
     border-radius:3px;
-    padding: 1px;
+    padding: 0px;
     margin: 0px;
     box-shadow: inset  0px  1px shade (@theme_bg_color, 0.8),
                 inset  1px  0px shade (@theme_bg_color, 0.8),
@@ -114,39 +118,36 @@
                 inset  0px -1px shade (@theme_bg_color, 0.8);
 }
 
-.mate-panel-applet-slider .frame .frame{
+.mate-panel-applet-slider frame frame,
+.mate-panel-applet-slider.background frame frame {
     background-color:transparent;
+    padding: 3px;
     box-shadow: none;
 }
 
 /* brightness applet */
-.mate-panel-applet-slider .frame .button {
+.mate-panel-applet-slider frame button,
+.mate-panel-applet-slider.background frame button {
     padding: 4px 5px 4px 0px;
     background-image: none;
     background-color: transparent;
     border-style: none;
     border-image: none;
     color: @theme_fg_color;
-    margin: 0px 0px 0px -4px;
+    margin: 0px;
 }
 
-CalendarWindow#MatePanelPopupWindow {
+/* clock window */
+#MatePanelPopupWindow {
 	border-radius: 3px;
-}
-
-/* FIXME, does not work */
-CalendarWindow#MatePanelPopupWindow ClockMap {
-	border-style: solid;
-	border-width: 1px;
-    border-color: shade (@bg_color, 0.82);
 }
 
 /*****************
  * Mate-terminal *
  *****************/
 
-TerminalWindow.mate-terminal TerminalScreen,
-TerminalWindow.mate-terminal .entry {
+/* FIXME, probably a bug in mate-terminal or vte */
+window.background.mate-terminal vte-terminal {
     -TerminalScreen-background-darkness: 0.95;
     background-color: #373633;
     color: @dark_fg_color;
@@ -156,23 +157,13 @@ TerminalWindow.mate-terminal .entry {
  * Pluma *
  *********/
 
-.pluma-window .notebook .header {
+.pluma-window notebook .header {
     border-width: 1px 1px 0px 1px;
     border-radius: 0px;
 }
 
-.pluma-window .notebook tab.top {
+.pluma-window notebook tab.top {
     padding: 5px 3px 5px 6px;
     border-width: 1px 1px 0px 1px;
-}
-#caja-tab-close-button,
-PlumaCloseButton.button.flat {
-    border-image: none;
-    background-image: none;
-    background-color: transparent;
-    border-style: none;
-    border-width: 0px;
-    icon-shadow: none;
-    padding: 0px;
 }
 
