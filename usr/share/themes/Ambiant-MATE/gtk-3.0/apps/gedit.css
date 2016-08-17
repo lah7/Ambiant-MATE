@@ -4,7 +4,7 @@ GeditWindow .pane-separator,
 GeditWindow .pane-separator:hover {
 }
 
-GeditPanel.title GtkLabel {
+GeditPanel.title label {
 }
 
 GeditDocumentsPanel .view {
@@ -13,16 +13,16 @@ GeditDocumentsPanel .view {
 GeditDocumentsPanel .view:backdrop {
 }
 
-GeditWindow .notebook {
+GeditWindow notebook {
     border-radius: 1px;
 }
 
-GeditPanel .notebook {
+GeditPanel notebook {
     border-radius: 1px;
 }
 
-GeditPanel .notebook tab,
-GeditWindow .notebook tab {
+GeditPanel notebook tab,
+GeditWindow notebook tab {
     border-radius: 3px;
 }
 
@@ -46,7 +46,7 @@ GeditViewFrame .gedit-search-slider .not-found:selected {
     color: @selected_fg_color;
 }
 
-GeditFileBrowserWidget .toolbar  {
+GeditFileBrowserWidget toolbar  {
     background-color: @bg_color;
     border: none;
     padding-bottom: 3px;
@@ -62,7 +62,7 @@ GeditFileBrowserWidget .toolbar  {
 
 /* Things from Adwaita start here...*/
 
-GeditOpenDocumentSelector .open-document-selector-treeview:prelight {
+GeditOpenDocumentSelector .open-document-selector-treeview:hover {
     background-color: alpha(@selected_bg_color, 0.4);
 }
 
@@ -89,7 +89,7 @@ GeditOpenDocumentSelector .open-document-selector-treeview:prelight {
 }
 
 /* sidepane close button styling (copied from the gtk tab close button) */
-.gedit-document-panel .list-row .button {
+.gedit-document-panel .list-row button {
     color: transparent;
     border-image: none;
     background-image: none;
@@ -99,19 +99,19 @@ GeditOpenDocumentSelector .open-document-selector-treeview:prelight {
     border-color: transparent;
     border-width: 1px;
     padding: 1px;
-    icon-shadow: none;
+    -gtk-icon-shadow: none;
 }
 
-.gedit-document-panel .prelight-row .button  {
+.gedit-document-panel .prelight-row button  {
     color: black;
     border-color: transparent;
 }
 
-.gedit-document-panel .prelight-row:selected .button {
+.gedit-document-panel .prelight-row:selected button {
     color:  white;
 }
 
-.gedit-document-panel .prelight-row .button:backdrop {
+.gedit-document-panel .prelight-row button:backdrop {
     color: black;
 }
 
@@ -124,16 +124,16 @@ GeditStatusbar {
     border-top: 1px solid @borders;
 }
 
-GeditStatusbar .button.flat {
+GeditStatusbar button.flat {
     border-radius: 0;
     border-bottom: none;
 }
 
-.notebook GeditCloseButton.button GtkImage { 
+notebook GeditCloseButton.button GtkImage { 
     padding: 1px;
 }
 
-.notebook GeditCloseButton.button {
+notebook GeditCloseButton.button {
     background-color: transparent;
     background-image: none;
     border-image: none;
@@ -145,22 +145,22 @@ GeditStatusbar .button.flat {
 }
 
 
-.notebook GeditCloseButton.button:prelight{
+notebook GeditCloseButton.button:hover{
     border-color: shade(@bg_color,0.65);
 }
 
-.notebook GeditTabLabel.active-page GeditCloseButton.button:prelight{
+notebook GeditTabLabel.active-page GeditCloseButton.button:hover{
     border-color: darker(@bg_color);
 }
 
-.notebook GeditCloseButton:backdrop.button:prelight{
+notebook GeditCloseButton:backdrop.button:hover{
     border-color: shade(@bg_color,0.75);
     border-image: none;
     border-style: solid;
     background-color: transparent;
 }
 
-.notebook GeditTabLabel.active-page GeditCloseButton:backdrop.button:prelight{
+notebook GeditTabLabel.active-page GeditCloseButton:backdrop.button:hover{
     border-color: shade(@bg_color,0.85);
     border-image: none;
     border-style: solid;

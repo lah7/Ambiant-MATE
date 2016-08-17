@@ -1,6 +1,6 @@
 /* Borders */
-.menubar.menuitem:hover,
-.menubar .menuitem:hover {
+.menubar > menuitem:hover,
+menubar > menuitem:hover {
     border: 1px solid #2e2e2c;
     border-bottom-width: 0px;
     border-radius: 4px 4px 0 0;
@@ -9,52 +9,52 @@
 /*********
  * entry *
  *********/
-.entry {
+entry {
     border-radius: 8px;
     border-width: 1px;
     border-style: solid;
     border-color: transparent;
 }
 
-.entry {
+entry {
     border-image: url("assets/entry.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.entry:backdrop {
+entry:backdrop {
     border-image: url("assets/backdrop-entry.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.entry:focus {
+entry:focus {
     border-image: url("assets/entry-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.entry:insensitive {
+entry:disabled {
     border-image: url("assets/entry-disabled.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.entry:insensitive:backdrop {
+entry:disabled:backdrop {
     border-image: url("assets/backdrop-entry-disabled.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.primary-toolbar .entry,
-.menubar.toolbar .entry,
-.header-bar .entry {
+.primary-toolbar entry,
+toolbar menubar entry,
+headerbar entry {
     border-image: url("assets/entry-toolbar.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.primary-toolbar .entry:focus,
-.menubar.toolbar .entry:focus,
-.header-bar .entry:focus {
+.primary-toolbar entry:focus,
+toolbar menubar entry:focus,
+headerbar entry:focus {
     border-image: url("assets/entry-toolbar-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.primary-toolbar .entry.progressbar,
-.primary-toolbar .entry.progressbar,
-.menubar.toolbar .entry.progressbar,
-.menubar.toolbar .entry.progressbar,
-.header-bar .entry.progressbar,
-.header-bar .entry.progressbar,
-.entry.progressbar {
+.primary-toolbar entry progressbar,
+.primary-toolbar entry progressbar,
+toolbar menubar entry progressbar,
+toolbar menubar entry progressbar,
+headerbar entry progressbar,
+headerbar entry progressbar,
+entry progressbar {
     border-radius: 8px;
     border-width: 0;
 }
@@ -62,208 +62,219 @@
 /******************
  * combobox entry *
  ******************/
-GtkComboBox.combobox-entry .entry:first-child,
-GtkComboBox.combobox-entry .button:first-child {
+combobox entry.combo:first-child,
+combobox button.combo:first-child {
     border-image-width: 10px 1px 10px 12px;
     border-radius: 8px 0 0 8px;
     border-right-width: 0;
 }
 
-GtkComboBox.combobox-entry .entry:last-child,
-GtkComboBox.combobox-entry .button:last-child {
+combobox entry.combo:last-child,
+combobox button.combo:last-child {
     border-image-width: 10px 12px 10px 1px;
     border-radius: 0 8px 8px 0;
     border-left-width: 0;
 }
 
-GtkComboBox.combobox-entry .button {
-    border-image: url("assets/combobox-button.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
+combobox button.combo {
+    border-image: url("assets/combobox-button.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-GtkComboBox.combobox-entry .button:backdrop {
-    border-image: url("assets/backdrop-combobox-button.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
+combobox button.combo:backdrop {
+    border-image: url("assets/backdrop-combobox-button.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-GtkComboBox.combobox-entry .button:focus {
-    border-image: url("assets/combobox-button-focused.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
+combobox button.combo:focus {
+    border-image: url("assets/combobox-button-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-GtkComboBox.combobox-entry .button:insensitive {
-    border-image: url("assets/combobox-button-disabled.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
+combobox button.combo:disabled {
+    border-image: url("assets/combobox-button-disabled.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-GtkComboBox.combobox-entry .button:insensitive:backdrop {
-    border-image: url("assets/backdrop-combobox-button-disabled.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
+combobox button.combo:disabled:backdrop {
+    border-image: url("assets/backdrop-combobox-button-disabled.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-GtkComboBox.combobox-entry .button:active:focus {
-    border-image: url("assets/combobox-button-pressed-focused.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
+combobox button.combo:active:focus {
+    border-image: url("assets/combobox-button-pressed-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.primary-toolbar GtkComboBox.combobox-entry .button,
-.primary-toolbar GtkComboBox.combobox-entry .button:focus:insensitive,
-.menubar.toolbar GtkComboBox.combobox-entry .button,
-.menubar.toolbar GtkComboBox.combobox-entry .button:focus:insensitive,
-.header-bar GtkComboBox.combobox-entry .button,
-.header-bar GtkComboBox.combobox-entry .button:focus:insensitive {
-    border-image: url("assets/combobox-button-toolbar.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
+.primary-toolbar combobox button.combo,
+.primary-toolbar combobox button.combo:focus:disabled,
+toolbar menubar combobox button.combo,
+toolbar menubar combobox button.combo:focus:disabled,
+headerbar combobox button.combo,
+headerbar combobox button.combo:focus:disabled {
+    border-image: url("assets/combobox-button-toolbar.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.primary-toolbar GtkComboBox.combobox-entry .button:focus,
-.menubar.toolbar GtkComboBox.combobox-entry .button:focus,
-.header-bar GtkComboBox.combobox-entry .button:focus {
-    border-image: url("assets/combobox-button-toolbar-focused.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
+.primary-toolbar combobox button.combo:focus,
+toolbar menubar combobox button.combo:focus,
+headerbar combobox button.combo:focus {
+    border-image: url("assets/combobox-button-toolbar-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.primary-toolbar GtkComboBox.combobox-entry .button:focus:active:focus,
-.menubar.toolbar GtkComboBox.combobox-entry .button:focus:active:focus,
-.header-bar GtkComboBox.combobox-entry .button:focus:active:focus {
-    border-image: url("assets/combobox-button-toolbar-pressed-focused.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
+.primary-toolbar combobox button.combo:focus:active:focus,
+toolbar menubar combobox button.combo:focus:active:focus,
+headerbar combobox button.combo:focus:active:focus {
+    border-image: url("assets/combobox-button-toolbar-pressed-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.primary-toolbar GtkComboBox.combobox-entry .entry:first-child,
-.primary-toolbar GtkComboBox.combobox-entry .button:first-child,
-.menubar.toolbar GtkComboBox.combobox-entry .entry:first-child,
-.menubar.toolbar GtkComboBox.combobox-entry .button:first-child,
-.header-bar GtkComboBox.combobox-entry .entry:first-child,
-.header-bar GtkComboBox.combobox-entry .button:first-child {
+.primary-toolbar combobox entry.combo:first-child,
+.primary-toolbar combobox button.combo:first-child,
+toolbar menubar combobox entry.combo:first-child,
+toolbar menubar combobox button.combo:first-child,
+headerbar combobox entry.combo:first-child,
+headerbar combobox button.combo:first-child {
     border-image-width: 10px 0 10px 12px;
     border-radius: 8px 0 0 8px;
     border-right-width: 0;
 }
 
-.primary-toolbar GtkComboBox.combobox-entry .entry:last-child,
-.primary-toolbar GtkComboBox.combobox-entry .button:last-child,
-.menubar.toolbar GtkComboBox.combobox-entry .entry:last-child,
-.menubar.toolbar GtkComboBox.combobox-entry .button:last-child,
-.header-bar GtkComboBox.combobox-entry .entry:last-child,
-.header-bar GtkComboBox.combobox-entry .button:last-child {
+.primary-toolbar combobox entry.combo:last-child,
+.primary-toolbar combobox button.combo:last-child,
+toolbar menubar combobox entry.combo:last-child,
+toolbar menubar combobox button.combo:last-child,
+headerbar combobox entry.combo:last-child,
+headerbar combobox button.combo:last-child {
     border-image-width: 10px 12px 10px 1px;
     border-radius: 0 8px 8px 0;
     border-left-width: 0;
 }
 
-.notebook tab.top:active {
+.primary-toolbar combobox entry.combo:only-child,
+.primary-toolbar combobox button.combo:only-child,
+toolbar menubar combobox entry.combo:only-child,
+toolbar menubar combobox button.combo:only-child,
+headerbar combobox entry.combo:only-child,
+headerbar combobox button.combo:only-child {
+    border-image-width: 10px 12px 10px 12px;
+    border-radius: 8px;
+}
+
+notebook header.top tab:checked {
     border-image: url("assets/notebook-tab-top.png") 8 10 1 10 / 8px 10px 1px 10px stretch;
 }
 
-.notebook tab.right:active {
+notebook header.right tab:checked {
     border-image: url("assets/notebook-tab-right.png") 10 8 10 1 / 10px 8px 10px 1px stretch;
 }
 
-.notebook tab.bottom:active {
+notebook header.bottom tab:checked {
     border-image: url("assets/notebook-tab-bottom.png") 1 10 8 10 / 1px 10px 8px 10px stretch;
 }
 
-.notebook tab.left:active {
+notebook header.left tab:checked {
     border-image: url("assets/notebook-tab-left.png") 10 1 10 8 / 10px 1px 10px 8px stretch;
 }
 
-.trough,
-.trough.highlight {
+trough,
+trough highlight {
     border-radius: 4px;
     border-width: 1px;
     border-style: solid;
     border-color: transparent;
 }
 
-.trough {
+progressbar trough,
+trough {
     border-image: url("assets/progressbar-horizontal-trough.png") 6 7 6 7 / 6px 7px 6px 7px stretch;
 }
 
-GtkSwitch.trough {
+switch {
     border-image: url("assets/switch-trough-off.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-GtkSwitch.trough:active {
+switch:active {
     border-image: url("assets/switch-trough-on.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.primary-toolbar GtkSwitch.trough,
-.menubar.toolbar GtkSwitch.trough,
-.header-bar GtkSwitch.trough {
+.primary-toolbar switch,
+toolbar menubar switch,
+headerbar switch {
     border-image: url("assets/switch-trough-toolbar-off.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.primary-toolbar GtkSwitch.trough:active,
-.menubar.toolbar GtkSwitch.trough:active,
-.header-bar GtkSwitch.trough:active {
+.primary-toolbar switch:active,
+toolbar menubar switch:active,
+headerbar switch:active {
     border-image: url("assets/switch-trough-toolbar-on.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 /* XXX temporary */
-GtkSwitch.trough:backdrop,
-GtkSwitch.trough:active:backdrop,
-GtkSwitch.trough:insensitive,
-GtkSwitch.trough:active:insensitive {
+switch:backdrop,
+switch:active:backdrop,
+switch:disabled,
+switch:active:disabled {
     border-image: url("assets/switch-trough-disabled.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-GtkSwitch.slider {
+switch slider {
     border-image: url("assets/switch-button-off.png") 9 11 9 11 / 9px 11px 9px 11px stretch;
 }
 
-GtkSwitch.slider:active {
+switch slider:active {
     border-image: url("assets/switch-button-on.png") 9 11 9 11 / 9px 11px 9px 11px stretch;
 }
 
 /* XXX temporary */
-GtkSwitch.slider:backdrop,
-GtkSwitch.slider:insensitive {
+switch slider:backdrop,
+switch slider:disabled {
     border-image: url("assets/switch-button-off-disabled.png") 9 11 9 11 / 9px 11px 9px 11px stretch;
 }
 
 /* XXX temporary */
-GtkSwitch.slider:active:backdrop,
-GtkSwitch.slider:active:insensitive {
+switch slider:active:backdrop,
+switch slider:active:disabled {
     border-image: url("assets/switch-button-on-disabled.png") 9 11 9 11 / 9px 11px 9px 11px stretch;
 }
 
-.scale.trough {
+scale trough {
     border-image: url("assets/scale-horizontal-trough.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
 }
 
-.scale.trough:insensitive {
+scale trough:disabled {
     border-image: url("assets/scale-horizontal-trough-disabled.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
 }
 
-.scale.trough:backdrop {
+scale trough:backdrop {
     border-image: url("assets/scale-horizontal-trough-backdrop.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
 }
 
-.scale.trough.vertical {
+scale trough.vertical {
     border-image: url("assets/scale-vertical-trough.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
 }
 
-.scale.trough.vertical:insensitive {
+scale trough.vertical:disabled {
     border-image: url("assets/scale-vertical-trough-disabled.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
 }
 
-.scale.trough.highlight.left {
+scale trough highlight.left {
     border-image: url("assets/scale-horizontal-fill.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
 }
 
-.scale.trough.vertical:backdrop {
+scale trough.vertical:backdrop {
     border-image: url("assets/scale-vertical-trough-backdrop.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
 }
 
-.scale.trough.highlight.left:insensitive {
+scale trough highlight.left:disabled {
     border-image: url("assets/scale-horizontal-fill-disabled.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
 }
 
-.scale.trough.highlight.left:backdrop {
+scale trough highlight.left:backdrop {
     border-image: url("assets/scale-horizontal-fill-backdrop.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
 }
 
-.scale.trough.highlight.bottom.vertical {
+scale.vertical trough.highlight.bottom {
     border-image: url("assets/scale-vertical-fill.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
 }
 
-.scale.trough.highlight.bottom.vertical:insensitive {
+scale.vertical trough highlight.bottom:disabled {
     border-image: url("assets/scale-vertical-fill-disabled.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
 }
 
-.scale.trough.highlight.bottom.vertical:backdrop {
+scale.vertical trough highlight.bottom:backdrop {
     border-image: url("assets/scale-vertical-fill-backdrop.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
 }
 
