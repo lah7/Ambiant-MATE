@@ -47,7 +47,7 @@
     -gtk-icon-style: regular; /* disable symbolic icons */
 }
 
-.background {
+.background:not(widget) {
     color: @fg_color;
     background-color: @bg_color;
 }
@@ -801,7 +801,7 @@ expander {
 /*********
  * frame *
  *********/
-frame,
+
 .frame {
     border-radius: 3px;
     border-width: 1px;
@@ -877,6 +877,9 @@ treeview.view rubberband,
 .content-view rubberband,
 rubberband {
     background-color: alpha (@selected_bg_color, 0.35);
+    background-image: linear-gradient(to bottom,
+                                      alpha (@theme_selected_bg_color, 0.35),
+                                      alpha (@theme_selected_bg_color, 0.35));
     border-color: @selected_bg_color;
     border-radius: 0;
     border-style: solid;
@@ -1385,7 +1388,7 @@ notebook header tab {
 }
 
 notebook header tab label {
-    color: mix (@theme_fg_color, @theme_bg_color, 0.40);
+    color: @theme_fg_color;
     font-weight: normal;
 }
 
@@ -3030,6 +3033,7 @@ toolbar:backdrop {
  *******************/
 .primary-toolbar,
 toolbar.primary-toolbar,
+.primary-toolbar toolbar, /* eom */
 headerbar,
 .maximized .titlebar.toolbar-mode:not(:backdrop) {
     -GtkWidget-window-dragging: true;
@@ -3042,10 +3046,8 @@ headerbar,
     border-style: solid;
     border-width: 1px 0 1px 0;
     border-radius: 0;
-
     color: @dark_fg_color;
     text-shadow: 0 -1px shade (@dark_bg_color, 0.7);
-
     box-shadow: inset 0 1px shade (@dark_bg_color, 0.94);
 }
 
@@ -3312,6 +3314,7 @@ tooltip.background,
 .tooltip.background {
     background-color: @tooltip_bg_color;
     background-clip: padding-box;
+    color: @tooltip_fg_color;
 }
 
 tooltip label,
@@ -3378,17 +3381,12 @@ list row.activatable:selected {
  * OSD *
  *******/
 
+.osd,
 .background.osd {
-    color: @osd_fg;
-    text-shadow: none;
-    border-style: solid;
-    border-width: 1px;
-    border-color: shade (@theme_selected_bg_color, 0.8);
-    border-radius: 0px;
-    background-image: linear-gradient(to left,
-                                      alpha(shade(@theme_selected_bg_color, 1.2), 0.7),
-                                      alpha(shade(@theme_selected_bg_color, 0.95), 0.7));
-    background-color: alpha(shade(@theme_selected_bg_color, 1.0), 0.4);
+	color: @osd_fg;
+	background-image: none;
+	background-color: @osd_bg;
+	border-radius:20px;
 }
 
 overlay.osd {
@@ -3622,6 +3620,7 @@ toolbar.osd separator {
     border-width: 0;
 }
 
+.osd .progressbar,
 .osd progressbar {
     background-color: @osd_fg;
 }
@@ -3683,6 +3682,7 @@ progressbar.horizontal .osd {
     min-height: 3px;
 }
 
+.osd .trough,
 .osd progressbar trough,
 progressbar .osd trough {
     padding: 0;
@@ -3690,16 +3690,23 @@ progressbar .osd trough {
     border-style: none;
     border-width: 0;
     background-image: none;
-    background-color: transparent;
-    border-radius: 0;
+    background-color: shade (@theme_fg_color, 0.6);
+    border-radius: 2px;
 }
 
+.osd .progressbar,
 .osd progressbar,
 progressbar .osd {
-    border-style: none;
-    background-color: @theme_selected_bg_color;
-    background-image: none;
-    border-radius: 0;
+	padding: 0;
+	-progressbar-xspacing: 0;
+	-progressbar-yspacing: 3px;
+	-progressbar-min-horizontal-bar-height: 3px;
+	border-style: none;
+	background-color: shade(@osd_progressbar_background_b, 1.3);
+	background-image: linear-gradient(to bottom,
+	                                  @osd_progressbar_background_a,
+	                                  @osd_progressbar_background_b);
+	border-radius: 2px;
 }
 
 .osd view {

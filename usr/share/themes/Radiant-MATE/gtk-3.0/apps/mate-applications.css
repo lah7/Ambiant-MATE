@@ -150,7 +150,7 @@ PanelWidget > PanelSeparator {
 window.background.mate-terminal vte-terminal {
     -TerminalScreen-background-darkness: 0.95;
     background-color: #373633;
-    color: @dark_fg_color;
+    color: @bg_color;
 }
 
 /*********
@@ -165,5 +165,30 @@ window.background.mate-terminal vte-terminal {
 .pluma-window notebook tab.top {
     padding: 5px 3px 5px 6px;
     border-width: 1px 1px 0px 1px;
+}
+
+/* pluma line numbers */
+.pluma-window textview {
+    background-color: shade (@bg_color, 0.95);
+}
+
+/* mate-screensaver lock dialog */
+
+.lock-dialog {
+    border-radius: 5px;
+    border-style: none;
+    border-width: 0px;
+    /* not sure if box-shadow works here */
+    box-shadow: 0 0 0 1px @wm_border, 0 2px 8px 3px @wm_shadow;
+}
+
+.lock-dialog frame {
+    border-radius: 5px;
+    border-style: none;
+    border-width: 0px;
+}
+
+.lock-dialog notebook {
+    background-color: shade (@theme_bg_color, 1.0);
 }
 
