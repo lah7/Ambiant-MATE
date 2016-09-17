@@ -156,13 +156,13 @@ MatePanelAppletFrameDBus {
 
 /* set normal menubar menu menuitem */
 .mate-panel-menu-bar menubar > menuitem > .popup.csd > menu > menuitem {
-    padding: 0px 5px 0px 5px;
+    padding: 3px 5px 3px 5px;
     border-width: 0px;
 }
 
 /* set Mate menu menuitem */
 .mate-panel-menu-bar menu menuitem {
-    padding: 0px 5px 0px 5px;
+    padding: 3px 5px 3px 5px;
     border-width: 0px;
 }
 
@@ -291,5 +291,189 @@ window.background.mate-terminal vte-terminal {
 .pluma-window .notebook tab.top {
     padding: 5px 3px 5px 6px;
     border-width: 1px 1px 0px 1px;
+}
+
+/* pluma line numbers */
+.pluma-window textview {
+    background-color: shade (@bg_color, 0.95);
+}
+
+/*************
+ * Mate-Menu *
+ *************/
+
+#mate-menu.background {
+    background-image: none;
+    background-color: shade (@dark_bg_color, 1.00);
+    border-color: shade(@dark_fg_color, 0.3);
+    border-width: 1px;
+    border-style: solid;
+    border-radius:2px;
+}
+
+#mate-menu.background notebook,
+#mate-menu.background viewport,
+#mate-menu.background viewport grid,
+#mate-menu.background > widget > box > widget > box,
+#mate-menu.background > widget > box > widget > box > box > widget {
+    background-image: none;
+    background-color: shade (@dark_bg_color, 1.00);
+}
+
+#mate-menu.background viewport,
+#mate-menu.background notebook {
+    border-radius: 0px;
+    border-width: 0px;
+    border-style: none;
+}
+
+#mate-menu.background scrolledwindow {
+    border-color: shade(@dark_fg_color, 0.3);
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0px;
+}
+
+#mate-menu.background label,
+#mate-menu.background button,
+#mate-menu.background button.flat {
+    text-shadow: none;
+    color: @dark_fg_color;
+}
+
+#mate-menu.background button:hover label,
+#mate-menu.background button:hover,
+#mate-menu.background button.flat:hover {
+    color: @selected_fg_color;
+    text-shadow: 0 -1px shade (@selected_bg_color, 0.7);
+}
+
+#mate-menu.background button,
+#mate-menu.background button.flat {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 1.08)),
+                                     color-stop (0.5, @dark_bg_color),
+                                     to (shade (@dark_bg_color, 0.94)));
+    border-radius: 6px;
+    border-color: shade(@dark_fg_color, 0.3);
+    border-image: none;
+}
+
+#mate-menu.background button:hover,
+#mate-menu.background button.flat:hover {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@selected_bg_color, 1.1)),
+                                     to (shade (@selected_bg_color, 0.9)));
+    border-image-width: 0px;
+    box-shadow: inset 1px 0 shade (@selected_bg_color, 1.02),
+                inset -1px 0 shade (@selected_bg_color, 1.02),
+                inset 0 1px shade (@selected_bg_color, 1.16),
+                inset 0 -1px shade (@selected_bg_color, 0.96);
+}
+
+#mate-menu.background separator,
+#mate-menu.background widget notebook viewport grid widget separator {
+    min-height: 1px;
+    background-color: shade(@dark_fg_color, 0.3);
+    border-color: shade(@dark_fg_color, 0.3);
+    border-style: solid;
+    border-width: 1px 0px 0px 0px;
+}
+
+#mate-menu.background scrollbar {
+    background-image: none;
+    border-style: solid;
+    border-color: shade(@dark_fg_color, 0.3);
+}
+
+#mate-menu.background scrollbar.vertical trough {
+    background-image: none;
+    border-color: shade(@dark_fg_color, 0.3);
+}
+
+#mate-menu.background scrollbar.vertical slider {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 1.75)),
+                                     to (shade (@dark_bg_color, 1.3)));
+    border-color: shade(@dark_fg_color, 0.3);
+}
+
+#mate-menu.background scrollbar.vertical slider:hover,
+#mate-menu.background scrollbar.vertical slider:hover:active {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 1.3)),
+                                     to (shade (@dark_bg_color, 1.75)));
+    border-color: shade(@dark_fg_color, 0.3);
+}
+
+#mate-menu.background scrollbar.vertical.fine-tune slider:hover:active,
+#mate-menu.background scrollbar.vertical.fine-tune .slider:hover:active {
+    background-image: url("assets/slider_fine_vertical.svg"),
+                      linear-gradient(to left,
+                                      shade(@dark_bg_color, 1.75),
+                                      shade(@dark_bg_color, 1.525) 55%,
+                                      shade(@dark_bg_color, 1.3));
+    background-repeat: no-repeat;
+    background-position: center;
+    border-color: shade(@dark_fg_color, 0.3);
+}
+
+#mate-menu.background scrollbar.vertical button {
+    border-radius: 0px;
+    background-image: none;
+    box-shadow: none;
+}
+
+#mate-menu.background scrollbar.vertical button:disabled {
+    background-color: transparent;
+    color: shade (@insensitive_fg_color, 0.6);
+}
+
+#mate-menu.background entry {
+    background-color: transparent;
+    background-image: -gtk-gradient(linear,
+                                    left top, left bottom,
+                                    from       (shade(@dark_bg_color, 1.16)),
+                                    color-stop (0.15, shade(@dark_bg_color, 1.26)),
+                                    color-stop (0.50, shade(@dark_bg_color, 1.28)),
+                                    to         (shade(@dark_bg_color, 1.30)));
+    color: shade (@dark_fg_color, 1.0);
+    border-image: none;
+}
+
+#mate-menu.background entry,
+#mate-menu.background entry:focus {
+    box-shadow: inset  0px  1px shade(@dark_fg_color, 0.3),
+                inset  1px  0px shade(@dark_fg_color, 0.3),
+                inset -1px  0px shade(@dark_fg_color, 0.3),
+                inset  0px -1px shade(@dark_fg_color, 0.3);
+    /* color of the cursor */
+	caret-color: shade (@dark_fg_color, 1.0);
+}
+
+#mate-menu.background entry selection,
+#mate-menu.background entry selection:focus {
+    background-color: shade(@dark_fg_color, 0.4);
+    color: shade (@dark_fg_color, 1.2);
+}
+
+/* mate-screensaver lock dialog */
+
+.lock-dialog {
+    border-radius: 5px;
+    border-style: none;
+    border-width: 0px;
+    /* not sure if box-shadow works here */
+    box-shadow: 0 0 0 1px @wm_border, 0 2px 8px 3px @wm_shadow;
+}
+
+.lock-dialog frame {
+    border-radius: 5px;
+    border-style: none;
+    border-width: 0px;
+}
+
+.lock-dialog notebook {
+    background-color: shade (@theme_bg_color, 1.0);
 }
 

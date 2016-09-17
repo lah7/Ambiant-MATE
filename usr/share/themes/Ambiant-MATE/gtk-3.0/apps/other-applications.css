@@ -13,7 +13,8 @@
 .lightdm-gtk-greeter,
 #login_window.background,
 #login_window.background.lightdm-gtk-greeter {
-	border-radius: 5px;
+    border-radius: 5px;
+    background-color: @theme_bg_color;
 }
 
 .lightdm-gtk-greeter,
@@ -23,6 +24,7 @@
 	border-radius: 5px;
     border-style: none;
     border-width: 0px;
+    background-color: @theme_bg_color;
 }
 
 .lightdm-gtk-greeter frame,
@@ -45,5 +47,18 @@
 .lightdm-gtk-greeter separator {
     border-style: none;
     border-width: 0px;
+}
+
+/************
+ * Ubiquity *
+ ************/
+
+#live_installer.background #wizard #page_mode,
+#live_installer.background #wizard #page_mode #page_section #steps {
+    background-color: @theme_bg_color;
+}
+
+#live_installer.background #wizard #progress_eventbox #progress_section #progress_mode {
+    background-color: @dark_bg_color;
 }
 
