@@ -73,7 +73,7 @@
  *******/
 @define-color osd_highlight #ffffff;
 @define-color osd_lowlight #525252;
-@define-color osd_base #212526;
+@define-color osd_base #0a1201;
 
 @define-color osd_fg #ededed;
 @define-color osd_bg alpha(@osd_base, 0.80);
@@ -129,8 +129,8 @@
 @define-color progressbar_fill_b shade(mix(@theme_selected_bg_color, green, 0.10), 0.91);
 @define-color button_border_active shade(@theme_selected_bg_color, 0.95);
 
-@define-color osd_progressbar_background_a #4d4d4d;
-@define-color osd_progressbar_background_b #636363;
+@define-color osd_progressbar_background_a @dark_fg_color;
+@define-color osd_progressbar_background_b @dark_fg_color;
 
 @define-color progressbar_backdrop_fill_a shade(@backdrop_selected_bg_color, 1.07);
 @define-color progressbar_backdrop_fill_b shade(mix(@backdrop_selected_bg_color, grey, 0.10), 0.91);

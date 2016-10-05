@@ -172,6 +172,79 @@ window.background.mate-terminal vte-terminal {
     background-color: shade (@bg_color, 0.95);
 }
 
+/*************
+ * Mate-Menu *
+ *************/
+
+#mate-menu.background {
+    background-image: none;
+    background-color: shade (@menu_bg_color, 1.00);
+    border-color: shade(@menu_bg_color, 0.8);
+    border-width: 1px;
+    border-style: solid;
+    border-radius:0px;
+}
+
+#mate-menu.background notebook,
+#mate-menu.background viewport,
+#mate-menu.background viewport grid,
+#mate-menu.background > widget > box > widget > box,
+#mate-menu.background > widget > box > widget > box > box > widget {
+    background-image: none;
+    background-color: shade (@menu_bg_color, 1.00);
+}
+
+#mate-menu.background viewport,
+#mate-menu.background notebook {
+    border-radius: 0px;
+    border-width: 0px;
+    border-style: none;
+}
+
+#mate-menu.background separator,
+#mate-menu.background widget notebook viewport grid widget separator {
+    min-height: 0px;
+    background-color: transparent;
+    border-color: transparent;
+    border-style: none;
+    border-width: 0px 0px 0px 0px;
+}
+
+#mate-menu.background button,
+#mate-menu.background button.flat {
+    background-color: transparent;
+    background-image: none;
+    border-radius: 8px;
+    border-image: none;
+    border-style: solid;
+    border-width: 1px;
+    border-color: shade (@menu_bg_color, 1.00);
+    padding: 4px;
+}
+
+#mate-menu.background button:hover,
+#mate-menu.background button.flat:hover {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@button_bg_color, 1.12)),
+                                     color-stop (0.5, @button_bg_color),
+                                     to (shade (@button_bg_color, 0.96)));
+    border-image-source: url("assets/button-hover.png");
+    border-image-width: 10px 12px 10px 12px;
+    border-image-slice: 10 12 10 12;
+    border-image-repeat: stretch;
+}
+
+#mate-menu.background scrollbar.vertical {
+    border-width: 0px;
+}
+
+#mate-menu.background scrollbar button,
+#mate-menu.background scrollbar button:hover {
+    padding: 0px;
+    border-image: none;
+    border-radius: 0px;
+}
+
 /* mate-screensaver lock dialog */
 
 .lock-dialog {
