@@ -36,20 +36,20 @@ entry:disabled:backdrop {
     border-image: url("assets/backdrop-entry-disabled.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.primary-toolbar entry,
+.primary-toolbar:not(.libreoffice-toolbar) entry,
 toolbar menubar entry,
 headerbar entry {
     border-image: url("assets/entry-toolbar.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.primary-toolbar entry:focus,
+.primary-toolbar:not(.libreoffice-toolbar) entry:focus,
 toolbar menubar entry:focus,
 headerbar entry:focus {
     border-image: url("assets/entry-toolbar-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.primary-toolbar entry progressbar,
-.primary-toolbar entry progressbar,
+.primary-toolbar:not(.libreoffice-toolbar) entry progressbar,
+.primary-toolbar:not(.libreoffice-toolbar) entry progressbar,
 toolbar menubar entry progressbar,
 headerbar entry progressbar,
 headerbar entry progressbar,
@@ -99,8 +99,8 @@ combobox button.combo:active:focus {
     border-image: url("assets/combobox-button-pressed-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.primary-toolbar combobox button.combo,
-.primary-toolbar combobox button.combo:focus:disabled,
+.primary-toolbar:not(.libreoffice-toolbar) combobox button.combo,
+.primary-toolbar:not(.libreoffice-toolbar) combobox button.combo:focus:disabled,
 toolbar menubar combobox button.combo,
 toolbar menubar combobox button.combo:focus:disabled,
 headerbar combobox button.combo,
@@ -108,20 +108,20 @@ headerbar combobox button.combo:focus:disabled {
     border-image: url("assets/combobox-button-toolbar.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
 }
 
-.primary-toolbar combobox button.combo:focus,
+.primary-toolbar:not(.libreoffice-toolbar) combobox button.combo:focus,
 toolbar menubar combobox button.combo:focus,
 headerbar combobox button.combo:focus {
     border-image: url("assets/combobox-button-toolbar-focused.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
 }
 
-.primary-toolbar combobox button.combo:focus:active:focus,
+.primary-toolbar:not(.libreoffice-toolbar) combobox button.combo:focus:active:focus,
 toolbar menubar combobox button.combo:focus:active:focus,
 headerbar combobox button.combo:focus:active:focus {
     border-image: url("assets/combobox-button-toolbar-pressed-focused.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
 }
 
-.primary-toolbar combobox entry.combo:first-child,
-.primary-toolbar combobox button.combo:first-child,
+.primary-toolbar:not(.libreoffice-toolbar) combobox entry.combo:first-child,
+.primary-toolbar:not(.libreoffice-toolbar) combobox button.combo:first-child,
 toolbar menubar combobox entry.combo:first-child,
 toolbar menubar combobox button.combo:first-child,
 headerbar combobox entry.combo:first-child,
@@ -131,8 +131,8 @@ headerbar combobox button.combo:first-child {
     border-right-width: 0;
 }
 
-.primary-toolbar combobox entry.combo:last-child,
-.primary-toolbar combobox button.combo:last-child,
+.primary-toolbar:not(.libreoffice-toolbar) combobox entry.combo:last-child,
+.primary-toolbar:not(.libreoffice-toolbar) combobox button.combo:last-child,
 toolbar menubar combobox entry.combo:last-child,
 toolbar menubar combobox button.combo:last-child,
 headerbar combobox entry.combo:last-child,
@@ -142,8 +142,8 @@ headerbar combobox button.combo:last-child {
     border-left-width: 0;
 }
 
-.primary-toolbar combobox entry.combo:only-child,
-.primary-toolbar combobox button.combo:only-child,
+.primary-toolbar:not(.libreoffice-toolbar) combobox entry.combo:only-child,
+.primary-toolbar:not(.libreoffice-toolbar) combobox button.combo:only-child,
 toolbar menubar combobox entry.combo:only-child,
 toolbar menubar combobox button.combo:only-child,
 headerbar combobox entry.combo:only-child,
@@ -197,13 +197,13 @@ switch:active {
     border-image: url("assets/switch-trough-on.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.primary-toolbar switch,
+.primary-toolbar:not(.libreoffice-toolbar) switch,
 toolbar menubar switch,
 headerbar switch {
     border-image: url("assets/switch-trough-toolbar-off.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.primary-toolbar switch:active,
+.primary-toolbar:not(.libreoffice-toolbar) switch:active,
 toolbar menubar switch:active,
 headerbar switch:active {
     border-image: url("assets/switch-trough-toolbar-on.png") 10 12 10 12 / 10px 12px 10px 12px stretch;

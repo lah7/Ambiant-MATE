@@ -378,12 +378,12 @@ row radio:indeterminate:disabled:backdrop {
     -gtk-icon-source: url("assets/backdrop-radio-mixed-disabled-alt.png");
 }
 
-.primary-toolbar menu menuitem check,
+.primary-toolbar:not(.libreoffice-toolbar) menu menuitem check,
 toolbar menubar menu menuitem check,
 headerbar menu menuitem check,
 menu menuitem check,
 menu menuitem .check,
-.primary-toolbar menu menuitem check:hover,
+.primary-toolbar:not(.libreoffice-toolbar) menu menuitem check:hover,
 toolbar menubar menu menuitem check:hover,
 headerbar menu menuitem check:hover,
 menu menuitem check:hover,
@@ -391,12 +391,12 @@ menu menuitem .check:hover {
     -gtk-icon-source: url("assets/check-menuitem-unselected.png");
 }
 
-.primary-toolbar menu menuitem radio,
+.primary-toolbar:not(.libreoffice-toolbar) menu menuitem radio,
 toolbar menubar menu menuitem radio,
 headerbar menu menuitem radio,
 menu menuitem radio,
 menu menuitem .radio,
-.primary-toolbar menu menuitem radio:hover,
+.primary-toolbar:not(.libreoffice-toolbar) menu menuitem radio:hover,
 toolbar menubar menu menuitem radio:hover,
 headerbar menu menuitem radio:hover,
 menu menuitem radio:hover,
@@ -404,7 +404,7 @@ menu menuitem .radio:hover {
     -gtk-icon-source: url("assets/check-menuitem-unselected.png");
 }
 
-.primary-toolbar menu menuitem check:checked,
+.primary-toolbar:not(.libreoffice-toolbar) menu menuitem check:checked,
 toolbar menubar menu menuitem check:checked,
 headerbar menu menuitem check:checked,
 toolbar menu menuitem check:checked:hover,
@@ -415,7 +415,7 @@ menu menuitem .check:checked:hover {
     -gtk-icon-source: url("assets/check-menuitem.png");
 }
 
-.primary-toolbar menu menuitem check:checked:disabled,
+.primary-toolbar:not(.libreoffice-toolbar) menu menuitem check:checked:disabled,
 toolbar menubar menu menuitem check:checked:disabled,
 headerbar menu menuitem check:checked:disabled,
 toolbar menu menuitem check:checked:hover:disabled,
@@ -426,7 +426,7 @@ menu menuitem .check:checked:hover:disabled {
     -gtk-icon-source: url("assets/check-menuitem-insensitive.png");
 }
 
-.primary-toolbar menu menuitem radio:checked,
+.primary-toolbar:not(.libreoffice-toolbar) menu menuitem radio:checked,
 toolbar menubar menu menuitem radio:checked,
 headerbar menu menuitem radio:checked,
 toolbar menu menuitem radio:checked:hover,
@@ -437,7 +437,7 @@ menu menuitem .radio:checked:hover {
     -gtk-icon-source: url("assets/radio-menuitem.png");
 }
 
-.primary-toolbar menu menuitem radio:checked:disabled,
+.primary-toolbar:not(.libreoffice-toolbar) menu menuitem radio:checked:disabled,
 toolbar menubar menu menuitem radio:checked:disabled,
 headerbar menu menuitem radio:checked:disabled,
 toolbar menu menuitem radio:checked:hover:disabled,

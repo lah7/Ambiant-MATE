@@ -584,7 +584,7 @@ ContactsWindow .sidebar.frame {
 }
 
 /* Primary toolbar with no line at top to avoid conflicts with frame border */
-ContactsWindow .primary-toolbar.toolbar {
+ContactsWindow .primary-toolbar:not(.libreoffice-toolbar).toolbar {
  border-width: 0 0 1px 0;
 }
 

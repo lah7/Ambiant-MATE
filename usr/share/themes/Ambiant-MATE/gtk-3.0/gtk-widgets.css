@@ -372,30 +372,30 @@ combobox > .linked button.combo:only-child,
     border-width: 1px;
 }
 
-.primary-toolbar .linked button,
+.primary-toolbar:not(.libreoffice-toolbar) .linked button,
 headerbar .linked button {
     box-shadow: inset 1px 0 shade (@dark_bg_color, 1.4),
                 inset -1px 0 shade (@dark_bg_color, 0.9);
 }
 
-.primary-toolbar .linked button:first-child,
+.primary-toolbar:not(.libreoffice-toolbar) .linked button:first-child,
 headerbar .linked button:first-child {
     box-shadow: inset -1px 0 shade (@dark_bg_color, 0.9);
 }
 
-.primary-toolbar .linked button:last-child,
+.primary-toolbar:not(.libreoffice-toolbar) .linked button:last-child,
 headerbar .linked button:last-child {
     box-shadow: inset 1px 0 shade (@dark_bg_color, 1.4)
 }
 
-.primary-toolbar .linked button:active,
+.primary-toolbar:not(.libreoffice-toolbar) .linked button:active,
 headerbar .linked button:active,
-.primary-toolbar .linked button:disabled,
+.primary-toolbar:not(.libreoffice-toolbar) .linked button:disabled,
 headerbar .linked button:disabled {
     box-shadow: none;
 }
 
-.primary-toolbar .linked button:only-child,
+.primary-toolbar:not(.libreoffice-toolbar) .linked button:only-child,
 headerbar .linked button:only-child {
     box-shadow: none;
 }
@@ -636,8 +636,8 @@ entry:disabled:backdrop {
     color: mix (@text_color, @base_color, 0.4);
 }
 
-.primary-toolbar entry progressbar,
-.primary-toolbar entry progressbar,
+.primary-toolbar:not(.libreoffice-toolbar) entry progressbar,
+.primary-toolbar:not(.libreoffice-toolbar) entry progressbar,
 headerbar entry progressbar,
 headerbar entry progressbar,
 entry progressbar {
@@ -779,8 +779,23 @@ calendar.header .app-notification.frame button.titlebutton {
 /************
  * expander *
  ************/
+
 expander {
     color: @fg_color;
+}
+
+expander arrow {
+    min-width: 16px;
+    min-height: 16px;
+	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
+}
+
+expander arrow:dir(rtl) {
+	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic-rtl");
+}
+
+expander arrow:checked {
+	-gtk-icon-source: -gtk-icontheme("pan-down-symbolic");
 }
 
 /*********
@@ -958,7 +973,7 @@ combobox menu,
 treemenu menu,
 toolbar headerbar menu,
 toolbutton menu,
-.primary-toolbar button menu,
+.primary-toolbar:not(.libreoffice-toolbar) button menu,
 headerbar button menu,
 menu,
 .menu {
@@ -1064,7 +1079,7 @@ menu > menuitem {
     text-shadow: none;
 }
 
-.primary-toolbar menu menuitem {
+.primary-toolbar:not(.libreoffice-toolbar) menu menuitem {
 /*    -GtkMenuItem-horizontal-padding: 0; deprecated */
     background-image: none;
     background-color: shade (@dark_bg_color, 1.08);
@@ -1139,8 +1154,8 @@ headerbar toolbar menu menuitem:disabled,
 headerbar toolbar menu menuitem *:disabled,
 toolbutton menu menuitem:disabled,
 toolbutton menu menuitem *:disabled,
-.primary-toolbar button menu menuitem:disabled,
-.primary-toolbar button menu menuitem *:disabled,
+.primary-toolbar:not(.libreoffice-toolbar) button menu menuitem:disabled,
+.primary-toolbar:not(.libreoffice-toolbar) button menu menuitem *:disabled,
 headerbar button menu menuitem:disabled,
 headerbar button menu menuitem *:disabled,
 menuitem:disabled,
@@ -1184,8 +1199,8 @@ menuitem entry {
     border-image-width: 1px;
 }
 
-.primary-toolbar scale trough,
-.primary-toolbar scale trough:backdrop,
+.primary-toolbar:not(.libreoffice-toolbar) scale trough,
+.primary-toolbar:not(.libreoffice-toolbar) scale trough:backdrop,
 headerbar scale trough,
 headerbar scale trough:backdrop,
 menuitem scale trough {
@@ -2457,7 +2472,7 @@ button separator:disabled {
 treemenu menuitem separator,
 toolbar headerbar menuitem separator,
 toolbutton menuitem separator,
-.primary-toolbar button menuitem separator,
+.primary-toolbar:not(.libreoffice-toolbar) button menuitem separator,
 headerbar button menuitem separator,
 menuitem separator {
     border-color: shade (@dark_bg_color, 0.99);
@@ -2998,9 +3013,9 @@ toolbar:backdrop {
 /*******************
  * primary-toolbar *
  *******************/
-.primary-toolbar,
-toolbar.primary-toolbar,
-.primary-toolbar toolbar, /* eom */
+.primary-toolbar:not(.libreoffice-toolbar),
+toolbar.primary-toolbar:not(.libreoffice-toolbar),
+.primary-toolbar:not(.libreoffice-toolbar) toolbar, /* eom */
 headerbar,
 .maximized .titlebar.toolbar-mode:not(:backdrop) {
     -GtkWidget-window-dragging: true;
@@ -3021,8 +3036,8 @@ headerbar,
     border-width: 0;
 }
 
-.primary-toolbar:backdrop,
-toolbar.primary-toolbar:backdrop,
+.primary-toolbar:not(.libreoffice-toolbar):backdrop,
+toolbar.primary-toolbar:not(.libreoffice-toolbar):backdrop,
 headerbar:backdrop {
     background-image: none;
     background-color: @dark_bg_color;
@@ -3033,16 +3048,16 @@ headerbar:backdrop {
     color: @backdrop_dark_fg_color;
 }
 
-.primary-toolbar :disabled,
-toolbar.primary-toolbar :disabled,
+.primary-toolbar:not(.libreoffice-toolbar) :disabled,
+toolbar.primary-toolbar:not(.libreoffice-toolbar) :disabled,
 headerbar :disabled {
     text-shadow: 0 -1px shade (@dark_bg_color, 0.7);
 }
 
-.primary-toolbar button,
-.primary-toolbar button.flat,
+.primary-toolbar:not(.libreoffice-toolbar) button,
+.primary-toolbar:not(.libreoffice-toolbar) button.flat,
 headerbar button,
-.primary-toolbar button.flat:hover {
+.primary-toolbar:not(.libreoffice-toolbar) button.flat:hover {
     background: transparent;
     color: @dark_fg_color;
     text-shadow: 0 -1px shade (@dark_bg_color, 0.7);
@@ -3054,31 +3069,31 @@ headerbar button {
     padding: 9px;
 }
 
-.primary-toolbar button.flat {
+.primary-toolbar:not(.libreoffice-toolbar) button.flat {
     border-image-source: none;
     background: transparent;
 }
 
-.primary-toolbar button:focus,
+.primary-toolbar:not(.libreoffice-toolbar) button:focus,
 headerbar button:focus {
     border-image-source: url("assets/button-toolbar-focused.png");
 }
 
-.primary-toolbar button:active,
-.primary-toolbar button:checked,
+.primary-toolbar:not(.libreoffice-toolbar) button:active,
+.primary-toolbar:not(.libreoffice-toolbar) button:checked,
 headerbar button:active,
 headerbar button:checked {
     border-image-source: url("assets/button-toolbar-active.png");
 }
 
-.primary-toolbar button:active:focus,
-.primary-toolbar button:checked:focus,
+.primary-toolbar:not(.libreoffice-toolbar) button:active:focus,
+.primary-toolbar:not(.libreoffice-toolbar) button:checked:focus,
 headerbar button:active:focus,
 headerbar button:checked:focus {
     border-image-source: url("assets/button-toolbar-active-focused.png");
 }
 
-.primary-toolbar button:backdrop,
+.primary-toolbar:not(.libreoffice-toolbar) button:backdrop,
 headerbar button:backdrop {
     background-color: transparent;
     color: @backdrop_dark_fg_color;
@@ -3086,19 +3101,19 @@ headerbar button:backdrop {
     border-image-source: url("assets/backdrop-button-toolbar.png");
 }
 
-.primary-toolbar button.flat:backdrop {
+.primary-toolbar:not(.libreoffice-toolbar) button.flat:backdrop {
     border-image-source: none;
 }
 
-.primary-toolbar button:active:backdrop,
-.primary-toolbar button:checked:backdrop,
+.primary-toolbar:not(.libreoffice-toolbar) button:active:backdrop,
+.primary-toolbar:not(.libreoffice-toolbar) button:checked:backdrop,
 headerbar button:active:backdrop,
 headerbar button:checked:backdrop {
     border-image-source: url("assets/backdrop-button-toolbar-active.png");
 }
 
-.primary-toolbar button:hover,
-.primary-toolbar button:checked,
+.primary-toolbar:not(.libreoffice-toolbar) button:hover,
+.primary-toolbar:not(.libreoffice-toolbar) button:checked,
 headerbar button:hover,
 headerbar button:checked {
     background-image: -gtk-gradient (linear, left top, left bottom,
@@ -3110,7 +3125,7 @@ headerbar button:hover {
     border-image: none;
 }
 
-.primary-toolbar button:active,
+.primary-toolbar:not(.libreoffice-toolbar) button:active,
 headerbar button:active {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 0.95)),
@@ -3118,34 +3133,34 @@ headerbar button:active {
     text-shadow: 0 -1px shade (@dark_bg_color, 0.6);
 }
 
-.primary-toolbar button:checked:disabled,
-.primary-toolbar button:disabled,
+.primary-toolbar:not(.libreoffice-toolbar) button:checked:disabled,
+.primary-toolbar:not(.libreoffice-toolbar) button:disabled,
 headerbar button:checked:disabled,
 headerbar button:disabled {
     text-shadow: none;
 }
 
-.primary-toolbar button:disabled,
+.primary-toolbar:not(.libreoffice-toolbar) button:disabled,
 headerbar button:disabled {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 1.01)),
                                      to (shade (@dark_bg_color, 0.99)));
 }
 
-.primary-toolbar button.flat:disabled {
+.primary-toolbar:not(.libreoffice-toolbar) button.flat:disabled {
     background-image: none;
 }
 
-.primary-toolbar button:checked:disabled,
+.primary-toolbar:not(.libreoffice-toolbar) button:checked:disabled,
 headerbar button:checked:disabled {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 0.94)),
                                      to (shade (@dark_bg_color, 1.02)));
 }
 
-.primary-toolbar toolitem separator,
-.primary-toolbar separator,
-.primary-toolbar separator:disabled,
+.primary-toolbar:not(.libreoffice-toolbar) toolitem separator,
+.primary-toolbar:not(.libreoffice-toolbar) separator,
+.primary-toolbar:not(.libreoffice-toolbar) separator:disabled,
 headerbar toolitem separator,
 headerbar separator,
 headerbar separator:disabled {

@@ -1,7 +1,7 @@
 /* Set up shadows and hilights for button visual separation */
-.primary-toolbar .linked button,
-.primary-toolbar button.raised.linked,
-.primary-toolbar .raised.linked button,
+.primary-toolbar:not(.libreoffice-toolbar) .linked button,
+.primary-toolbar:not(.libreoffice-toolbar) button.raised.linked,
+.primary-toolbar:not(.libreoffice-toolbar) .raised.linked button,
 toolbar menubar .linked button,
 toolbar menubar button.raised.linked,
 toolbar menubar .raised.linked button,
@@ -12,9 +12,9 @@ headerbar button.raised.linked button {
                 inset -1px 0 shade (@dark_bg_color, 0.9);
 }
 
-.primary-toolbar .linked button:first-child,
-.primary-toolbar button.raised.linked:first-child,
-.primary-toolbar .raised.linked button:first-child,
+.primary-toolbar:not(.libreoffice-toolbar) .linked button:first-child,
+.primary-toolbar:not(.libreoffice-toolbar) button.raised.linked:first-child,
+.primary-toolbar:not(.libreoffice-toolbar) .raised.linked button:first-child,
 toolbar menubar .linked button:first-child,
 toolbar menubar button.raised.linked:first-child,
 toolbar menubar .raised.linked button:first-child,
@@ -24,9 +24,9 @@ headerbar .raised.linked button:first-child {
     box-shadow: inset -1px 0 shade (@dark_bg_color, 0.9);
 }
 
-.primary-toolbar .linked button:last-child,
-.primary-toolbar button.raised.linked:last-child,
-.primary-toolbar .raised.linked button:last-child,
+.primary-toolbar:not(.libreoffice-toolbar) .linked button:last-child,
+.primary-toolbar:not(.libreoffice-toolbar) button.raised.linked:last-child,
+.primary-toolbar:not(.libreoffice-toolbar) .raised.linked button:last-child,
 toolbar menubar .linked button:last-child,
 toolbar menubar button.raised.linked:last-child,
 toolbar menubar .raised.linked button:last-child,
@@ -36,9 +36,9 @@ headerbar .raised.linked button:last-child {
     box-shadow: inset 1px 0 shade (@dark_bg_color, 1.1)
 }
 
-.primary-toolbar .linked button:active,
-.primary-toolbar button.raised.linked:active,
-.primary-toolbar .raised.linked button:active,
+.primary-toolbar:not(.libreoffice-toolbar) .linked button:active,
+.primary-toolbar:not(.libreoffice-toolbar) button.raised.linked:active,
+.primary-toolbar:not(.libreoffice-toolbar) .raised.linked button:active,
 toolbar menubar .linked button:active,
 toolbar menubar button.raised.linked:active,
 toolbar menubar .raised.linked button:active,
@@ -48,9 +48,9 @@ headerbar .raised.linked button:active {
     box-shadow: inset 1px 0 shade (@dark_bg_color, 0.9);
 }
 
-.primary-toolbar .linked button:disabled,
-.primary-toolbar button.raised.linked:disabled,
-.primary-toolbar .raised.linked button:disabled,
+.primary-toolbar:not(.libreoffice-toolbar) .linked button:disabled,
+.primary-toolbar:not(.libreoffice-toolbar) button.raised.linked:disabled,
+.primary-toolbar:not(.libreoffice-toolbar) .raised.linked button:disabled,
 toolbar menubar .linked button:disabled,
 toolbar menubar button.raised.linked:disabled,
 toolbar menubar .raised.linked button:disabled,
@@ -60,9 +60,9 @@ headerbar .raised.linked button:disabled {
     box-shadow: inset -1px 0 shade (@dark_bg_color, 0.9);
 }
 
-.primary-toolbar .linked button:backdrop:last-child,
-.primary-toolbar button.raised.linked:backdrop:last-child,
-.primary-toolbar .raised.linked button:backdrop:last-child,
+.primary-toolbar:not(.libreoffice-toolbar) .linked button:backdrop:last-child,
+.primary-toolbar:not(.libreoffice-toolbar) button.raised.linked:backdrop:last-child,
+.primary-toolbar:not(.libreoffice-toolbar) .raised.linked button:backdrop:last-child,
 toolbar menubar .linked button:backdrop:last-child,
 toolbar menubar button.raised.linked:backdrop:last-child,
 toolbar menubar .raised.linked button:backdrop:last-child,
@@ -104,8 +104,8 @@ menu .spinner:hover {
 }
 
 /* primary-toolbar */
-.primary-toolbar,
-toolbar.primary-toolbar,
+.primary-toolbar:not(.libreoffice-toolbar),
+toolbar.primary-toolbar:not(.libreoffice-toolbar),
 toolbar menubar,
 headerbar,
 .maximized .titlebar.toolbar-mode:not(:backdrop) {
@@ -118,15 +118,15 @@ headerbar,
     text-shadow: 0 1px shade (@dark_bg_color, 1.1);
 }
 
-.primary-toolbar :disabled,
+.primary-toolbar:not(.libreoffice-toolbar) :disabled,
 toolbar menubar :disabled,
 headerbar :disabled {
     text-shadow: 0 1px shade (@dark_bg_color, 1.1);
 }
 
-.primary-toolbar combobox,
-.primary-toolbar button *,
-.primary-toolbar button,
+.primary-toolbar:not(.libreoffice-toolbar) combobox,
+.primary-toolbar:not(.libreoffice-toolbar) button *,
+.primary-toolbar:not(.libreoffice-toolbar) button,
 toolbar menubar combobox,
 toolbar menubar button *,
 toolbar menubar button,
@@ -136,11 +136,11 @@ headerbar button {
     text-shadow: 0 1px alpha (shade (@dark_bg_color, 1.25), 0.32);
 }
 
-.primary-toolbar .raised button,
-.primary-toolbar .raised.button,
-.primary-toolbar button:hover,
-.primary-toolbar button:active,
-.primary-toolbar button:disabled,
+.primary-toolbar:not(.libreoffice-toolbar) .raised button,
+.primary-toolbar:not(.libreoffice-toolbar) .raised.button,
+.primary-toolbar:not(.libreoffice-toolbar) button:hover,
+.primary-toolbar:not(.libreoffice-toolbar) button:active,
+.primary-toolbar:not(.libreoffice-toolbar) button:disabled,
 toolbar menubar .raised button,
 toolbar menubar .raised.button,
 toolbar menubar button:hover,
