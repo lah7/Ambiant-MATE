@@ -149,9 +149,19 @@ MatePanelAppletFrameDBus {
     text-shadow: 1px 1px alpha (#000000, 0.8);
 }
 
-/* set normal menubar button */
+/* main menu */
+/* set normal menubar menuitem */
 .mate-panel-menu-bar menubar > menuitem {
     background-image: none;
+}
+
+/* set selected menubar menuitem */
+.mate-panel-menu-bar menubar > menuitem:hover {
+    background-color: transparent;
+    background-clip: border-box;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 1.38)),
+                                     to (shade (@dark_bg_color, 1.11)));
 }
 
 /* set normal menubar menu menuitem */
@@ -266,6 +276,12 @@ MatePanelAppletFrameDBus {
 /* clock window */
 #MatePanelPopupWindow {
 	border-radius: 3px;
+}
+
+/* mate-indicator-applet */
+/* needed for a transparent panel */
+#fast-user-switch-applet > #fast-user-switch-menubar {
+    background-color: transparent;
 }
 
 /*****************

@@ -86,10 +86,20 @@
  * Mate-Panel *
  **************/
 
+/* main menu */
 /* set normal menubar menuitem */
 .mate-panel-menu-bar menubar,
 .mate-panel-menu-bar menubar > menuitem {
     background-color: transparent;
+}
+
+/* set selected menubar menuitem */
+.mate-panel-menu-bar menubar > menuitem:hover {
+    background-color: transparent;
+    background-clip: border-box;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 1.38)),
+                                     to (shade (@dark_bg_color, 1.11)));
 }
 
 PanelWidget > PanelSeparator {
@@ -140,6 +150,12 @@ PanelWidget > PanelSeparator {
 /* clock window */
 #MatePanelPopupWindow {
 	border-radius: 3px;
+}
+
+/* mate-indicator-applet */
+/* needed for a transparent panel */
+#fast-user-switch-applet > #fast-user-switch-menubar {
+    background-color: transparent;
 }
 
 /*****************
