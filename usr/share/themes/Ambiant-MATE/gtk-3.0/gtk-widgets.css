@@ -1903,6 +1903,55 @@ progressbar.vertical trough {
                                      to (#e8e8e8));
 }
 
+treeview.view.progressbar,
+treeview.view.progressbar:selected {
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    background-image: linear-gradient(to bottom,
+                                      @progressbar_fill_a,
+                                      @progressbar_fill_b);
+    border-top-color:    shade(@button_border_active, 0.80);
+    border-left-color:   shade(@button_border_active, 0.85);
+    border-right-color:  shade(@button_border_active, 0.85);
+    border-bottom-color: shade(@button_border_active, 0.80);
+/* Label font color of progressbar*/
+    color: @theme_fg_color;
+    text-shadow: none;
+}
+
+treeview.view.progressbar:backdrop {
+    background-image: linear-gradient(to bottom,
+                                      @progressbar_backdrop_fill_a,
+                                      @progressbar_backdrop_fill_b);
+    border-top-color:    shade(@button_border_backdrop_active, 0.80);
+    border-left-color:   shade(@button_border_backdrop_active, 0.85);
+    border-right-color:  shade(@button_border_backdrop_active, 0.85);
+    border-bottom-color: shade(@button_border_backdrop_active, 0.80);
+}
+
+treeview.view.trough,
+treeview.view.trough:selected {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (#d1d1d1),
+                                     to (#e8e8e8));
+    border-style: solid;
+    border-width: 1px;
+    color: @text_color;
+    border-radius: 3px;
+    border-top-color:    shade(@borders, 0.80);
+    border-left-color:   shade(@borders, 0.85);
+    border-right-color:  shade(@borders, 0.85);
+    border-bottom-color: shade(@borders, 0.80);
+}
+
+treeview.view.trough:selected {
+    border-top-color:    shade(@button_border_active, 0.80);
+    border-left-color:   shade(@button_border_active, 0.85);
+    border-right-color:  shade(@button_border_active, 0.85);
+    border-bottom-color: shade(@button_border_active, 0.80);
+}
+
 /*************
  * Level bar *
  *************/
