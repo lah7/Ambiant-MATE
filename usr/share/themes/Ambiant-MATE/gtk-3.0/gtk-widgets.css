@@ -817,6 +817,22 @@ frame > border.flat,
     border: none;
 }
 
+/* Style the Search and Location entry boxes for Firefox 49 */
+frame {
+    border-width: 1px;
+    border-style: solid;
+    border-color: shade (@bg_color, 0.82);
+}
+
+/* Override the Firefox 49 frame styling where is absolutely shouldn't be applied */
+box > frame, /* mate-tweak */
+statusbar > frame, /* caja, etc. */
+statusbar > widget > frame, /* pluma */
+GvcMixerDialog frame { /* Mate Mixer dialog */
+    border-width: 0px;
+    border-style: none;
+}
+
 /***********************
  * iconview & textview *
  ***********************/
@@ -1903,6 +1919,9 @@ progressbar.vertical trough {
                                      to (#e8e8e8));
 }
 
+/* old syntax is for <= firefox-48 */
+.progressbar.horizontal,
+.progressbar.horizontal:selected,
 treeview.view.progressbar,
 treeview.view.progressbar:selected {
     border-radius: 3px;
@@ -1920,6 +1939,7 @@ treeview.view.progressbar:selected {
     text-shadow: none;
 }
 
+.progressbar.horizontal:backdrop,
 treeview.view.progressbar:backdrop {
     background-image: linear-gradient(to bottom,
                                       @progressbar_backdrop_fill_a,
@@ -1930,6 +1950,8 @@ treeview.view.progressbar:backdrop {
     border-bottom-color: shade(@button_border_backdrop_active, 0.80);
 }
 
+.trough.horizontal,
+.trough.horizontal:selected,
 treeview.view.trough,
 treeview.view.trough:selected {
     background-image: -gtk-gradient (linear, left top, left bottom,
@@ -1945,7 +1967,8 @@ treeview.view.trough:selected {
     border-bottom-color: shade(@borders, 0.80);
 }
 
-treeview.view.trough:selected {
+.trough.horizontal:selected,
+.treeview.view.trough:selected {
     border-top-color:    shade(@button_border_active, 0.80);
     border-left-color:   shade(@button_border_active, 0.85);
     border-right-color:  shade(@button_border_active, 0.85);
@@ -3174,6 +3197,13 @@ headerbar button:hover {
     border-image: none;
 }
 
+/* hack for yelp, https://github.com/flexiondotorg/ubuntu-mate-themes/issues/38 */
+/* imo a bug in yelp button, seems that 'border-image: none;' from previous setting
+   does not work */
+headerbar.primary-toolbar.toolbar button:hover {
+    border-image-slice: 10 12 10 12;
+}
+
 .primary-toolbar:not(.libreoffice-toolbar) button:active,
 headerbar button:active {
     background-image: -gtk-gradient (linear, left top, left bottom,
@@ -4170,6 +4200,15 @@ calendar.highlight {
 	border-radius: 0px;
 	padding: 0px;
 	border-width: 0px;
+}
+
+/***************
+ * weird hacks *
+ ***************/
+
+/* time admin */
+button notebook {
+    background-color: transparent;
 }
 
 /*****************************************************************************
