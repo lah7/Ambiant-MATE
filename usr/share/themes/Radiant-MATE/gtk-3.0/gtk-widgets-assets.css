@@ -332,7 +332,6 @@ radio:checked:disabled,
 .radio:checked:disabled {
     -gtk-icon-source: -gtk-scaled(url("assets/radio-selected-disabled.png"),
                                   url("assets/radio-selected-disabled@2.png"));
-
 }
 
 row radio:checked:disabled,
@@ -564,6 +563,7 @@ scale slider,
 scale.horizontal slider {
     background-image: -gtk-scaled(url("assets/slider-horizontal.png"),
                                   url("assets/slider-horizontal@2.png"));
+    background-repeat: no-repeat;
 }
 
 scale slider:backdrop,
@@ -576,6 +576,7 @@ scale slider:hover,
 scale.horizontal slider:hover {
     background-image: -gtk-scaled(url("assets/slider-horizontal-hover.png"),
                                   url("assets/slider-horizontal-hover@2.png"));
+    background-repeat: no-repeat;
 }
 
 scale slider:focus,

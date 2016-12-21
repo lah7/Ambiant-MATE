@@ -16,6 +16,7 @@ menubar menu menuitem:hover {
 /*********
  * entry *
  *********/
+spinbutton,
 entry {
     border-radius: 8px;
     border-width: 1px;
@@ -23,25 +24,40 @@ entry {
     border-color: transparent;
 }
 
+spinbutton,
 entry {
     border-image: -gtk-scaled(url("assets/entry.png"),url("assets/entry@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
+spinbutton:backdrop,
 entry:backdrop {
     border-image: -gtk-scaled(url("assets/backdrop-entry.png"),url("assets/backdrop-entry@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
+spinbutton:focus,
 entry:focus {
     border-image: -gtk-scaled(url("assets/entry-focused.png"),url("assets/entry-focused@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
+spinbutton:disabled,
 entry:disabled {
     border-image: -gtk-scaled(url("assets/entry-disabled.png"),url("assets/entry-disabled@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
+spinbutton:disabled:backdrop,
 entry:disabled:backdrop {
     border-image: -gtk-scaled(url("assets/backdrop-entry-disabled.png"),url("assets/backdrop-entry-disabled@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
+
+spinbutton entry,
+spinbutton entry:focus,
+spinbutton entry:disabled,
+spinbutton entry:disabled:backdrop,
+spinbutton entry:backdrop {
+    margin: 1px;
+    border-image: none;
+}
+
 
 .primary-toolbar:not(.libreoffice-toolbar) entry,
 toolbar menubar entry,

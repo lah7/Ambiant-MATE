@@ -33,6 +33,25 @@
   font-family: Monospace;
 }
 
+assistant .sidebar .highlight {
+        color: @fg_color;
+        font-weight: bold;
+}
+
+assistant .sidebar {
+        background-color: shade (@bg_color, 0.97);
+        border-right-color: shade (@bg_color, 0.8);
+        border-radius: 0;
+        border-style: solid;
+        border-width: 0 1px 0 0;
+        padding: 12px;
+
+        color: mix (@fg_color, @bg_color, 0.40);
+        text-shadow: 0 1px shade (@bg_color, 1.04);
+        box-shadow: inset -1px 0 shade (@bg_color, 0.94);
+}
+
+
 /**********
  * button *
  **********/
@@ -1058,7 +1077,8 @@ menu button,
 }
 
 .context-menu {
-    font: regular medium;
+    font-size: medium;
+    font-weight: normal;
 }
 
 /***********
@@ -2949,7 +2969,7 @@ headerbar {
 
 .titlebar .title,
 headerbar .title {
-    font: bold;
+    font-weight: bold;
 }
 
 .titlebar .subtitle,
