@@ -16,7 +16,6 @@ menubar menu menuitem:hover {
 /*********
  * entry *
  *********/
-spinbutton,
 entry {
     border-radius: 8px;
     border-width: 1px;
@@ -24,40 +23,25 @@ entry {
     border-color: transparent;
 }
 
-spinbutton,
 entry {
     border-image: -gtk-scaled(url("assets/entry.png"),url("assets/entry@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-spinbutton:backdrop,
 entry:backdrop {
     border-image: -gtk-scaled(url("assets/backdrop-entry.png"),url("assets/backdrop-entry@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-spinbutton:focus,
 entry:focus {
     border-image: -gtk-scaled(url("assets/entry-focused.png"),url("assets/entry-focused@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-spinbutton:disabled,
 entry:disabled {
     border-image: -gtk-scaled(url("assets/entry-disabled.png"),url("assets/entry-disabled@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-spinbutton:disabled:backdrop,
 entry:disabled:backdrop {
     border-image: -gtk-scaled(url("assets/backdrop-entry-disabled.png"),url("assets/backdrop-entry-disabled@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
-
-spinbutton entry,
-spinbutton entry:focus,
-spinbutton entry:disabled,
-spinbutton entry:disabled:backdrop,
-spinbutton entry:backdrop {
-    margin: 1px;
-    border-image: none;
-}
-
 
 .primary-toolbar:not(.libreoffice-toolbar) entry,
 toolbar menubar entry,
@@ -82,65 +66,65 @@ entry progressbar {
 }
 
 /******************
- * combobox entry *
+ * comboboxentry *
  ******************/
-combobox entry.combo:first-child,
-combobox button.combo:first-child {
+combobox entry:first-child,
+combobox entry button:first-child {
     border-image-width: 10px 1px 10px 12px;
     border-radius: 8px 0 0 8px;
     border-right-width: 0;
 }
 
-combobox entry.combo:last-child,
-combobox button.combo:last-child {
+combobox entry:last-child,
+combobox entry button:last-child {
     border-image-width: 10px 12px 10px 1px;
     border-radius: 0 8px 8px 0;
     border-left-width: 0;
 }
 
-combobox button.combo {
+combobox entry button {
     border-image: -gtk-scaled(url("assets/combobox-button.png"),url("assets/combobox-button@2.png")) 10 12 10 1 / 10px 12px 10px 1px stretch;
 }
 
-combobox button.combo:backdrop {
+combobox entry button:backdrop {
     border-image: -gtk-scaled(url("assets/backdrop-combobox-button.png"),url("assets/backdrop-combobox-button@2.png")) 10 12 10 1 / 10px 12px 10px 1px stretch;
 }
 
-combobox button.combo:focus {
+combobox entry button:focus {
     border-image: -gtk-scaled(url("assets/combobox-button-focused.png"),url("assets/combobox-button-focused@2.png")) 10 12 10 1 / 10px 12px 10px 1px stretch;
 }
 
-combobox button.combo:disabled {
+combobox entry button:disabled {
     border-image: -gtk-scaled(url("assets/combobox-button-disabled.png"),url("assets/combobox-button-disabled@2.png")) 10 12 10 1 / 10px 12px 10px 1px stretch;
 }
 
-combobox button.combo:disabled:backdrop {
+combobox entry button:disabled:backdrop {
     border-image: -gtk-scaled(url("assets/backdrop-combobox-button-disabled.png"),url("assets/backdrop-combobox-button-disabled@2.png")) 10 12 10 1 / 10px 12px 10px 1px stretch;
 }
 
-combobox button.combo:active:focus {
+combobox entry button:active:focus {
     border-image: -gtk-scaled(url("assets/combobox-button-pressed-focused.png"),url("assets/combobox-button-pressed-focused@2.png")) 10 12 10 1 / 10px 12px 10px 1px stretch;
 }
 
-.primary-toolbar:not(.libreoffice-toolbar) combobox button.combo,
-.primary-toolbar:not(.libreoffice-toolbar) combobox button.combo:focus:disabled,
-toolbar menubar combobox button.combo,
-toolbar menubar combobox button.combo:focus:disabled,
-headerbar combobox button.combo,
-headerbar combobox button.combo:focus:disabled {
-    border-image: url("assets/combobox-button-toolbar.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
+.primary-toolbar:not(.libreoffice-toolbar) combobox entry button,
+.primary-toolbar:not(.libreoffice-toolbar) combobox entry button:focus:disabled,
+menubar toolbar combobox entry button,
+menubar toolbar combobox entry button:focus:disabled,
+headerbar combobox entry button,
+headerbar combobox entry button:focus:disabled {
+    border-image: -gtk-scaled(url("assets/combobox-button-toolbar.png"),url("assets/combobox-button-toolbar@2.png")) 10 12 10 1 / 10px 12px 10px 1px stretch;
 }
 
-.primary-toolbar:not(.libreoffice-toolbar) combobox button.combo:focus,
-toolbar menubar combobox button.combo:focus,
-headerbar combobox button.combo:focus {
-    border-image: url("assets/combobox-button-toolbar-focused.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
+.primary-toolbar:not(.libreoffice-toolbar) combobox entry button:focus,
+menubar toolbar combobox entry button:focus,
+headerbar combobox entry button:focus {
+    border-image: -gtk-scaled(url("assets/combobox-button-toolbar-focused.png"),url("assets/combobox-button-toolbar-focused@2.png")) 10 12 10 1 / 10px 12px 10px 1px stretch;
 }
 
-.primary-toolbar:not(.libreoffice-toolbar) combobox button.combo:focus:active:focus,
-toolbar menubar combobox button.combo:focus:active:focus,
-headerbar combobox button.combo:focus:active:focus {
-    border-image: url("assets/combobox-button-toolbar-pressed-focused.png") 10 12 10 1 / 10px 12px 10px 1px stretch;
+.primary-toolbar:not(.libreoffice-toolbar) combobox entry button:focus:active:focus,
+menubar toolbar combobox entry button:focus:active:focus,
+headerbar combobox entry button:focus:active:focus {
+    border-image: -gtk-scaled(url("assets/combobox-button-toolbar-pressed-focused.png"),url("assets/combobox-button-toolbar-pressed-focused@2.png")) 10 12 10 1 / 10px 12px 10px 1px stretch;
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) combobox entry.combo:first-child,
