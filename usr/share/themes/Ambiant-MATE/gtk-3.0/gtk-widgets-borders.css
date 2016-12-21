@@ -24,40 +24,39 @@ entry {
 }
 
 entry {
-    border-image: url("assets/entry.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-image: -gtk-scaled(url("assets/entry.png"),url("assets/entry@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 entry:backdrop {
-    border-image: url("assets/backdrop-entry.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-image: -gtk-scaled(url("assets/backdrop-entry.png"),url("assets/backdrop-entry@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 entry:focus {
-    border-image: url("assets/entry-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-image: -gtk-scaled(url("assets/entry-focused.png"),url("assets/entry-focused@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 entry:disabled {
-    border-image: url("assets/entry-disabled.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-image: -gtk-scaled(url("assets/entry-disabled.png"),url("assets/entry-disabled@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 entry:disabled:backdrop {
-    border-image: url("assets/backdrop-entry-disabled.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-image: -gtk-scaled(url("assets/backdrop-entry-disabled.png"),url("assets/backdrop-entry-disabled@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) entry,
 toolbar menubar entry,
 headerbar entry {
-    border-image: url("assets/entry-toolbar.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-image: -gtk-scaled(url("assets/entry-toolbar.png"),url("assets/entry-toolbar@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) entry:focus,
 toolbar menubar entry:focus,
 headerbar entry:focus {
-    border-image: url("assets/entry-toolbar-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-image: -gtk-scaled(url("assets/entry-toolbar-focused.png"),url("assets/entry-toolbar-focused@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) entry progressbar,
 .primary-toolbar:not(.libreoffice-toolbar) entry progressbar,
-toolbar menubar entry progressbar,
 toolbar menubar entry progressbar,
 headerbar entry progressbar,
 headerbar entry progressbar,
@@ -84,27 +83,27 @@ combobox button.combo:last-child {
 }
 
 combobox button.combo {
-    border-image: url("assets/combobox-button.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-image: -gtk-scaled(url("assets/combobox-button.png"),url("assets/combobox-button@2.png")) 10 12 10 1 / 10px 12px 10px 1px stretch;
 }
 
 combobox button.combo:backdrop {
-    border-image: url("assets/backdrop-combobox-button.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-image: -gtk-scaled(url("assets/backdrop-combobox-button.png"),url("assets/backdrop-combobox-button@2.png")) 10 12 10 1 / 10px 12px 10px 1px stretch;
 }
 
 combobox button.combo:focus {
-    border-image: url("assets/combobox-button-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-image: -gtk-scaled(url("assets/combobox-button-focused.png"),url("assets/combobox-button-focused@2.png")) 10 12 10 1 / 10px 12px 10px 1px stretch;
 }
 
 combobox button.combo:disabled {
-    border-image: url("assets/combobox-button-disabled.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-image: -gtk-scaled(url("assets/combobox-button-disabled.png"),url("assets/combobox-button-disabled@2.png")) 10 12 10 1 / 10px 12px 10px 1px stretch;
 }
 
 combobox button.combo:disabled:backdrop {
-    border-image: url("assets/backdrop-combobox-button-disabled.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-image: -gtk-scaled(url("assets/backdrop-combobox-button-disabled.png"),url("assets/backdrop-combobox-button-disabled@2.png")) 10 12 10 1 / 10px 12px 10px 1px stretch;
 }
 
 combobox button.combo:active:focus {
-    border-image: url("assets/combobox-button-pressed-focused.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-image: -gtk-scaled(url("assets/combobox-button-pressed-focused.png"),url("assets/combobox-button-pressed-focused@2.png")) 10 12 10 1 / 10px 12px 10px 1px stretch;
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) combobox button.combo,
@@ -161,19 +160,19 @@ headerbar combobox button.combo:only-child {
 }
 
 notebook header.top tab:checked {
-    border-image: url("assets/notebook-tab-top.png") 8 10 1 10 / 8px 10px 1px 10px stretch;
+    border-image: -gtk-scaled(url("assets/notebook-tab-top.png"),url("assets/notebook-tab-top@2.png")) 8 10 1 10 / 8px 10px 1px 10px stretch;
 }
 
 notebook header.right tab:checked {
-    border-image: url("assets/notebook-tab-right.png") 10 8 10 1 / 10px 8px 10px 1px stretch;
+    border-image: -gtk-scaled(url("assets/notebook-tab-right.png"),url("assets/notebook-tab-right@2.png")) 10 8 10 1 / 10px 8px 10px 1px stretch;
 }
 
 notebook header.bottom tab:checked {
-    border-image: url("assets/notebook-tab-bottom.png") 1 10 8 10 / 1px 10px 8px 10px stretch;
+    border-image: -gtk-scaled(url("assets/notebook-tab-bottom.png"),url("assets/notebook-tab-bottom@2.png")) 1 10 8 10 / 1px 10px 8px 10px stretch;
 }
 
 notebook header.left tab:checked {
-    border-image: url("assets/notebook-tab-left.png") 10 1 10 8 / 10px 1px 10px 8px stretch;
+    border-image: -gtk-scaled(url("assets/notebook-tab-left.png"),url("assets/notebook-tab-left@2.png")) 10 1 10 8 / 10px 1px 10px 8px stretch;
 }
 
 trough,
@@ -186,27 +185,27 @@ trough highlight {
 
 progressbar trough,
 trough {
-    border-image: url("assets/progressbar-horizontal-trough.png") 6 7 6 7 / 6px 7px 6px 7px stretch;
+    border-image: -gtk-scaled(url("assets/progressbar-horizontal-trough.png"),url("assets/progressbar-horizontal-trough@2.png")) 6 7 6 7 / 6px 7px 6px 7px stretch;
 }
 
 switch {
-    border-image: url("assets/switch-trough-off.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-image: -gtk-scaled(url("assets/switch-trough-off.png"),url("assets/switch-trough-off@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 switch:active {
-    border-image: url("assets/switch-trough-on.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-image: -gtk-scaled(url("assets/switch-trough-on.png"),url("assets/switch-trough-on@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) switch,
 toolbar menubar switch,
 headerbar switch {
-    border-image: url("assets/switch-trough-toolbar-off.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-image: -gtk-scaled(url("assets/switch-trough-toolbar-off.png"),url("assets/switch-trough-toolbar-off@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) switch:active,
 toolbar menubar switch:active,
 headerbar switch:active {
-    border-image: url("assets/switch-trough-toolbar-on.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-image: -gtk-scaled(url("assets/switch-trough-toolbar-on.png"),url("assets/switch-trough-toolbar-on@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 /* XXX temporary */
@@ -214,74 +213,74 @@ switch:backdrop,
 switch:active:backdrop,
 switch:disabled,
 switch:active:disabled {
-    border-image: url("assets/switch-trough-disabled.png") 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-image: -gtk-scaled(url("assets/switch-trough-disabled.png"),url("assets/switch-trough-disabled@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 switch slider {
-    border-image: url("assets/switch-button-off.png") 9 11 9 11 / 9px 11px 9px 11px stretch;
+    border-image: -gtk-scaled(url("assets/switch-button-off.png"),url("assets/switch-button-off@2.png")) 9 11 9 11 / 9px 11px 9px 11px stretch;
 }
 
 switch slider:active {
-    border-image: url("assets/switch-button-on.png") 9 11 9 11 / 9px 11px 9px 11px stretch;
+    border-image: -gtk-scaled(url("assets/switch-button-on.png"),url("assets/switch-button-on@2.png")) 9 11 9 11 / 9px 11px 9px 11px stretch;
 }
 
 /* XXX temporary */
 switch slider:backdrop,
 switch slider:disabled {
-    border-image: url("assets/switch-button-off-disabled.png") 9 11 9 11 / 9px 11px 9px 11px stretch;
+    border-image: -gtk-scaled(url("assets/switch-button-off-disabled.png"),url("assets/switch-button-off-disabled@2.png")) 9 11 9 11 / 9px 11px 9px 11px stretch;
 }
 
 /* XXX temporary */
 switch slider:active:backdrop,
 switch slider:active:disabled {
-    border-image: url("assets/switch-button-on-disabled.png") 9 11 9 11 / 9px 11px 9px 11px stretch;
+    border-image: -gtk-scaled(url("assets/switch-button-on-disabled.png"),url("assets/switch-button-on-disabled@2.png")) 9 11 9 11 / 9px 11px 9px 11px stretch;
 }
 
 scale trough {
-    border-image: url("assets/scale-horizontal-trough.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
+    border-image: -gtk-scaled(url("assets/scale-horizontal-trough.png"),url("assets/scale-horizontal-trough@2.png")) 2 6 2 6 / 2px 6px 2px 6px stretch;
 }
 
 scale trough:disabled {
-    border-image: url("assets/scale-horizontal-trough-disabled.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
+    border-image: -gtk-scaled(url("assets/scale-horizontal-trough-disabled.png"),url("assets/scale-horizontal-trough-disabled@2.png")) 2 6 2 6 / 2px 6px 2px 6px stretch;
 }
 
 scale trough:backdrop {
-    border-image: url("assets/scale-horizontal-trough-backdrop.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
+    border-image: -gtk-scaled(url("assets/scale-horizontal-trough-backdrop.png"),url("assets/scale-horizontal-trough-backdrop@2.png")) 2 6 2 6 / 2px 6px 2px 6px stretch;
 }
 
 scale trough.vertical {
-    border-image: url("assets/scale-vertical-trough.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
+    border-image: -gtk-scaled(url("assets/scale-vertical-trough.png"),url("assets/scale-vertical-trough@2.png")) 6 2 6 2 / 6px 2px 6px 2px stretch;
 }
 
 scale trough.vertical:disabled {
-    border-image: url("assets/scale-vertical-trough-disabled.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
+    border-image: -gtk-scaled(url("assets/scale-vertical-trough-disabled.png"),url("assets/scale-vertical-trough-disabled@2.png")) 6 2 6 2 / 6px 2px 6px 2px stretch;
 }
 
 scale trough highlight.left {
-    border-image: url("assets/scale-horizontal-fill.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
+    border-image: -gtk-scaled(url("assets/scale-horizontal-fill.png"),url("assets/scale-horizontal-fill@2.png")) 2 6 2 6 / 2px 6px 2px 6px stretch;
 }
 
 scale trough.vertical:backdrop {
-    border-image: url("assets/scale-vertical-trough-backdrop.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
+    border-image: -gtk-scaled(url("assets/scale-vertical-trough-backdrop.png"),url("assets/scale-vertical-trough-backdrop@2.png")) 6 2 6 2 / 6px 2px 6px 2px stretch;
 }
 
 scale trough highlight.left:disabled {
-    border-image: url("assets/scale-horizontal-fill-disabled.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
+    border-image: -gtk-scaled(url("assets/scale-horizontal-fill-disabled.png"),url("assets/scale-horizontal-fill-disabled@2.png")) 2 6 2 6 / 2px 6px 2px 6px stretch;
 }
 
 scale trough highlight.left:backdrop {
-    border-image: url("assets/scale-horizontal-fill-backdrop.png") 2 6 2 6 / 2px 6px 2px 6px stretch;
+    border-image: -gtk-scaled(url("assets/scale-horizontal-fill-backdrop.png"),url("assets/scale-horizontal-fill-backdrop@2.png")) 2 6 2 6 / 2px 6px 2px 6px stretch;
 }
 
 scale.vertical trough.highlight.bottom {
-    border-image: url("assets/scale-vertical-fill.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
+    border-image: -gtk-scaled(url("assets/scale-vertical-fill.png"),url("assets/scale-vertical-fill@2.png")) 6 2 6 2 / 6px 2px 6px 2px stretch;
 }
 
 scale.vertical trough highlight.bottom:disabled {
-    border-image: url("assets/scale-vertical-fill-disabled.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
+    border-image: -gtk-scaled(url("assets/scale-vertical-fill-disabled.png"),url("assets/scale-vertical-fill-disabled@2.png")) 6 2 6 2 / 6px 2px 6px 2px stretch;
 }
 
 scale.vertical trough highlight.bottom:backdrop {
-    border-image: url("assets/scale-vertical-fill-backdrop.png") 6 2 6 2 / 6px 2px 6px 2px stretch;
+    border-image: -gtk-scaled(url("assets/scale-vertical-fill-backdrop.png"),url("assets/scale-vertical-fill-backdrop@2.png")) 6 2 6 2 / 6px 2px 6px 2px stretch;
 }
 

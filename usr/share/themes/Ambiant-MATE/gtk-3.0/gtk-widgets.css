@@ -60,6 +60,12 @@
     box-shadow: inset -1px 0 shade (@bg_color, 0.94);
 }
 
+/* Fix for applications that have issues finding a default monospace font */
+/* https://github.com/mate-desktop/mate-themes/issues/145 */
+.monospace {
+  font-family: Monospace;
+}
+
 /**********
  * button *
  **********/
@@ -93,11 +99,15 @@ button {
                                      from (shade (@button_bg_color, 1.08)),
                                      color-stop (0.5, @button_bg_color),
                                      to (shade (@button_bg_color, 0.94)));
+
     color: @fg_color;
     text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.4);
+
     border: 1px solid transparent;
     border-radius: 8px;
-    border-image-source: url("assets/button.png");
+    border-image-source: -gtk-scaled(url("assets/button.png"),
+                                     url("assets/button@2.png"));
+
     /* all button border images have the same size and are sliced in the same way */
     border-image-width: 10px 12px 10px 12px;
     border-image-slice: 10 12 10 12;
@@ -112,7 +122,9 @@ button.flat {
 button:backdrop {
     background-image: none;
     background-color: @bg_color;
-    border-image-source: url("assets/backdrop-button.png");
+    border-image-source: -gtk-scaled(url("assets/backdrop-button.png"),
+                                     url("assets/backdrop-button@2.png"));
+
     color: @backdrop_fg_color;
     text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.2);
 }
@@ -122,7 +134,8 @@ button.flat:backdrop {
 }
 
 button:focus {
-    border-image-source: url("assets/button-focused.png");
+    border-image-source: -gtk-scaled(url("assets/button-focused.png"),
+                                     url("assets/button-focused@2.png"));
 }
 
 button:hover {
@@ -130,29 +143,36 @@ button:hover {
                                      from (shade (@button_bg_color, 1.12)),
                                      color-stop (0.5, @button_bg_color),
                                      to (shade (@button_bg_color, 0.96)));
-    border-image-source: url("assets/button-hover.png");
+    border-image-source: -gtk-scaled(url("assets/button-hover.png"),
+                                     url("assets/button-hover@2.png"));
 }
 
 button:hover:backdrop {
     background-color: shade (@bg_color, 1.04);
-    border-image-source: url("assets/backdrop-button-hover.png");
+    border-image-source: -gtk-scaled(url("assets/backdrop-button-hover.png"),
+                                     url("assets/backdrop-button-hover@2.png"));
 }
 
 button:hover:focus {
-    border-image-source: url("assets/button-focused-hover.png");
+    border-image-source: -gtk-scaled(url("assets/button-focused-hover.png"),
+                                     url("assets/button-focused-hover@2.png"));
 }
 
 button:disabled {
     background-image: none;
     background-color: mix (#ebebeb, @bg_color, 0.5);
+
     text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.4);
-    border-image-source: url("assets/button-disabled.png");
+    border-image-source: -gtk-scaled(url("assets/button-disabled.png"),
+                                     url("assets/button-disabled@2.png"));
 }
 
 button:disabled:backdrop {
     background-color: #ebebeb;
+
     text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.2);
-    border-image-source: url("assets/backdrop-button-disabled.png");
+    border-image-source: -gtk-scaled(url("assets/backdrop-button-disabled.png"),
+                                     url("assets/backdrop-button-disabled@2.png"));
 }
 
 button.flat:disabled,
@@ -165,49 +185,82 @@ button:checked {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (#cecece),
                                      to (#e8e8e8));
-    border-image-source: url("assets/button-active.png");
+    border-image-source: -gtk-scaled(url("assets/button-active.png"),
+                                     url("assets/button-active@2.png"));
 }
 
 button:checked:focus {
-    border-image-source: url("assets/button-active-focused.png");
+    border-image-source: -gtk-scaled(url("assets/button-active-focused.png"),
+                                     url("assets/button-active-focused@2.png"));
 }
 
 button:active {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (#dcdcdc),
                                      to (#f3f3f3));
-    border-image-source: url("assets/button-active-hover.png");
+    border-image-source: -gtk-scaled(url("assets/button-active-hover.png"),
+                                     url("assets/button-active-hover@2.png"));
 }
 
 button:active:focus {
-    border-image-source: url("assets/button-active-focused-hover.png");
+    border-image-source: -gtk-scaled(url("assets/button-active-focused-hover.png"),
+                                     url("assets/button-active-focused-hover@2.png"));
 }
 
 button:active:disabled {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (#e3e3e3),
                                      to (#f3f3f3));
-    border-image-source: url("assets/button-active-disabled.png");
+    border-image-source: -gtk-scaled(url("assets/button-active-disabled.png"),
+                                     url("assets/button-active-disabled@2.png"));
 }
 
 button:checked:backdrop {
-    border-image-source: url("assets/backdrop-button-active.png");
+    border-image-source: -gtk-scaled(url("assets/backdrop-button-active.png"),
+                                     url("assets/backdrop-button-active@2.png"));
 }
 
 button:active:backdrop {
-    border-image-source: url("assets/backdrop-button-active-hover.png");
+    border-image-source: -gtk-scaled(url("assets/backdrop-button-active-hover.png"),
+                                     url("assets/backdrop-button-active-hover@2.png"));
 }
 
 button:checked:disabled:backdrop {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (mix (#e3e3e3, @bg_color, 0.5)),
                                      to (mix (#f3f3f3, @bg_color, 0.5)));
-    border-image-source: url("assets/backdrop-button-active-disabled.png");
+    border-image-source: -gtk-scaled(url("assets/backdrop-button-active-disabled.png"),
+                                     url("assets/backdrop-button-active-disabled@2.png"));
 }
 
+.button.default {
+    border-image-source: -gtk-scaled(url("assets/button-default.png"),
+                                     url("assets/button-default@2.png"));
+}
+
+.button.default:hover {
+    border-image-source: -gtk-scaled(url("assets/button-default-hover.png"),
+                                     url("assets/button-default-hover@2.png"));
+}
+
+.button.default:focus {
+    border-image-source: -gtk-scaled(url("assets/button-default-focused.png"),
+                                     url("assets/button-default-focused@2.png"));
+}
+
+.button.default:focus:hover {
+    border-image-source: -gtk-scaled(url("assets/button-default-focused-hover.png"),
+                                     url("assets/button-default-focused-hover@2.png"));
+}
+
+/* Possibly no longer required /*
 button.default:focus {
     border-color: @focus_color_dialog;
     border-style: solid;
+    box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.0),
+                inset  1px  0px shade (@theme_selected_bg_color, 1.0),
+                inset -1px  0px shade (@theme_selected_bg_color, 1.0),
+                inset  0px -1px shade (@theme_selected_bg_color, 1.0);
 }
 
 button.default:hover:focus {
@@ -221,6 +274,8 @@ button.default:hover:focus {
 button label {
     padding: 0px 0px 0px 4px;
 }
+/* End of possibly not required /*
+
 
 /******************
  * Linked Widgets *
@@ -1292,15 +1347,11 @@ menu > arrow.bottom,
 
 notebook {
     padding: 0;
-    background-clip: border-box;
     border-style: none;
-    background-color: shade (@theme_bg_color, 1.1);
 }
 
 notebook.frame {
     padding: 0;
-    background-color: shade (@theme_bg_color, 1.1);
-    background-clip: border-box;
     border-style: solid;
     border-color: shade (@bg_color, 0.82);
     border-width: 1px;
@@ -2924,10 +2975,8 @@ headerbar {
     border-style: solid;
     border-width: 1px 0 0 0;
     border-radius: 7px 7px 0 0;
-
     color: @dark_fg_color;
     text-shadow: 0 -1px shade (@dark_bg_color, 0.7);
-
     box-shadow: inset 0 1px shade (@dark_bg_color, 1.65);
 }
 
@@ -3133,7 +3182,8 @@ headerbar button,
     background: transparent;
     color: @dark_fg_color;
     text-shadow: 0 -1px shade (@dark_bg_color, 0.7);
-    border-image-source: url("assets/button-toolbar.png");
+    border-image-source: -gtk-scaled(url("assets/button-toolbar.png"),
+                                     url("assets/button-toolbar@2.png"));
     padding: 5px;
 }
 
@@ -3148,21 +3198,24 @@ headerbar button {
 
 .primary-toolbar:not(.libreoffice-toolbar) button:focus,
 headerbar button:focus {
-    border-image-source: url("assets/button-toolbar-focused.png");
+    border-image-source: -gtk-scaled(url("assets/button-toolbar-focused.png"),
+                                     url("assets/button-toolbar-focused@2.png"));
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) button:active,
 .primary-toolbar:not(.libreoffice-toolbar) button:checked,
 headerbar button:active,
 headerbar button:checked {
-    border-image-source: url("assets/button-toolbar-active.png");
+    border-image-source: -gtk-scaled(url("assets/button-toolbar-active.png"),
+                                     url("assets/button-toolbar-active@2.png"));
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) button:active:focus,
 .primary-toolbar:not(.libreoffice-toolbar) button:checked:focus,
 headerbar button:active:focus,
 headerbar button:checked:focus {
-    border-image-source: url("assets/button-toolbar-active-focused.png");
+    border-image-source: -gtk-scaled(url("assets/button-toolbar-active-focused.png"),
+                                     url("assets/button-toolbar-active-focused.png"));
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) button:backdrop,
@@ -3170,7 +3223,8 @@ headerbar button:backdrop {
     background-color: transparent;
     color: @backdrop_dark_fg_color;
     text-shadow: 0 -1px shade (@dark_bg_color, 0.9);
-    border-image-source: url("assets/backdrop-button-toolbar.png");
+    border-image-source: -gtk-scaled(url("assets/backdrop-button-toolbar.png"),
+                                     url("assets/backdrop-button-toolbar@2.png"));
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) button.flat:backdrop {
@@ -3181,7 +3235,8 @@ headerbar button:backdrop {
 .primary-toolbar:not(.libreoffice-toolbar) button:checked:backdrop,
 headerbar button:active:backdrop,
 headerbar button:checked:backdrop {
-    border-image-source: url("assets/backdrop-button-toolbar-active.png");
+    border-image-source: -gtk-scaled(url("assets/backdrop-button-toolbar-active.png"),
+                                     url("assets/backdrop-button-toolbar-active@2.png"));
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) button:hover,
@@ -3418,12 +3473,6 @@ treeview.dnd {
 
 treeview entry {
     background-image: none;
-}
-
-/* does that really work? */
-treeview.view:nth-child(odd) {
-    /* zebra stripping, see LP#945430 */
-    background-color: shade (@base_color, 0.965);
 }
 
 /************
