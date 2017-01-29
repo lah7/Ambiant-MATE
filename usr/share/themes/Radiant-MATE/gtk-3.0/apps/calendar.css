@@ -8,7 +8,6 @@
 }
 
 /* Give pop-down lists the same selected bg colour as other menus. Fixes lp# 1558659 */
-.calendar-list :hover { 
+.calendar-list :hover {
     background-color: @selected_bg_color;
 }
-
