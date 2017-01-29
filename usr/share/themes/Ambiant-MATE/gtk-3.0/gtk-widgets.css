@@ -850,22 +850,6 @@ frame > border.flat,
     border: none;
 }
 
-/* Style the Search and Location entry boxes for Firefox 49 */
-frame {
-    border-width: 1px;
-    border-style: solid;
-    border-color: shade (@bg_color, 0.82);
-}
-
-/* Override the Firefox 49 frame styling where is absolutely shouldn't be applied */
-box > frame, /* mate-tweak */
-statusbar > frame, /* caja, etc. */
-statusbar > widget > frame, /* pluma */
-GvcMixerDialog frame { /* Mate Mixer dialog */
-    border-width: 0px;
-    border-style: none;
-}
-
 /***********************
  * iconview & textview *
  ***********************/
@@ -1141,7 +1125,8 @@ menu > menuitem {
 
 popover menuitem:checked:hover,
 menuitem:hover,
-menu menuitem:hover {
+menu menuitem:hover,
+.menu menuitem:hover {
     border-radius: 0;
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@selected_bg_color, 1.1)),
@@ -3010,7 +2995,6 @@ headerbar .subtitle {
 }
 
 .titlebar button.titlebutton:hover,
-/* backdrop:hover....what a nonsense :) */
 .titlebar button.titlebutton:backdrop:hover {
     background-image: linear-gradient(to top, #969696, #bdbdbd 50%, #cacaca);
 }
@@ -3194,7 +3178,7 @@ headerbar button:checked {
 headerbar button:active:focus,
 headerbar button:checked:focus {
     border-image-source: -gtk-scaled(url("assets/button-toolbar-active-focused.png"),
-                                     url("assets/button-toolbar-active-focused.png"));
+                                     url("assets/button-toolbar-active-focused@2.png"));
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) button:backdrop,
@@ -3225,15 +3209,20 @@ headerbar button:checked {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 1.2)),
                                      to (shade (@dark_bg_color, 1.1)));
+    border-image-source: -gtk-scaled(url("assets/backdrop-button-toolbar.png"),
+                                     url("assets/backdrop-button-toolbar@2.png"));
 }
 
+/*
 headerbar button:hover {
     border-image: none;
 }
+*/
 
 /* hack for yelp, https://github.com/flexiondotorg/ubuntu-mate-themes/issues/38 */
 /* imo a bug in yelp button, seems that 'border-image: none;' from previous setting
    does not work */
+
 headerbar.primary-toolbar.toolbar button:hover {
     border-image-slice: 10 12 10 12;
 }
@@ -3258,10 +3247,13 @@ headerbar button:disabled {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 1.01)),
                                      to (shade (@dark_bg_color, 0.99)));
+    border-image-source: -gtk-scaled(url("assets/button-toolbar.png"),
+                                     url("assets/button-toolbar@2.png"));
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) button.flat:disabled {
     background-image: none;
+    border-image-source: inherit;
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) button:checked:disabled,
@@ -3269,6 +3261,8 @@ headerbar button:checked:disabled {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 0.94)),
                                      to (shade (@dark_bg_color, 1.02)));
+    border-image-source: -gtk-scaled(url("assets/button-toolbar.png"),
+                                     url("assets/button-toolbar@2.png"));
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) toolitem separator,
