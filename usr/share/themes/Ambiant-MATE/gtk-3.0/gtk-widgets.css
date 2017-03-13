@@ -844,11 +844,23 @@ expander arrow:checked {
     background: none;
 }
 
+notebook.frame {
+    border: none;
+}
+
+/* Corrects border on unfocused search/location bars in Firefox 51 */
+frame border, notebook.frame > stack {
+    border-style: none;
+    border-image: none;
+    background: none;
+}
+
 frame > border,
 frame > border.flat,
 .frame.flat {
     border: none;
 }
+
 
 /***********************
  * iconview & textview *

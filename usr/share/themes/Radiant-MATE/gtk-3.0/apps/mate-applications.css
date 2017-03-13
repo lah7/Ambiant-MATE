@@ -162,7 +162,7 @@ PanelWidget > PanelSeparator {
  * Mate-terminal *
  *****************/
 
-/* FIXME, probably a bug in mate-terminal or vte */
+/* vte use hardcoded colors as upstream, ubuntu is patched */
 window.background.mate-terminal vte-terminal {
     -TerminalScreen-background-darkness: 0.95;
     background-color: #373633;
@@ -279,5 +279,27 @@ window.background.mate-terminal vte-terminal {
 
 .lock-dialog notebook {
     background-color: shade (@theme_bg_color, 1.0);
+}
+
+/******************
+ * multimedia OSD *
+ ******************/
+
+/*For mate-settings-daemon noncomposited osd windows*/
+MsdOsdWindow.background.osd.msd-osd-window-solid {
+	border-radius: 0px;
+	border-width: 2px;
+	border-style:solid;
+	border-color: shade(@borders, 0.20);
+}
+
+MsdOsdWindow.background.osd.msd-osd-window-solid progressbar {
+	border-radius: 8px;
+    background: transparent;
+}
+
+MsdOsdWindow.background.osd.msd-osd-window-solid progressbar trough,
+MsdOsdWindow.background.osd.msd-osd-window-solid progressbar progress {
+	border-radius: 8px;
 }
 
