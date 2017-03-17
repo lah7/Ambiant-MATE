@@ -1,0 +1,12 @@
+[Desktop Entry]
+Type=X-GNOME-Metatheme
+Name=Ambiant-MATE-Dark
+Comment=Ambiant MATE Dark theme
+Encoding=UTF-8
+
+[X-GNOME-Metatheme]
+GtkTheme=Ambiant-MATE-Dark
+MetacityTheme=Ambiant-MATE-Dark
+IconTheme=Ambiant-MATE
+CursorTheme=DMZ-White
+ButtonLayout=close,minimize,maximize:
