@@ -151,6 +151,9 @@
 @define-color scrollbar_trough shade(@theme_bg_color, 0.98);
 @define-color scrollbar_slider @theme_bg_color;
 
+@define-color scrollbar_slider_bg_color shade(@theme_selected_bg_color, 0.99);
+@define-color scrollbar_slider_hover_bg_color shade(@theme_selected_bg_color, 1.03);
+
 @define-color progressbar_fill_a shade(@theme_selected_bg_color, 1.07);
 @define-color progressbar_fill_b shade(mix(@theme_selected_bg_color, green, 0.10), 0.91);
 @define-color button_border_active shade(@theme_selected_bg_color, 0.95);

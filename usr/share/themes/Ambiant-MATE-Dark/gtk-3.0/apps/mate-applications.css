@@ -31,6 +31,13 @@
     border-width: 1px 1px 0px 1px;
 }
 
+/* avoid double borders with caja views, as this was set for ff locationbar */
+/* event boxes, ie. trash-, search-boxes */
+.caja-notebook box.vertical > frame > border {
+    border-width: 1px 1px 0px 1px;
+    border-radius: 3px 3px 0px 0px;
+}
+
 .caja-canvas-item {
     border-radius: 3px;
 }
