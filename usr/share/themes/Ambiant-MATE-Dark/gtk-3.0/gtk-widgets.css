@@ -22,7 +22,7 @@
     -gtk-outline-radius: 2px;
 }
 
-.background:not(widget) {
+.background {
     color: @fg_color;
     background-color: @bg_color;
 }
@@ -1358,6 +1358,24 @@ window.background.solid-csd > box.vertical > notebook:not(.frame) {
     border-radius: 4px 4px 0px 0px;
 }
 
+window.background > box.vertical > notebook:not(.frame) > stack > box,
+window.background.csd > box.vertical > notebook:not(.frame) > stack > box,
+window.background.ssd > box.vertical > notebook:not(.frame) > stack > box,
+window.background.solid-csd > box.vertical > notebook:not(.frame) > stack > box {
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+    border-color: shade (@bg_color, 0.82);
+}
+
+window.background > box.vertical > notebook:not(.frame) > header.top,
+window.background.csd > box.vertical > notebook:not(.frame) > header.top,
+window.background.ssd > box.vertical > notebook:not(.frame) > header.top,
+window.background.solid-csd > box.vertical > notebook:not(.frame) > header.top {
+    border-style: solid;
+    border-width: 1px 1px 0px 1px;
+    border-color: shade (@bg_color, 0.82);
+}
+
 printdialog > box.view.vertical.dialog-vbox > box.vertical > notebook {
     background-color: shade (@theme_bg_color, 1.1);
     border-radius: 0px;
@@ -1374,7 +1392,6 @@ dialog.background.solid-csd > box.vertical.dialog-vbox > notebook {
 
 notebook :hover {
     -gtk-icon-effect: highlight;
-    color: @theme_fg_color;
 }
 
 notebook header {
@@ -1408,11 +1425,6 @@ notebook header.left {
 notebook header.right {
     border-width: 0px 0px 0px 1px;
     border-radius: 0px 4px 4px 0px;
-}
-
-notebook viewport {
-    background-color: @theme_base_color;
-    border-width: 0px;
 }
 
 notebook header tab {
@@ -1681,10 +1693,8 @@ notebook header.right tab:checked {
 }
 
 /* close button styling */
-notebook button.flat,
-notebook button.flat.small-button,
-notebook button.flat:hover:active,
-notebook button.flat.small-button:hover:active {
+notebook > header > tabs > tab > box > button.flat,
+notebook > header > tabs > tab > box > button.flat.small-button {
     border-image: none;
     background-image: none;
     background-color: transparent;
@@ -1696,25 +1706,15 @@ notebook button.flat.small-button:hover:active {
     padding: 0px;
 }
 
-notebook .prelight-page button.flat.small-button,
-notebook .active-page button.flat.small-button {
-    color: mix(@theme_fg_color, @theme_base_color, 0.6);
-    -gtk-icon-shadow: 0 1px @button_text_shadow;
+notebook > header > tabs > tab > box > button.flat:hover,
+notebook > header > tabs > tab > box > button.flat.small-button:hover {
+    -gtk-icon-effect: highlight;
 }
 
-notebook button.flat:hover,
-notebook button.flat.small-button:hover {
-    color: @theme_fg_color;
-    border-color: transparent;
-    border-image: none;
-    background-image: none;
-    background-color: transparent;
-}
-
-notebook button.flat:checked,
-notebook button.flat:hover:checked,
-notebook button.flat.small-button:checked,
-notebook button.flat.small-button:hover:active {
+notebook > header > tabs > tab > box > button.flat:checked,
+notebook > header > tabs > tab > box > button.flat:hover:active,
+notebook > header > tabs > tab > box > button.flat.small-button:checked,
+notebook > header > tabs > tab > box > button.flat.small-button:hover:active {
     color:  @button_active_text;
     background-color: alpha(black, 0.08);
     box-shadow: inset 0 1px alpha(black, 0.05);
@@ -1723,6 +1723,12 @@ notebook button.flat.small-button:hover:active {
                         alpha(black, 0.13)
                         alpha(black, 0.13)
                         alpha(black, 0.13);
+}
+
+notebook > header > tabs > tab.prelight-page button.flat.small-button,
+notebook > header > tabs > tab.active-page button.flat.small-button {
+    color: mix(@theme_fg_color, @theme_base_color, 0.6);
+    -gtk-icon-shadow: 0 1px @button_text_shadow;
 }
 
 notebook header.top tabs arrow.up,
@@ -3084,6 +3090,44 @@ headerbar .subtitle {
     -gtk-icon-style: symbolic;
 }
 
+/* fixed half backed implementation of regular icons in headerbar */
+/* fixes https://github.com/flexiondotorg/ubuntu-mate-themes/issues/51 */
+.titlebar button.titlebutton.toggle.popup,
+headerbar button.titlebutton.toggle.popup {
+    background: transparent;
+    color: @dark_fg_color;
+    border-width: 1px;
+    border-image-width: 10px 12px 10px 12px;
+    border-image-slice: 10 12 10 12;
+    border-image-repeat: stretch;
+    border-image-source: -gtk-scaled(url("assets/button-toolbar.png"),
+                                     url("assets/button-toolbar@2.png"));
+    padding: 5px 6px;
+}
+
+.titlebar button.titlebutton.toggle.popup:hover,
+headerbar button.titlebutton.toggle.popup:hover,
+.titlebar button.titlebutton.toggle.popup:checked,
+headerbar button.titlebutton.toggle.popup:checked {
+    background: transparent;
+    color: @dark_fg_color;
+    border-width: 1px;
+    border-image-width: 10px 12px 10px 12px;
+    border-image-slice: 10 12 10 12;
+    border-image-repeat: stretch;
+    border-image-source: -gtk-scaled(url("assets/backdrop-button-toolbar.png"),
+                                     url("assets/backdrop-button-toolbar@2.png"));
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 1.2)),
+                                     to (shade (@dark_bg_color, 1.1)));
+    padding: 5px 6px;
+}
+
+headerbar.titlebar entry,
+headerbar.titlebar button:not(.titlebutton) {
+    padding: 5px 6px;
+}
+
 /***************************************
  * Window Decorations and window-frame *
  ***************************************/
@@ -4301,6 +4345,11 @@ calendar.highlight {
 /* time admin */
 button notebook {
     background-color: transparent;
+}
+
+/* override for headerbars to fix menulibre */
+entry.search {
+    text-shadow: none;
 }
 
 /*****************************************************************************
