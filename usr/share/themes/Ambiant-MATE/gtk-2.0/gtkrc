@@ -1,4 +1,4 @@
-gtk-color-scheme = "base_color:#ffffff\nfg_color:#4c4c4c\ntooltip_fg_color:#ffffff\nselected_bg_color:#87A752\nselected_fg_color:#FFFFFF\ntext_color:#3C3C3C\nbg_color:#F2F1F0\ntooltip_bg_color:#000000\nlink_color:#A7BB85"
+gtk-color-scheme = "base_color:#ffffff\nfg_color:#4c4c4c\ntooltip_fg_color:#ebebeb\nselected_bg_color:#87A752\nselected_fg_color:#FFFFFF\ntext_color:#3C3C3C\nbg_color:#F2F1F0\ntooltip_bg_color:#1e1e1e\nlink_color:#A7BB85"
 
 gtk-icon-sizes = "panel-menu=22,22:gtk-button=16,16"
 
@@ -541,10 +541,10 @@ style "tooltips" {
 
 	bg[NORMAL]        = @tooltip_bg_color
 	fg[NORMAL]        = @tooltip_fg_color
-	bg[SELECTED]      = "#000000"
+	bg[SELECTED]      = "#1e1e1e"
 
 	engine "murrine" {
-		rgba = TRUE
+		rgba = FALSE
 		roundness = 0
 		lightborder_shade = 1.26
 		lightborderstyle = 1

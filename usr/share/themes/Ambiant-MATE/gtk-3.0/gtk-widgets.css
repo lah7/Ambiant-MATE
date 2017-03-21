@@ -443,24 +443,26 @@ headerbar .linked button:only-child {
 
 messagedialog .linked.dialog-action-area button {
     border-image: none;
-    border-width: 1px 1px 1px 0px;
+    border-width: 1px 0px 1px 0px;
     border-color: shade (@bg_color, 0.82);
     border-style: solid;
-    box-shadow: none;
     border-radius: 0px;
     padding: 5px 0px;
+    box-shadow: inset 1px 0 @inset_light_color, inset -1px 0 @inset_dark_color;
 }
 
 messagedialog .linked.dialog-action-area button:first-child {
     border-image: none;
-    border-width: 1px 1px 1px 1px;
+    border-width: 1px 0px 1px 1px;
     border-radius: 7px 0px 0px 7px;
+    box-shadow: inset -1px 0 @inset_dark_color;
 }
 
 messagedialog .linked.dialog-action-area button:last-child {
     border-image: none;
     border-width: 1px 1px 1px 0px;
     border-radius: 0px 7px 7px 0px;
+    box-shadow: inset 1px 0 @inset_light_color;
 }
 
 messagedialog .linked.dialog-action-area button:only-child {
@@ -469,26 +471,12 @@ messagedialog .linked.dialog-action-area button:only-child {
     border-width: 1px;
 }
 
-messagedialog .linked.dialog-action-area button.default {
-    border-color: @focus_color_dialog;
-    border-style: solid;
-}
-
+messagedialog .linked.dialog-action-area button.default,
+messagedialog .linked.dialog-action-area button:hover,
 messagedialog .linked.dialog-action-area button:focus,
 messagedialog .linked.dialog-action-area button.default:focus {
     border-color: @focus_color_dialog;
     border-style: solid;
-    box-shadow: inset  0px  1px @focus_color_dialog,
-                inset  1px  0px @focus_color_dialog,
-                inset -1px  0px @focus_color_dialog,
-                inset  0px -1px @focus_color_dialog;
-}
-
-messagedialog .linked.dialog-action-area button:hover {
-    box-shadow: inset  0px  1px shade (@theme_selected_bg_color, 1.3),
-                inset  1px  0px shade (@theme_selected_bg_color, 1.3),
-                inset -1px  0px shade (@theme_selected_bg_color, 1.3),
-                inset  0px -1px shade (@theme_selected_bg_color, 1.3);
 }
 
 /****************
@@ -3342,9 +3330,8 @@ headerbar button:disabled {
 }
 
 /* override previous setting to fix menulibre headerbar button */
+headerbar button:disabled,
 headerbar.titlebar button:disabled {
-    border-image: none;
-    border-color: transparent;
     background-color: transparent;
 }
 
@@ -3548,6 +3535,11 @@ treeview entry {
 treeview,
 treeview.view {
 	outline-color: alpha(currentColor, 0.6);
+}
+
+/* ie. ubiquity */
+scrolledwindow.frame > treeview.view > check {
+    background-color: transparent;
 }
 
 /************

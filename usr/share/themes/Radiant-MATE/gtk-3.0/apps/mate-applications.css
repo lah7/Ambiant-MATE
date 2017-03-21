@@ -287,15 +287,16 @@ window.background.mate-terminal vte-terminal {
 /* mate-screensaver lock dialog */
 
 .lock-dialog {
-    border-radius: 5px;
-    border-style: none;
-    border-width: 0px;
+    border-radius: 0px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: @borders;
     /* not sure if box-shadow works here */
     box-shadow: 0 0 0 1px @wm_border, 0 2px 8px 3px @wm_shadow;
 }
 
 .lock-dialog frame {
-    border-radius: 5px;
+    border-radius: 0px;
     border-style: none;
     border-width: 0px;
 }
@@ -343,3 +344,74 @@ MsdOsdWindow.background.osd.msd-osd-window-solid progressbar progress {
     box-shadow: none;
 }
 
+/**************
+ * Brisk-menu *
+ **************/
+
+.brisk-menu {
+    background-color: @menu_bg_color;
+    color: @dark_fg_color;
+}
+
+.brisk-menu .apps-list {
+    background-color: @menu_bg_color;
+    border-color: shade(@borders, 0.8);
+    border-style: solid;
+    border-width: 1px;
+}
+
+.brisk-menu button.flat {
+    background: transparent;
+    color: @dark_fg_color;
+    padding: 5px;
+}
+
+.brisk-menu button.flat:checked {
+    border-radius: 0;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@selected_bg_color, 1.2)),
+                                     to (shade (@selected_bg_color, 1.1)));
+    border-image: -gtk-gradient (linear, left top, left bottom,
+                                 from (shade (@selected_bg_color, 0.8)),
+                                 to (shade (@selected_bg_color, 0.9))) 1;
+
+    border-image-width: 1px;
+    box-shadow: inset 1px 0 shade (@selected_bg_color, 1.02),
+                inset -1px 0 shade (@selected_bg_color, 1.02),
+                inset 0 1px shade (@selected_bg_color, 1.16),
+                inset 0 -1px shade (@selected_bg_color, 0.96);
+
+    color: @selected_fg_color;
+    text-shadow: 0 -1px shade (@selected_bg_color, 0.7);
+}
+
+.brisk-menu button.flat:hover {
+    border-radius: 0;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@selected_bg_color, 1.1)),
+                                     to (shade (@selected_bg_color, 0.9)));
+    border-image: -gtk-gradient (linear, left top, left bottom,
+                                 from (shade (@selected_bg_color, 0.7)),
+                                 to (shade (@selected_bg_color, 0.7))) 1;
+    border-image-width: 1px;
+    box-shadow: inset 1px 0 shade (@selected_bg_color, 1.02),
+                inset -1px 0 shade (@selected_bg_color, 1.02),
+                inset 0 1px shade (@selected_bg_color, 1.16),
+                inset 0 -1px shade (@selected_bg_color, 0.96);
+
+    color: @selected_fg_color;
+    text-shadow: 0 -1px shade (@selected_bg_color, 0.7);
+}
+
+.brisk-menu separator {
+    border-width: 1px;
+    border-style: solid;
+    border-color: shade (@dark_bg_color, 1.02);
+    border-bottom-color: shade (@dark_bg_color, 0.98);
+    border-right-color: shade (@dark_bg_color, 0.98);
+}
+
+.brisk-menu label,
+.brisk-menu label.dim-label {
+    text-shadow: none;
+}

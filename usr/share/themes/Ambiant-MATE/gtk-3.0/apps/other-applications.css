@@ -62,3 +62,16 @@
     background-color: @dark_bg_color;
 }
 
+/************
+ * terminix *
+ ************/
+
+.terminix-title-separator {
+    border-width: 1px;
+    border-style: solid;
+    border-image: none;
+    border-color: shade (@dark_bg_color, 0.92);
+    border-bottom-color: alpha (shade (@dark_bg_color, 1.26), 0.6);
+    border-right-color: alpha (shade (@dark_bg_color, 1.26), 0.6)
+}
+

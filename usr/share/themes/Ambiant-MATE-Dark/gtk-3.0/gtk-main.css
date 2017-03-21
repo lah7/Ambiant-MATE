@@ -5,8 +5,8 @@
 @define-color text_color #EBEBEB;
 @define-color selected_bg_color #87A752;
 @define-color selected_fg_color #EBEBEB;
-@define-color tooltip_bg_color #4E4C46;
-@define-color tooltip_fg_color #EBEBEB;
+@define-color tooltip_bg_color #1e1e1e;
+@define-color tooltip_fg_color #ebebeb;
 
 @define-color theme_fg_color @fg_color;
 @define-color theme_bg_color @bg_color;
@@ -139,8 +139,8 @@
 @define-color progressbar_backdrop_fill_b shade(mix(@backdrop_selected_bg_color, grey, 0.10), 0.91);
 @define-color button_border_backdrop_active shade(@backdrop_selected_bg_color, 0.95);
 
-@define-color inset_light_color alpha(white, 0.45);
-@define-color inset_dark_color alpha(black, 0.07);
+@define-color inset_light_color shade(alpha(white, 0.45), 0.2);
+@define-color inset_dark_color  shade(alpha(black, 0.07), 0.6);
 
 @define-color wm_shadow alpha(black, 0.5);
 
