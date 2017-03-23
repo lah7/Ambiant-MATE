@@ -140,15 +140,19 @@ PanelWidget > PanelSeparator {
 .mate-panel-applet-slider frame,
 .mate-panel-applet-slider.background frame {
     background-color: @theme_bg_color;
-    border-image: none;
-    border-style: none;
-    border-radius:3px;
     padding: 0px;
     margin: 0px;
     box-shadow: inset  0px  1px shade (@theme_bg_color, 0.8),
                 inset  1px  0px shade (@theme_bg_color, 0.8),
                 inset -1px  0px shade (@theme_bg_color, 0.8),
                 inset  0px -1px shade (@theme_bg_color, 0.8);
+}
+
+.mate-panel-applet-slider frame border,
+.mate-panel-applet-slider.background frame border {
+    border-image: none;
+    border-style: none;
+    border-radius:3px;
 }
 
 .mate-panel-applet-slider frame frame,

@@ -68,6 +68,21 @@
 
 @define-color shadow_color alpha(black, 0.5);
 
+/************
+ * notebook *
+ ************/
+
+@define-color core_color_a #B9C0A9; /* Core color for green widgets in AmbiantMATE-Dark. */
+
+@define-color notebook_bg_color shade(@dark_bg_color, 1.02);
+@define-color border_color shade(@dark_bg_color, 0.67);
+@define-color notebook_tab_inner_border_color shade(@dark_bg_color, 1.04);
+
+@define-color notebook_tab_gradient_a shade(@dark_bg_color, 0.97);
+@define-color notebook_tab_gradient_b shade(@dark_bg_color, 0.92);
+@define-color notebook_tab_gradient_c shade(@dark_bg_color, 0.90);
+@define-color notebook_tab_gradient_d shade(@dark_bg_color, 0.86);
+
 /*******
  * OSD *
  *******/

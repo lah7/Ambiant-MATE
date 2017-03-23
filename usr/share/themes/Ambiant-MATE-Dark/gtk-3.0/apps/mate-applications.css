@@ -271,11 +271,15 @@ PanelApplet.wnck-applet .wnck-pager {
 .mate-panel-applet-slider frame,
 .mate-panel-applet-slider.background frame {
     background-color: @dark_bg_color;
+    padding: 0px;
+    margin: 0px;
+}
+
+.mate-panel-applet-slider frame border,
+.mate-panel-applet-slider.background frame border {
     border-image: none;
     border-style: none;
     border-radius:2px;
-    padding: 0px;
-    margin: 0px;
 }
 
 .mate-panel-applet-slider frame frame,
