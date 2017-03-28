@@ -185,7 +185,7 @@ switch {
     border-image: -gtk-scaled(url("assets/switch-trough-off.png"),url("assets/switch-trough-off@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-switch:active {
+switch:checked {
     border-image: -gtk-scaled(url("assets/switch-trough-on.png"),url("assets/switch-trough-on@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
@@ -195,17 +195,16 @@ headerbar switch {
     border-image: -gtk-scaled(url("assets/switch-trough-toolbar-off.png"),url("assets/switch-trough-toolbar-off@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-.primary-toolbar:not(.libreoffice-toolbar) switch:active,
-toolbar menubar switch:active,
-headerbar switch:active {
+.primary-toolbar:not(.libreoffice-toolbar) switch:checked,
+toolbar menubar switch:checked,
+headerbar switch:checked {
     border-image: -gtk-scaled(url("assets/switch-trough-toolbar-on.png"),url("assets/switch-trough-toolbar-on@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
-/* XXX temporary */
 switch:backdrop,
-switch:active:backdrop,
+switch:checked:backdrop,
 switch:disabled,
-switch:active:disabled {
+switch:checked:disabled {
     border-image: -gtk-scaled(url("assets/switch-trough-disabled.png"),url("assets/switch-trough-disabled@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
@@ -213,19 +212,17 @@ switch slider {
     border-image: -gtk-scaled(url("assets/switch-button-off.png"),url("assets/switch-button-off@2.png")) 9 11 9 11 / 9px 11px 9px 11px stretch;
 }
 
-switch slider:active {
+switch slider:checked {
     border-image: -gtk-scaled(url("assets/switch-button-on.png"),url("assets/switch-button-on@2.png")) 9 11 9 11 / 9px 11px 9px 11px stretch;
 }
 
-/* XXX temporary */
-switch slider:backdrop,
-switch slider:disabled {
+switch:backdrop slider,
+switch:disabled slider {
     border-image: -gtk-scaled(url("assets/switch-button-off-disabled.png"),url("assets/switch-button-off-disabled@2.png")) 9 11 9 11 / 9px 11px 9px 11px stretch;
 }
 
-/* XXX temporary */
-switch slider:active:backdrop,
-switch slider:active:disabled {
+switch:checked:backdrop slider,
+switch:checked:disabled slider {
     border-image: -gtk-scaled(url("assets/switch-button-on-disabled.png"),url("assets/switch-button-on-disabled@2.png")) 9 11 9 11 / 9px 11px 9px 11px stretch;
 }
 

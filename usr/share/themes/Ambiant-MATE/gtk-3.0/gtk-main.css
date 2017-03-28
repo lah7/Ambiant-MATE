@@ -52,7 +52,11 @@
 @define-color notebook_button_bg_color shade (@bg_color, 1.02);
 @define-color button_insensitive_bg_color mix (@button_bg_color, @bg_color, 0.6);
 @define-color dark_bg_color #3c3b37;
+@define-color dark_bg_slider_color #4E4C46;
 @define-color dark_fg_color #dfdbd2;
+@define-color dark_button_bg_color shade (@dark_bg_color, 1.02);
+@define-color dark_slider_bg_color shade (@dark_bg_slider_color, 1.02);
+
 
 @define-color backdrop_fg_color mix (@bg_color, @fg_color, 0.8);
 @define-color backdrop_text_color mix (@base_color, @text_color, 0.8);

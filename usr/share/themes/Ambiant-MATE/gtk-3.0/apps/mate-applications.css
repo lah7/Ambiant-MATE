@@ -315,6 +315,13 @@ PanelApplet.wnck-applet .wnck-pager {
  * Mate-terminal *
  *****************/
 
+/* override for pavu-control */
+window.background.mate-terminal > box.vertical > notebook > header.top,
+window.background.mate-terminal > box.vertical > notebook > stack > box {
+    border-style: none;
+    border-width: 0px;
+}
+
 /* vte use hardcoded colors as upstream, ubuntu is patched */
 window.background.mate-terminal vte-terminal {
     -TerminalScreen-background-darkness: 0.95;
@@ -428,44 +435,26 @@ window.background.mate-terminal vte-terminal {
     background-image: none;
     border-style: solid;
     border-color: shade(@dark_fg_color, 0.3);
+    min-width: 11px;
 }
 
 #mate-menu.background scrollbar.vertical trough {
     background-image: none;
     border-color: shade(@dark_fg_color, 0.3);
+    min-width: 11px;
 }
 
-#mate-menu.background scrollbar.vertical slider {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@dark_bg_color, 1.75)),
-                                     to (shade (@dark_bg_color, 1.3)));
-    border-color: shade(@dark_fg_color, 0.3);
-}
-
-#mate-menu.background scrollbar.vertical slider:hover,
-#mate-menu.background scrollbar.vertical slider:hover:active {
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@dark_bg_color, 1.3)),
-                                     to (shade (@dark_bg_color, 1.75)));
-    border-color: shade(@dark_fg_color, 0.3);
-}
-
-#mate-menu.background scrollbar.vertical.fine-tune slider:hover:active,
-#mate-menu.background scrollbar.vertical.fine-tune .slider:hover:active {
-    background-image: url("assets/slider_fine_vertical.svg"),
-                      linear-gradient(to left,
-                                      shade(@dark_bg_color, 1.75),
-                                      shade(@dark_bg_color, 1.525) 55%,
-                                      shade(@dark_bg_color, 1.3));
-    background-repeat: no-repeat;
-    background-position: center;
-    border-color: shade(@dark_fg_color, 0.3);
+scrollbar.vertical slider {
+    min-width: 11px;
+    min-height: 42px;
+    margin: 0px -1px 0px -1px;
 }
 
 #mate-menu.background scrollbar.vertical button {
     border-radius: 0px;
     background-image: none;
     box-shadow: none;
+    min-width: 11px;
 }
 
 #mate-menu.background scrollbar.vertical button:disabled {
@@ -565,25 +554,26 @@ MsdOsdWindow.background.osd.msd-osd-window-solid progressbar progress {
  * Brisk-menu *
  **************/
 
-.brisk-menu {
+.background.brisk-menu {
     background-color: @dark_bg_color;
     color: @dark_fg_color;
 }
 
-.brisk-menu .apps-list {
+.background.brisk-menu .apps-list,
+.background.brisk-menu .categories-list {
     background-color: @dark_bg_color;
     border-color: shade(@borders, 0.2);
     border-style: solid;
     border-width: 1px;
 }
 
-.brisk-menu button.flat {
+.background.brisk-menu button.flat {
     background: transparent;
     color: @dark_fg_color;
     padding: 5px;
 }
 
-.brisk-menu button.flat:checked {
+.background.brisk-menu button.flat:checked {
     border-radius: 0;
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@selected_bg_color, 1.2)),
@@ -602,7 +592,7 @@ MsdOsdWindow.background.osd.msd-osd-window-solid progressbar progress {
     text-shadow: 0 -1px shade (@selected_bg_color, 0.7);
 }
 
-.brisk-menu button.flat:hover {
+.background.brisk-menu button.flat:hover {
     border-radius: 0;
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@selected_bg_color, 1.1)),
@@ -620,7 +610,7 @@ MsdOsdWindow.background.osd.msd-osd-window-solid progressbar progress {
     text-shadow: 0 -1px shade (@selected_bg_color, 0.7);
 }
 
-.brisk-menu separator {
+.background.brisk-menu separator {
     border-width: 1px;
     border-style: solid;
     border-color: shade (@dark_bg_color, 1.02);
@@ -628,54 +618,57 @@ MsdOsdWindow.background.osd.msd-osd-window-solid progressbar progress {
     border-right-color: shade (@dark_bg_color, 0.8);
 }
 
-.brisk-menu scrolledwindow {
+.background.brisk-menu scrolledwindow {
     border-width: 1px;
     border-style: solid;
     border-color: shade (@dark_bg_color, 1.02);
 }
 
-.brisk-menu overshoot {
+.background.brisk-menu overshoot {
     background: none;
 }
 
-.brisk-menu scrollbar {
+.background.brisk-menu scrollbar {
     background-image: none;
     border-style: solid;
     border-color: shade(@dark_fg_color, 0.3);
+    min-width: 11px;
 }
 
-.brisk-menu scrollbar.vertical trough {
+.background.brisk-menu scrollbar.vertical trough {
     background-image: none;
     border-color: shade(@dark_fg_color, 0.3);
+    min-width: 11px;
 }
 
-.brisk-menu scrollbar.vertical button {
+.background.brisk-menu scrollbar.vertical button {
     border-radius: 0px;
     background-image: none;
     box-shadow: none;
     color: @dark_fg_color;
+    min-width: 11px;
 }
 
-.brisk-menu scrollbar.vertical button:disabled {
+.background.brisk-menu scrollbar.vertical button:disabled {
     background-color: transparent;
     color: shade (@insensitive_fg_color, 0.6);
 }
 
-.brisk-menu scrollbar.vertical button.up,
-.brisk-menu scrollbar.vertical .button.up,
-.brisk-menu scrollbar.vertical button.up:hover,
-.brisk-menu scrollbar.vertical .button.up:hover {
+.background.brisk-menu scrollbar.vertical button.up,
+.background.brisk-menu scrollbar.vertical .button.up,
+.background.brisk-menu scrollbar.vertical button.up:hover,
+.background.brisk-menu scrollbar.vertical .button.up:hover {
     box-shadow: inset 0 -1px shade(@dark_fg_color, 0.35);
 }
 
-.brisk-menu scrollbar.vertical button.down,
-.brisk-menu scrollbar.vertical .button.down,
-.brisk-menu scrollbar.vertical button.down:hover,
-.brisk-menu scrollbar.vertical .button.down:hover {
+.background.brisk-menu scrollbar.vertical button.down,
+.background.brisk-menu scrollbar.vertical .button.down,
+.background.brisk-menu scrollbar.vertical button.down:hover,
+.background.brisk-menu scrollbar.vertical .button.down:hover {
     box-shadow: inset 0 1px shade(@dark_fg_color, 0.35);
 }
 
-.brisk-menu entry {
+.background.brisk-menu entry {
     background-color: transparent;
     background-image: -gtk-gradient(linear,
                                     left top, left bottom,
@@ -687,8 +680,8 @@ MsdOsdWindow.background.osd.msd-osd-window-solid progressbar progress {
     border-image: none;
 }
 
-.brisk-menu entry,
-.brisk-menu entry:focus {
+.background.brisk-menu entry,
+.background.brisk-menu entry:focus {
     box-shadow: inset  0px  1px shade(@dark_fg_color, 0.3),
                 inset  1px  0px shade(@dark_fg_color, 0.3),
                 inset -1px  0px shade(@dark_fg_color, 0.3),
@@ -697,13 +690,13 @@ MsdOsdWindow.background.osd.msd-osd-window-solid progressbar progress {
 	caret-color: shade (@dark_fg_color, 1.0);
 }
 
-.brisk-menu entry selection,
-.brisk-menu entry selection:focus {
+.background.brisk-menu entry selection,
+.background.brisk-menu entry selection:focus {
     background-color: shade(@dark_fg_color, 0.4);
     color: shade (@dark_fg_color, 1.2);
 }
 
-.brisk-menu label,
-.brisk-menu label.dim-label {
+.background.brisk-menu label,
+.background.brisk-menu label.dim-label {
     text-shadow: none;
 }

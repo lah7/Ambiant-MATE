@@ -73,15 +73,26 @@
  ************/
 
 @define-color core_color_a #B9C0A9; /* Core color for green widgets in AmbiantMATE-Dark. */
+@define-color core_color_b shade(@bg_color, 0.86);
 
-@define-color notebook_bg_color shade(@dark_bg_color, 1.02);
-@define-color border_color shade(@dark_bg_color, 0.67);
-@define-color notebook_tab_inner_border_color shade(@dark_bg_color, 1.04);
+@define-color notebook_bg_color shade(@core_color_b, 0.98);
+@define-color border_color shade(@core_color_b, 0.67);
+@define-color notebook_tab_inner_border_color shade(@core_color_b, 1.04);
 
-@define-color notebook_tab_gradient_a shade(@dark_bg_color, 0.97);
-@define-color notebook_tab_gradient_b shade(@dark_bg_color, 0.92);
-@define-color notebook_tab_gradient_c shade(@dark_bg_color, 0.90);
-@define-color notebook_tab_gradient_d shade(@dark_bg_color, 0.86);
+@define-color notebook_tab_gradient_a shade(@core_color_b, 0.97);
+@define-color notebook_tab_gradient_b shade(@core_color_b, 0.92);
+@define-color notebook_tab_gradient_c shade(@core_color_b, 0.90);
+@define-color notebook_tab_gradient_d shade(@core_color_b, 0.86);
+
+/* active tab */
+
+@define-color notebook_active_tab_border @menubar_menuitem_hover_border_color;
+
+@define-color notebook_active_tab_strip_gradient_a shade(@core_color_a, 1.05);
+@define-color notebook_active_tab_strip_gradient_b shade(@core_color_a, 0.94);
+@define-color notebook_active_tab_strip_border_bottom_color mix(#727272, shade(@core_color_a, 0.84), 0.65);
+@define-color notebook_active_tab_gradient_a shade(@core_color_b, 1.07);
+@define-color notebook_active_tab_gradient_b @notebook_bg_color;
 
 /*******
  * OSD *

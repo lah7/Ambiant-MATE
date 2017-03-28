@@ -22,14 +22,52 @@
     -gtk-outline-radius: 2px;
 }
 
-.background {
+/* exclude widget for mate-menu */
+.background:not(widget) {
     color: @fg_color;
     background-color: @bg_color;
+}
+
+/* override previous setting for rubberband of mate-screenshot */
+.background.rubberband {
+	background-color: transparent;
 }
 
 .background:backdrop {
     color: @backdrop_fg_color;
     box-shadow: inset -1px 0 shade (@bg_color, 0.94);
+}
+
+/* no madness on desktop windows */
+window.background.caja-desktop-window:backdrop,
+window.background.nemo-desktop-window:backdrop,
+window.background.nautilus-desktop:backdrop {
+    box-shadow: none;
+}
+
+.gtkstyle-fallback {
+	background-color: @theme_bg_color;
+	color: @theme_fg_color;
+}
+
+.gtkstyle-fallback:hover {
+	background-color: shade(@theme_bg_color, 1.10);
+	color: @theme_fg_color;
+}
+
+.gtkstyle-fallback:active {
+	background-color: shade(@theme_bg_color, 0.90);
+	color: @theme_fg_color;
+}
+
+.gtkstyle-fallback:disabled {
+	background-color: @insensitive_bg_color;
+	color: @insensitive_fg_color;
+}
+
+.gtkstyle-fallback:selected {
+	background-color: @theme_selected_bg_color;
+	color: @theme_selected_fg_color;
 }
 
 /* Fix for applications that have issues finding a default monospace font */
@@ -90,12 +128,12 @@ button {
                                      color-stop (0.5, @button_bg_color),
                                      to (shade (@button_bg_color, 0.94)));
 
-    color: @fg_color;
+    color: @dark_fg_color;
+    text-shadow: 0 -1px shade (@dark_bg_color, 0.7);
+
     border: 1px solid transparent;
     border-radius: 8px;
     background-color: transparent;
-    color: @dark_fg_color;
-    text-shadow: 0 -1px shade (@dark_bg_color, 0.7);
     border-image-source: -gtk-scaled(url("assets/button-toolbar.png"),
                                      url("assets/button-toolbar@2.png"));
 
@@ -114,8 +152,8 @@ button.flat {
 button:backdrop {
     background-image: none;
     background-color: @bg_color;
-    border-image-source: -gtk-scaled(url("assets/backdrop-button.png"),
-                                     url("assets/backdrop-button@2.png"));
+    border-image-source: -gtk-scaled(url("assets/backdrop-button-toolbar.png"),
+                                     url("assets/backdrop-button-toolbar@2.png"));
 
     color: @backdrop_fg_color;
     text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.2);
@@ -140,13 +178,13 @@ button:hover {
 
 button:hover:backdrop {
     background-color: shade (@bg_color, 1.04);
-    border-image-source: -gtk-scaled(url("assets/backdrop-button-hover.png"),
-                                     url("assets/backdrop-button-hover@2.png"));
+    border-image-source: -gtk-scaled(url("assets/backdrop-button-toolbar-active.png"),
+                                     url("assets/backdrop-button-toolbar-active@2.png"));
 }
 
 button:hover:focus {
-    border-image-source: -gtk-scaled(url("assets/button-focused-hover.png"),
-                                     url("assets/button-focused-hover@2.png"));
+    border-image-source: -gtk-scaled(url("assets/button-toolbar-focused.png"),
+                                     url("assets/button-toolbar-focused@2.png"));
 }
 
 button:disabled {
@@ -162,8 +200,8 @@ button:disabled:backdrop {
     background-color: #4E4C46;
 
     text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.2);
-    border-image-source: -gtk-scaled(url("assets/backdrop-button-disabled.png"),
-                                     url("assets/backdrop-button-disabled@2.png"));
+    border-image-source: -gtk-scaled(url("assets/backdrop-button-toolbar.png"),
+                                     url("assets/backdrop-button-toolbar@2.png"));
 }
 
 button.flat:disabled,
@@ -184,8 +222,8 @@ button:active {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (#4E4C46),
                                      to (#5B5A56));
-    border-image-source: -gtk-scaled(url("assets/button-active-hover.png"),
-                                     url("assets/button-active-hover@2.png"));
+    border-image-source: -gtk-scaled(url("assets/button-toolbar-focused.png"),
+                                     url("assets/button-toolbar-focused@2.png"));
 }
 
 button:active:focus,
@@ -203,21 +241,21 @@ button:active:disabled {
 }
 
 button:checked:backdrop {
-    border-image-source: -gtk-scaled(url("assets/backdrop-button-active.png"),
-                                     url("assets/backdrop-button-active@2.png"));
+    border-image-source: -gtk-scaled(url("assets/backdrop-button-toolbar-active.png"),
+                                     url("assets/backdrop-button-toolbar-active@2.png"));
 }
 
 button:active:backdrop {
-    border-image-source: -gtk-scaled(url("assets/backdrop-button-active-hover.png"),
-                                     url("assets/backdrop-button-active-hover@2.png"));
+    border-image-source: -gtk-scaled(url("assets/backdrop-button-toolbar-active.png"),
+                                     url("assets/backdrop-button-toolbar-active@2.png"));
 }
 
 button:checked:disabled:backdrop {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (mix (#434343, @bg_color, 0.5)),
                                      to (mix (#434343, @bg_color, 0.5)));
-    border-image-source: -gtk-scaled(url("assets/backdrop-button-active-disabled.png"),
-                                     url("assets/backdrop-button-active-disabled@2.png"));
+    border-image-source: -gtk-scaled(url("assets/backdrop-button-toolbar.png"),
+                                     url("assets/backdrop-button-toolbar@2.png"));
 }
 
 /*
@@ -1775,7 +1813,7 @@ notebook header tab:checked label {
 }
 
 notebook header tab label {
-    color: shade (@theme_fg_color, 0.6);
+    color: shade (@theme_fg_color, 0.8);
     font-weight: normal;
 }
 
@@ -2913,14 +2951,12 @@ statusbar {
  **********/
 
 switch {
-    padding: 0px;
+    padding: 2px;
     border-radius: 6px;
-    padding: 1px 0px 2px 0px;
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (#4E4C46),
                                      to (#5B5A56));
     color: @fg_color;
-    text-shadow: 0 1px alpha (shade (@bg_color, 1.25), 0.5);
 }
 
 switch:checked {
@@ -2931,43 +2967,36 @@ switch:checked {
     text-shadow: 0 1px shade (@selected_bg_color, 0.7);
 }
 
-switch:focus {
+switch:focus,
+switch:focus slider {
     outline: 2px solid @focus_color;
     outline-offset: -2px;
     -gtk-outline-radius: 6px;
 }
 
-/* XXX temporary */
 switch:backdrop,
 switch:disabled {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@bg_color, 0.93)),
                                      to (shade (@bg_color, 0.99)));
     color: shade (@bg_color, 0.6);
-    text-shadow: 0 1px alpha (shade (@bg_color, 1.25), 0.5);
-}
-
-switch:disabled {
-    text-shadow: none;
 }
 
 switch slider {
-    padding: 1px;
     border-radius: 6px;
     border-style: solid;
+    border-width: 1px;
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@button_bg_color, 1.08)),
                                      color-stop (0.5, @button_bg_color),
                                      to (shade (@button_bg_color, 0.94)));
     color: @fg_color;
-    text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.4);
 }
 
-switch slider:backdrop {
+switch:backdrop slider {
     background-image: none;
     background-color: @bg_color;
     color: @backdrop_fg_color;
-    text-shadow: 0 1px alpha (shade (@button_bg_color, 1.25), 0.2);
 }
 
 /*************
@@ -3153,7 +3182,7 @@ decoration.ssd {
 .solid-csd decoration {
     border-radius: 0;
     background-color: @fg_color;
-    border: 1px solid darker(@fg_color);
+    border: 1px solid shade(@bg_color, 0.85);
     box-shadow: none;
     margin: 0px;
 }
@@ -4058,7 +4087,7 @@ modelbutton.flat:backdrop {
     border: none;
     text-shadow: none;
     border-radius: 3px;
-    padding: 0px 0px 0px 4px;
+    padding: 5px;
 }
 
 modelbutton.flat:backdrop:hover {
@@ -4088,7 +4117,7 @@ modelbutton.flat radio:hover,
 modelbutton.flat radio:checked {
     background-image: none;
     border: none;
-    padding: 0px 3px 0px 0px;
+    padding: 0px;
 }
 
 modelbutton.flat arrow.left {
@@ -4097,9 +4126,6 @@ modelbutton.flat arrow.left {
 
 modelbutton.flat arrow.right {
     -gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
-}
-modelbutton.flat arrow{
-    padding: 0px 3px 0px 0px;
 }
 
 modelbutton.flat:disabled,

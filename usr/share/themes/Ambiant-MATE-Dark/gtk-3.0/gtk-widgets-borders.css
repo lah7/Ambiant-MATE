@@ -28,7 +28,7 @@ entry {
 }
 
 entry:backdrop {
-    border-image: -gtk-scaled(url("assets/backdrop-entry.png"),url("assets/backdrop-entry@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-image: -gtk-scaled(url("assets/entry-toolbar.png"),url("assets/entry-toolbar@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 entry:focus {
@@ -41,7 +41,7 @@ entry:disabled {
 }
 
 entry:disabled:backdrop {
-    border-image: -gtk-scaled(url("assets/backdrop-entry-disabled.png"),url("assets/backdrop-entry-disabled@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
+    border-image: -gtk-scaled(url("assets/entry-toolbar.png"),url("assets/entry-toolbar@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) entry,
@@ -174,43 +174,38 @@ trough {
 }
 
 switch,
-switch:active {
-    border-image: -gtk-scaled(url("assets/entry-toolbar.png"),url("assets/entry-toolbar@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
-}
-
+switch:checked,
 .primary-toolbar:not(.libreoffice-toolbar) switch,
 toolbar menubar switch,
-headerbar switch {
-    border-image: -gtk-scaled(url("assets/switch-trough-toolbar-off.png"),url("assets/switch-trough-toolbar-off@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
-}
-
-.primary-toolbar:not(.libreoffice-toolbar) switch:active,
-toolbar menubar switch:active,
-headerbar switch:active {
-    border-image: -gtk-scaled(url("assets/switch-trough-toolbar-on.png"),url("assets/switch-trough-toolbar-on@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
+headerbar switch,
+.primary-toolbar:not(.libreoffice-toolbar) switch:checked,
+toolbar menubar switch:checked,
+headerbar switch:checked {
+    border-image: -gtk-scaled(url("assets/entry-toolbar.png"),url("assets/entry-toolbar@2.png")) 10 12 10 12 / 10px 12px 10px 12px stretch;
 }
 
 /* XXX temporary */
 switch:backdrop,
-switch:active:backdrop,
+switch:checked:backdrop,
 switch:disabled,
-switch:active:disabled {
+switch:checked:disabled {
     border-image-source: -gtk-scaled(url("assets/button-toolbar.png"),
                                      url("assets/button-toolbar@2.png"));
 }
 
 switch slider,
-switch slider:active,
-switch slider:backdrop,
-switch slider:disabled,
-switch slider:active:backdrop,
-switch slider:active:disabled {
+switch:checked slider,
+switch:backdrop slider,
+switch:disabled slider,
+switch:checked:backdrop slider,
+switch:checked:disabled slider {
     border-image: -gtk-scaled(url("assets/button-toolbar.png"),
                               url("assets/button-toolbar@2.png")) 9 11 9 11 / 9px 11px 9px 11px stretch;
 }
 
 scale trough {
-    border-image: -gtk-scaled(url("assets/entry-toolbar.png"),url("assets/entry-toolbar@2.png"))) 2 6 2 6 / 2px 6px 2px 6px stretch;
+    border-image: -gtk-scaled(url("assets/entry-toolbar.png"),
+                              url("assets/entry-toolbar@2.png")) 2 6 2 6 / 2px 6px 2px 6px stretch;
 }
 
 scale trough:disabled {

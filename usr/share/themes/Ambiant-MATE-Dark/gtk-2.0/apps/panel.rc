@@ -1,4 +1,4 @@
-# Panel specific settings for correct theming on MATE
+# Panel specific settings
 
 style "panel" = "dark"
 {
@@ -21,7 +21,6 @@ widget "*Panel"                   style "panel"
 widget "*PanelWidget*"            style "panel"
 widget "*PanelApplet*"            style "panel"		# workaround for right click menu corrupted bg
 widget "*fast-user-switch*"       style "panel" 	# workaround for Fast User Switch applet
-widget "*CPUFreqApplet*"          style "panel" 	# workaround for CpuFreq Applet
 class "PanelApp*"                 style "panel"
 class "PanelToplevel*"            style "panel"
 widget_class "*notif*"            style "panel"

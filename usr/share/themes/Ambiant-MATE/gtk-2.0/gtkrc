@@ -33,7 +33,7 @@ style "default" {
 	GtkScrollbar	::has-backward-stepper		= 1
 	GtkScrollbar	::has-forward-stepper		= 1
 	GtkScrollbar	::min-slider-length		= 15
-	GtkScrollbar	::slider-width			= 13
+	GtkScrollbar	::slider-width			= 14
 	GtkScrollbar	::trough-border			= 0
 	GtkScrollbar	::activate-slider		= 1
 
@@ -44,11 +44,11 @@ style "default" {
 	GtkMenuBar::shadow-type = GTK_SHADOW_NONE
 	GtkExpander::expander-size = 11
 	GtkToolbar::internal-padding = 1
-#	GtkToolbar::shadow-type = GTK_SHADOW_NONE
+	GtkToolbar::shadow-type = GTK_SHADOW_NONE
 	GtkTreeView::expander-size = 7
 	GtkTreeView::vertical-separator = 0
 #	GtkTreeView::odd-row-color = shade (0.96, @base_color)
-	GtkNotebook::tab-overlap = -1
+	GtkNotebook::tab-overlap = 1
 
 	GtkMenu::horizontal-padding = 0
 	GtkMenu::vertical-padding = 3
@@ -62,8 +62,8 @@ style "default" {
 
 	GtkEntry::progress-border = { 2, 2, 2, 2 }
 
-	GtkProgressBar::min-horizontal-bar-height = 14
-	GtkProgressBar::min-vertical-bar-width = 14
+	GtkProgressBar::min-horizontal-bar-height = 20
+	GtkProgressBar::min-vertical-bar-width = 20
 	
 	GtkImage::x-ayatana-indicator-dynamic = 1
 	GtkMenuBar::window-dragging = 1
@@ -113,7 +113,7 @@ style "default" {
 		progressbarstyle = 0
 		colorize_scrollbar = FALSE
 		prelight_shade		= .95			# shade level for scrollbar's slider, comboboxstyle(1), and prelight state with gradient_colors
-		trough_shades		= {0.98, 1.06}		# draw gradient on trough of GtkScrollbar and GtkProgressbar
+		trough_shades		= {0.96, 1.04}		# draw gradient on trough of GtkScrollbar and GtkProgressbar
 		menubaritemstyle = 1
 		menubarstyle = 1
 		menustyle = 0
@@ -123,7 +123,7 @@ style "default" {
 		scrollbarstyle = 0
 		stepperstyle = 3
 		toolbarstyle = 2     # 0 = flat, 1 = glassy, 2 = gradient
-#		rgba = TRUE
+		#rgba = TRUE
 	}
 }
 
@@ -180,28 +180,6 @@ style "vscale" {
 style "hscale" {
 }
 
-#style "button" {
-#	xthickness = 3
-#	ythickness = 3
-#
-#	bg[NORMAL] = shade (1.07, "#cdcdcd")
-#	bg[PRELIGHT] = shade (1.09, "#cdcdcd")
-#	bg[ACTIVE] = shade (1.0, "#cdcdcd")
-#	bg[INSENSITIVE] = mix (0.25, @bg_color, "#e2e1e1")
-#	fg[INSENSITIVE] = "#9c9c9c"
-#
-#	engine "murrine" {
-#		#contrast = 1.0
-#		border_shades = {1.04, 0.82}
-#		reliefstyle = 5
-#		shadow_shades = {1.02, 1.1}
-#		textstyle = 1
-#		glowstyle = 5
-#		glow_shade = 1.1
-#		#text_shade = 1.04
-#	}
-#}
-
 style "button" {
 
 	xthickness = 3
@@ -214,7 +192,6 @@ style "button" {
 	fg[INSENSITIVE] = "#9c9c9c"
 
 	engine "murrine" {
-		#contrast = 1.0
 		textstyle = 1
 		border_shades = {1.01, 0.8}
 		reliefstyle = 0
@@ -222,8 +199,6 @@ style "button" {
 		glowstyle = 5
 		glow_shade = 1.02
 		lightborder_shade = 1.32
-#		lightborderstyle = 0
-		#text_shade = 1.04
 	}
 }
 
@@ -251,20 +226,6 @@ style "murrine-scrollbar" {
 	}
 }
 
-style "overlay_scrollbar" {
-	bg[NORMAL]	= shade (0.99, @selected_bg_color)
-	bg[SELECTED]	= shade (1.03, @selected_bg_color)
-	bg[ACTIVE]	= shade (1.03, @selected_bg_color)
-	bg[PRELIGHT]	= shade (1.03, @selected_bg_color)
-
-	engine "murrine" {
-		roundness	= 0
-		gradient_shades = {1.0, 1.0, 1.0, 1.0}
-		border_shades	= {1.05, 1.05}
-		contrast	= 0.4
-	}
-}
-
 style "scale" = "button" {
 	bg[NORMAL] = @bg_color
 	bg[PRELIGHT] = shade (1.06, @bg_color)
@@ -279,8 +240,6 @@ style "scale" = "button" {
 		handlestyle = 2
 		trough_border_shades = {0.9, 1.4}
 		glow_shade = 1.0
-#		reliefstyle = 2
-#		shadow_shades = { 1.0, 0.9 }
 	}
 }
 
@@ -293,13 +252,13 @@ style "notebook_bg" {
 # The color is changed by the notebook_bg style, this style
 # changes the x/ythickness
 style "notebook" {
-	xthickness = 2
-	ythickness = 2
+	xthickness = 3
+	ythickness = 3
 	
 	engine "murrine" {
 		roundness = 3
 		contrast = 0.8
-		focusstyle = 2
+		focusstyle = 0
 		lightborder_shade = 1.16
 		gradient_shades = {1.1, 1.0, 1.0, 0.68}
 	}
@@ -331,7 +290,7 @@ style "menubar" = "dark" {
 	}
 }
 
-style "toolbar" = "dark" {
+style "toolbar" {
 	engine "murrine" {
 		textstyle = 1
 		text_shade = 1.32
@@ -339,30 +298,8 @@ style "toolbar" = "dark" {
 	}
 }
 
-style "toolbar-button" = "dark" {
-	xthickness = 4
-	ythickness = 3
-
+style "toolbar-button" = "notebook_button" {
 	engine "murrine" {
-		#contrast = 1.0
-		textstyle = 1
-		border_shades = {1.01, 0.8}
-		reliefstyle = 0
-		shadow_shades = {1.0, 1.1}
-		glowstyle = 5
-		glow_shade = 1.02
-		lightborder_shade = 1.32
-#		lightborderstyle = 0
-		#text_shade = 1.04
-	}
-}
-
-style "toolbar-entry" = "entry" { # text
-	base[NORMAL]			= shade(0.93, @base_color)
-	engine "murrine" {
-		contrast			= 0.6
-		border_shades		= {1.2, 1.0}
-		focus_color 		= shade (1.0, @selected_bg_color)
 	}
 }
 
@@ -372,6 +309,7 @@ style "menu" = "dark" {
 
 	engine "murrine"
 	{
+		reliefstyle = 0
 		roundness = 0
 	}
 }
@@ -430,7 +368,7 @@ style "separator_menu_item" {
 	GtkWidget::wide-separators = 1
 	GtkWidget::separator-width = 1
 	GtkWidget::separator-height = 7
-	
+
 	engine "murrine" {
 		contrast = 0.6
 		separatorstyle = 0
@@ -473,16 +411,14 @@ style "progressbar" {
 
 	bg[ACTIVE] = shade (0.94, @bg_color)
 	fg[PRELIGHT] = @selected_fg_color
-	#bg[SELECTED] = "#cdcdcd"
 
 	engine "murrine" {
-		#trough_shades = {0.98, 1.02}
-		roundness = 8
+		roundness = 6
 		lightborderstyle = 1
 		lightborder_shade = 1.26
 		border_shades = {0.95, 0.85}
 		gradient_shades = {1.1, 1.0, 1.0, 0.9}
-		trough_border_shades = {0.9, 1.4}
+		trough_border_shades = {0.8, 0.9}
 	}
 }
 
@@ -534,6 +470,135 @@ style "radiocheck"  = "button" {
 	}
 }
 
+style "radiocheck" {
+    engine "pixmap" {
+
+	# Check Buttons
+	image {
+            function        		= CHECK
+            recolorable     		= TRUE
+            state 			= NORMAL
+            shadow          		= OUT
+            overlay_file    		= "assets/check-unselected.png"
+            overlay_stretch 		= FALSE
+        }
+	image {
+            function        		= CHECK
+            recolorable     		= TRUE
+            state 			= PRELIGHT
+            shadow          		= OUT
+            overlay_file    		= "assets/check-unselected.png"
+            overlay_stretch 		= FALSE
+        }
+	image {
+            function        		= CHECK
+            recolorable     		= TRUE
+            state 			= ACTIVE
+            shadow          		= OUT
+            overlay_file    		= "assets/check-unselected.png"
+            overlay_stretch 		= FALSE
+        }
+	image {
+            function        		= CHECK
+            recolorable     		= TRUE
+            state 			= INSENSITIVE
+            shadow          		= OUT
+            overlay_file    		= "assets/check-unselected-insensitive.png"
+            overlay_stretch 		= FALSE
+        }
+	image {
+            function        		= CHECK
+            recolorable     		= TRUE
+            state	 		= NORMAL
+            shadow          		= IN
+            overlay_file    		= "assets/check-selected.png"
+            overlay_stretch	 	= FALSE
+        }
+	image {
+            function        		= CHECK
+            recolorable     		= TRUE
+            state 			= PRELIGHT
+            shadow          		= IN
+            overlay_file    		= "assets/check-selected.png"
+            overlay_stretch 		= FALSE
+        }
+	image {
+            function        		= CHECK
+            recolorable     		= TRUE
+            state 		        = ACTIVE
+            shadow          		= IN
+            overlay_file    		= "assets/check-selected.png"
+            overlay_stretch 		= FALSE
+        }
+	image {
+            function        		= CHECK
+            recolorable     		= TRUE
+            state 		        = INSENSITIVE
+            shadow          		= IN
+            overlay_file		= "assets/check-selected-insensitive.png"
+            overlay_stretch 		= FALSE
+	}
+
+	# Radio Buttons
+	image {
+            function        		= OPTION
+            state 			= NORMAL
+            shadow          		= OUT
+            overlay_file    		= "assets/radio-unselected.png"
+            overlay_stretch 		= FALSE
+        }
+	image {
+            function        		= OPTION
+            state 			= PRELIGHT
+            shadow          		= OUT
+            overlay_file    		= "assets/radio-unselected.png"
+            overlay_stretch 		= FALSE
+        }
+	image {
+            function        		= OPTION
+            state 			= ACTIVE
+            shadow          		= OUT
+            overlay_file    		= "assets/radio-unselected.png"
+            overlay_stretch 		= FALSE
+        }
+	image {
+            function        		= OPTION
+            state 			= INSENSITIVE
+            shadow         		= OUT
+            overlay_file    		= "assets/radio-unselected-insensitive.png"
+            overlay_stretch 		= FALSE
+        }
+	image {
+            function        		= OPTION
+            state 			= NORMAL
+            shadow          		= IN
+            overlay_file    		= "assets/radio-selected.png"
+            overlay_stretch 		= FALSE
+        }
+	image {
+            function        		= OPTION
+            state			= PRELIGHT
+            shadow          		= IN
+            overlay_file    		= "assets/radio-selected.png"
+            overlay_stretch 		= FALSE
+        }
+	image {
+            function        		= OPTION
+            state			= ACTIVE
+            shadow          		= IN
+            overlay_file    		= "assets/radio-selected.png"
+            overlay_stretch	 	= FALSE
+        }
+	image {
+            function        		= OPTION
+            state 			= INSENSITIVE
+            shadow          		= IN
+            overlay_file    		= "assets/radio-selected-insensitive.png"
+            overlay_stretch 		= FALSE
+        }
+    }
+}
+
 style "tooltips" {
 	xthickness = 4
 	ythickness = 4
@@ -559,14 +624,6 @@ style "infobar" {
 	}
 }
 
-style "nautilus_location" {
-	bg[NORMAL]  = mix (0.60, shade (1.05, @bg_color), @selected_bg_color)
-}
-
-style "caja_location" {
-	bg[NORMAL]  = mix (0.60, shade (1.05, @bg_color), @selected_bg_color)
-}
-
 style "calendar" {
 	xthickness = 0
 	ythickness = 0
@@ -577,8 +634,6 @@ style "calendar" {
 }
 
 style "calendar_menu_item" = "calendar" {
-	base[NORMAL] = "#605E58"
-	base[ACTIVE] = "#4b4944"
 }
 
 style "iconview" {
@@ -588,10 +643,6 @@ style "iconview" {
 		glow_shade = 1.1
 		glowstyle = 5
 	}
-}
-
-style "soundfix"
-{
 }
 
 # Wrokaround style for places where the text color is used instead of the fg color.
@@ -619,13 +670,6 @@ style "fg_is_text_color_workaround" {
 	fg[SELECTED]      = @selected_fg_color
 	fg[ACTIVE]        = @selected_fg_color
 	fg[INSENSITIVE]   = darker (@bg_color)
-}
-
-# Style to set the toolbar to use a flat style. This is because the "New" button in
-# Evolution is not drawn transparent. So if there is a gradient in the background it will
-# look really wrong.
-# See http://bugzilla.gnome.org/show_bug.cgi?id=446953.
-style "evo_new_button_workaround" {
 }
 
 ###############################################################################
@@ -668,8 +712,7 @@ widget_class "*<GtkScrolledWindow>*" style "scrolledwindow"
 
 widget_class "*<GtkButton>" style "button"
 widget_class "*<GtkButton>*<GtkLabel>" style "button"
-widget_class "*<GtkToolbar>.*.<GtkButton>*" style "toolbar-button"
-widget_class "*<GtkToolbar>.*.<GtkEntry>*"  style "toolbar-entry"
+widget_class "*<GtkToolbar>.*.<GtkButton>*" style "notebook_button"
 widget_class "*<GtkNotebook>" style "notebook"
 widget_class "*<GtkStatusbar>" style "statusbar"
 widget_class "*<GtkSpinButton>*" style "spinbutton"
@@ -707,10 +750,6 @@ widget_class "*.<GtkCTree>.<GtkButton>.*<GtkLabel>" style "treeview_header"
 widget_class "*.<GtkList>.<GtkButton>.*<GtkLabel>" style "treeview_header"
 widget_class "*.<GtkCList>.<GtkButton>.*<GtkLabel>" style "treeview_header"
 
-# Overlay scrollbar
-widget_class "*<OsScrollbar>" style "overlay_scrollbar"
-widget_class "*<OsThumb>" style "overlay_scrollbar"
-
 # The window of the tooltip is called "gtk-tooltip"
 ##################################################################
 # FIXME:
@@ -725,19 +764,6 @@ widget "gtk-tooltip*" style "tooltips"
 # Following are special cases and workarounds for issues in applications.
 ##########################################################################
 
-# Workaround for the evolution ETable (bug #527532)
-widget_class "*.ETable.ECanvas" style "treeview_header"
-# Workaround for the evolution ETree
-widget_class "*.ETree.ECanvas" style "treeview_header"
-
-# Special case the nautilus-extra-view-widget
-# ToDo: A more generic approach for all applications that have a widget like this.
-widget "*.nautilus-extra-view-widget" style : highest "nautilus_location"
-
-# Special case the caja-extra-view-widget
-# ToDo: A more generic approach for all applications that have a widget like this.
-widget "*.caja-extra-view-widget" style : highest "caja_location"
-
 # Work around for http://bugzilla.gnome.org/show_bug.cgi?id=382646
 # Note that this work around assumes that the combobox is _not_ in appears-as-list mode.
 widget_class "*.<GtkComboBox>.<GtkCellView>" style "text_is_fg_color_workaround"
@@ -749,15 +775,8 @@ widget "*.gtk-combobox-popup-menu.*" style "menuitem_text_is_fg_color_workaround
 widget_class "*<GtkListItem>*" style "fg_is_text_color_workaround"
 # GtkCList also uses the fg color to draw text on top of the base colors.
 widget_class "*<GtkCList>" style "fg_is_text_color_workaround"
-# Nautilus/Caja when renaming files, and maybe other places.
-widget_class "*<EelEditableLabel>" style "fg_is_text_color_workaround"
-# Work around for ubuntu's lucid sound indicator
-widget "ido-offscreen-scale" style "soundfix"
 # Thickness for indicator menu items
 widget "*IdoEntryMenuItem*" style "wide"
-
-# See the documentation of the style.
-widget_class "EShellWindow.GtkVBox.BonoboDock.BonoboDockBand.BonoboDockItem*" style "evo_new_button_workaround"
 
 # Various performance fixes if murrine textstyle is on by default in the theme.
 style "performance-fix" {
@@ -771,12 +790,7 @@ widget_class "*gtkmm__GtkWindow*"	style "performance-fix" # Inkscape
 widget_class "*GimpDisplayShell*"	style "performance-fix" # Gimp
 widget_class "*GimpToolbox*"		style "performance-fix"
 widget_class "*GimpMenuDock*"		style "performance-fix"
-widget "*OOoFixed*"					style "performance-fix" # Openoffice/Libreoffice
-widget_class "*MozContainer*"		style "performance-fix" # Firefox (Not sure if this one does anything though.)
 
 # Includes
-#include "apps/banshee.rc"
 include "apps/chromium.rc"
-include "apps/ff.rc"
-include "apps/caja.rc"
-include "apps/mate-panel.rc"
+include "apps/panel.rc"

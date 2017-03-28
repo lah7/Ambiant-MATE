@@ -189,6 +189,13 @@ PanelWidget > PanelSeparator {
  * Mate-terminal *
  *****************/
 
+/* override for pavu-control */
+window.background.mate-terminal > box.vertical > notebook > header.top,
+window.background.mate-terminal > box.vertical > notebook > stack > box {
+    border-style: none;
+    border-width: 0px;
+}
+
 /* vte use hardcoded colors as upstream, ubuntu is patched */
 window.background.mate-terminal vte-terminal {
     -TerminalScreen-background-darkness: 0.95;
@@ -352,25 +359,26 @@ MsdOsdWindow.background.osd.msd-osd-window-solid progressbar progress {
  * Brisk-menu *
  **************/
 
-.brisk-menu {
+.background.brisk-menu {
     background-color: @menu_bg_color;
     color: @dark_fg_color;
 }
 
-.brisk-menu .apps-list {
+.background.brisk-menu .apps-list,
+.background.brisk-menu .categories-list {
     background-color: @menu_bg_color;
     border-color: shade(@borders, 0.8);
     border-style: solid;
     border-width: 1px;
 }
 
-.brisk-menu button.flat {
+.background.brisk-menu button.flat {
     background: transparent;
     color: @dark_fg_color;
     padding: 5px;
 }
 
-.brisk-menu button.flat:checked {
+.background.brisk-menu button.flat:checked {
     border-radius: 0;
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@selected_bg_color, 1.2)),
@@ -389,7 +397,7 @@ MsdOsdWindow.background.osd.msd-osd-window-solid progressbar progress {
     text-shadow: 0 -1px shade (@selected_bg_color, 0.7);
 }
 
-.brisk-menu button.flat:hover {
+.background.brisk-menu button.flat:hover {
     border-radius: 0;
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@selected_bg_color, 1.1)),
@@ -407,7 +415,7 @@ MsdOsdWindow.background.osd.msd-osd-window-solid progressbar progress {
     text-shadow: 0 -1px shade (@selected_bg_color, 0.7);
 }
 
-.brisk-menu separator {
+.background.brisk-menu separator {
     border-width: 1px;
     border-style: solid;
     border-color: shade (@dark_bg_color, 1.02);
@@ -415,7 +423,7 @@ MsdOsdWindow.background.osd.msd-osd-window-solid progressbar progress {
     border-right-color: shade (@dark_bg_color, 0.98);
 }
 
-.brisk-menu label,
-.brisk-menu label.dim-label {
+.background.brisk-menu label,
+.background.brisk-menu label.dim-label {
     text-shadow: none;
 }
