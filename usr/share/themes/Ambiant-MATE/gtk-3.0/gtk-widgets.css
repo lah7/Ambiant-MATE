@@ -2993,10 +2993,16 @@ headerbar switch:disabled {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 0.93)),
                                      to (shade (@dark_bg_color, 0.99)));
-    color: shade (@dark_bg_color, 0.6);
+    color: shade (@dark_fg_color, 0.6);
 }
 
-switch slider {
+headerbar switch:checked,
+headerbar switch:checked:backdrop {
+    color: shade (@dark_fg_color, 1.0);
+}
+
+switch slider,
+switch:backdrop slider {
     border-radius: 6px;
     border-style: solid;
     border-width: 1px;
@@ -3004,10 +3010,10 @@ switch slider {
                                      from (shade (@button_bg_color, 1.08)),
                                      color-stop (0.5, @button_bg_color),
                                      to (shade (@button_bg_color, 0.94)));
-    color: @fg_color;
 }
 
-headerbar switch slider {
+headerbar switch slider,
+headerbar switch:backdrop slider {
     border-radius: 6px;
     border-style: solid;
     border-width: 1px;
@@ -3015,15 +3021,15 @@ headerbar switch slider {
                                      from (shade (@dark_slider_bg_color, 1.08)),
                                      color-stop (0.5, @dark_slider_bg_color),
                                      to (shade (@dark_slider_bg_color, 0.94)));
-    color: @fg_color;
 }
 
+/*
 switch:backdrop slider {
     background-image: none;
     background-color: @dark_bg_color;
     color: @backdrop_fg_color;
 }
-
+*/
 /*************
  * headerbar *
  *************/
@@ -3314,7 +3320,9 @@ headerbar button {
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) button:focus,
-headerbar button:focus {
+headerbar button:focus,
+headerbar button:hover:focus,
+headerbar button:hover:backdrop {
     border-image-source: -gtk-scaled(url("assets/button-toolbar-focused.png"),
                                      url("assets/button-toolbar-focused@2.png"));
 }
@@ -3397,7 +3405,8 @@ headerbar button:disabled {
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) button:disabled,
-headerbar button:disabled {
+headerbar button:disabled,
+headerbar button:disabled:backdrop {
     background-image: -gtk-gradient (linear, left top, left bottom,
                                      from (shade (@dark_bg_color, 1.01)),
                                      to (shade (@dark_bg_color, 0.99)));
@@ -3407,7 +3416,10 @@ headerbar button:disabled {
 
 /* override previous setting to fix menulibre headerbar button */
 headerbar button:disabled,
-headerbar.titlebar button:disabled {
+headerbar.titlebar button:disabled,
+headerbar button:disabled:backdrop,
+headerbar.titlebar button:disabled:backdrop,
+headerbar button:hover:backdrop {
     background-color: transparent;
 }
 
