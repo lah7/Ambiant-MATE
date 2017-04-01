@@ -728,3 +728,10 @@ MsdOsdWindow.background.osd.msd-osd-window-solid progressbar progress {
     border-image: none;
     text-shadow: none;
 }
+
+/* mate-keyboard-layout-view */
+
+.gswitchit-layout-view box.dialog-vbox box.vertical widget {
+    background-color: shade (@notebook_bg_color, 0.95);
+}
+

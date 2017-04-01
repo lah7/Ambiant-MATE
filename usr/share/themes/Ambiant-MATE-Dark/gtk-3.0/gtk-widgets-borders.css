@@ -203,7 +203,8 @@ switch:checked:disabled slider {
                               url("assets/button-toolbar@2.png")) 9 11 9 11 / 9px 11px 9px 11px stretch;
 }
 
-scale trough {
+scale trough,
+scale trough:backdrop {
     border-image: -gtk-scaled(url("assets/entry-toolbar.png"),
                               url("assets/entry-toolbar@2.png")) 2 6 2 6 / 2px 6px 2px 6px stretch;
 }
@@ -212,12 +213,13 @@ scale trough:disabled {
     border-image: -gtk-scaled(url("assets/button-toolbar.png"),
                               url("assets/button-toolbar@2.png")) 2 6 2 6 / 2px 6px 2px 6px stretch;
 }
-
+/*
 scale trough:backdrop {
     border-image: -gtk-scaled(url("assets/scale-horizontal-trough-backdrop.png"),url("assets/scale-horizontal-trough-backdrop@2.png")) 2 6 2 6 / 2px 6px 2px 6px stretch;
 }
-
-scale trough.vertical {
+*/
+scale trough.vertical,
+scale trough.vertical:backdrop {
     border-image: -gtk-scaled(url("assets/scale-vertical-trough.png"),url("assets/scale-vertical-trough@2.png")) 6 2 6 2 / 6px 2px 6px 2px stretch;
 }
 
@@ -226,10 +228,11 @@ scale trough.vertical:disabled {
                               url("assets/button-toolbar@2.png")) 6 2 6 2 / 6px 2px 6px 2px stretch;
 }
 
-scale trough highlight.left {
+scale trough highlight.left,
+scale trough highlight.left:backdrop {
     border-image: -gtk-scaled(url("assets/scale-horizontal-fill.png"),url("assets/scale-horizontal-fill@2.png")) 2 6 2 6 / 2px 6px 2px 6px stretch;
 }
-
+/*
 scale trough.vertical:backdrop {
     border-image: -gtk-scaled(url("assets/scale-vertical-trough-backdrop.png"),url("assets/scale-vertical-trough-backdrop@2.png")) 6 2 6 2 / 6px 2px 6px 2px stretch;
 }
@@ -237,12 +240,13 @@ scale trough.vertical:backdrop {
 scale trough highlight.left:backdrop {
     border-image: -gtk-scaled(url("assets/scale-horizontal-fill-backdrop.png"),url("assets/scale-horizontal-fill-backdrop@2.png")) 2 6 2 6 / 2px 6px 2px 6px stretch;
 }
-
-scale.vertical trough.highlight.bottom {
+*/
+scale.vertical trough.highlight.bottom,
+scale.vertical trough highlight.bottom:backdrop {
     border-image: -gtk-scaled(url("assets/scale-vertical-fill.png"),url("assets/scale-vertical-fill@2.png")) 6 2 6 2 / 6px 2px 6px 2px stretch;
 }
-
+/*
 scale.vertical trough highlight.bottom:backdrop {
     border-image: -gtk-scaled(url("assets/scale-vertical-fill-backdrop.png"),url("assets/scale-vertical-fill-backdrop@2.png")) 6 2 6 2 / 6px 2px 6px 2px stretch;
 }
-
+*/

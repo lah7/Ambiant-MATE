@@ -2239,10 +2239,13 @@ scale.vertical trough:disabled {
 	background-image: none;
 }
 
-scale  contents trough highlight,
+scale contents trough highlight,
 scale.horizontal contents trough highlight,
 scale.horizontal.marks-after contents trough highlight,
-scale.vertical contents trough highlight {
+scale.vertical contents trough highlight,
+scale contents trough highlight:backdrop,
+scale.horizontal contents trough highlight:backdrop,
+scale.vertical contents trough highlight:backdrop {
     border-radius: 8px;
     border-width: 1px;
     border-style: solid;
@@ -2263,6 +2266,7 @@ scale.vertical contents trough highlight:disabled {
     border-color: transparent;
 }
 
+/*
 scale contents trough highlight:backdrop,
 scale.horizontal contents trough highlight:backdrop,
 scale.vertical contents trough highlight:backdrop {
@@ -2270,7 +2274,7 @@ scale.vertical contents trough highlight:backdrop {
     background-image: none;
     border-color: transparent;
 }
-
+*/
 
 /* defines the color of the actuall marks on the scale */
 scale marks indicator {

@@ -560,18 +560,20 @@ toolbar menu menuitem radio:checked:disabled {
  * GtkScale's slider *
  *********************/
 scale slider,
-scale.horizontal slider {
+scale.horizontal slider,
+scale slider:backdrop,
+scale.horizontal slider:backdrop {
     background-image: -gtk-scaled(url("assets/slider-horizontal.png"),
                                   url("assets/slider-horizontal@2.png"));
     background-repeat: no-repeat;
 }
-
+/*
 scale slider:backdrop,
 scale.horizontal slider:backdrop {
-    /*background-image: -gtk-scaled(url("assets/slider-horizontal-disabled.png"),
-                                  url("assets/slider-horizontal-disabled@2.png"));*/
+    background-image: -gtk-scaled(url("assets/slider-horizontal-disabled.png"),
+                                  url("assets/slider-horizontal-disabled@2.png"));
 }
-
+*/
 scale slider:hover,
 scale.horizontal slider:hover {
     background-image: -gtk-scaled(url("assets/slider-horizontal-hover.png"),
@@ -592,25 +594,28 @@ scale.horizontal slider:hover:focus {
 }
 
 scale slider:disabled,
-scale.horizontal slider:disabled {
+scale.horizontal slider:disabled,
+scale slider:disabled:backdrop,
+scale.horizontal slider:disabled:backdrop {
     background-image: -gtk-scaled(url("assets/slider-horizontal-disabled.png"),
                                   url("assets/slider-horizontal-disabled@2.png"));
 }
-
+/*
 scale slider:disabled:backdrop,
 scale.horizontal slider:disabled:backdrop {
-    /*background-image: url("assets/slider-horizontal-backdrop-disabled.png");*/
+    background-image: url("assets/slider-horizontal-backdrop-disabled.png");
 }
-
-scale.vertical slider {
+*/
+scale.vertical slider,
+scale.vertical slider:backdrop {
     background-image: -gtk-scaled(url("assets/slider-vertical.png"),
                                   url("assets/slider-vertical@2.png"));
 }
-
+/*
 scale.vertical slider:backdrop {
-    /*background-image: url("assets/slider-vertical-backdrop.png");*/
+    background-image: url("assets/slider-vertical-backdrop.png");
 }
-
+*/
 scale.vertical slider:hover {
     background-image: -gtk-scaled(url("assets/slider-vertical-hover.png"),
                                   url("assets/slider-vertical-hover@2.png"));
@@ -626,15 +631,17 @@ scale.vertical slider:hover:focus {
                                   url("assets/slider-vertical-focused-hover@2.png"));
 }
 
-scale.vertical slider:disabled {
+scale.vertical slider:disabled,
+scale.vertical slider:disabled:backdrop {
     background-image: -gtk-scaled(url("assets/slider-vertical-disabled.png"),
                                   url("assets/slider-vertical-disabled@2.png"));
 }
 
+/*
 scale.vertical slider:disabled:backdrop {
-    /*background-image: url("assets/slider-vertical-backdrop-disabled.png");*/
+    background-image: url("assets/slider-vertical-backdrop-disabled.png");
 }
-
+*/
 /*scale.horizontal.marks-before slider {
     background-image: url("assets/slider-up.png");
 }
