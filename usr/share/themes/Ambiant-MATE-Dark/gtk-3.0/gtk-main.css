@@ -21,7 +21,7 @@
 @define-color theme_unfocused_base_color @base_color;
 @define-color theme_unfocused_selected_bg_color @selected_bg_color;
 @define-color theme_unfocused_selected_fg_color @selected_fg_color;
-@define-color borders shade(@bg_color, 0.82);
+@define-color borders shade(@bg_color, 0.7);
 @define-color unfocused_borders transparent;
 
 @define-color warning_color @warning_fg_color;
@@ -169,6 +169,9 @@
 @define-color inset_dark_color  shade(alpha(black, 0.07), 0.6);
 
 @define-color wm_shadow alpha(black, 0.5);
+
+/* inactive-pane caja */
+@define-color inactive-pane_bg_color #55534E;
 
 @import url("gtk-widgets-borders.css");
 @import url("gtk-widgets-assets.css");

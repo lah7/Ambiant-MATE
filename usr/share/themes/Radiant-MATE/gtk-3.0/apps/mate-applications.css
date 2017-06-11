@@ -38,6 +38,16 @@
     border-radius: 3px 3px 0px 0px;
 }
 
+/* background-image is needed for inactiv-pane (list-view). bg color don't work here */
+.caja-notebook treeview.view:selected,
+.caja-notebook treeview.view:selected:hover {
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+    background-image: linear-gradient(to bottom,
+                                      shade (@theme_selected_bg_color, 1.00),
+                                      shade (@theme_selected_bg_color, 1.00));
+}
+
 .caja-canvas-item {
     border-radius: 3px;
 }
@@ -92,6 +102,11 @@
 /**************
  * Mate-Panel *
  **************/
+
+/* needed for keyboard layout indicator applet */
+.mate-panel-menu-bar {
+    color: @theme_fg_color;
+}
 
 /* outlines */
 window.background, /* selector where outlines are writen on GtkTrayIcon */
