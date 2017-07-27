@@ -1454,6 +1454,7 @@ notebook header {
 }
 
 notebook header.top {
+    margin: -1px -1px 0px 0px;
     border-width: 0px 0px 1px 0px;
     border-radius: 4px 4px 0px 0px;
     background-color: @theme_bg_color;
@@ -1468,6 +1469,7 @@ dialog.background.solid-csd > box.vertical.dialog-vbox > notebook > header.top {
 }
 
 notebook header.bottom {
+    margin: 0px -1px -1px 0px;
     border-width: 1px 0px 0px 0px;
     border-radius: 0px 0px 4px 4px;
     background-color: @theme_bg_color;
@@ -1475,6 +1477,7 @@ notebook header.bottom {
 }
 
 notebook header.left {
+    margin: 0px 0px -1px -1px;
     border-width: 0px 1px 0px 0px;
     border-radius: 4px 0px 0px 4px;
     background-color: @theme_bg_color;
@@ -1482,6 +1485,7 @@ notebook header.left {
 }
 
 notebook header.right {
+    margin: 0px -1px -1px 0px;
     border-width: 0px 0px 0px 1px;
     border-radius: 0px 4px 4px 0px;
     background-color: @theme_bg_color;
