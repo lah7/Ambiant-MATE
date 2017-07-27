@@ -1456,9 +1456,7 @@ notebook header {
 notebook header.top {
     border-width: 0px 0px 1px 0px;
     border-radius: 4px 4px 0px 0px;
-    background-image: linear-gradient(to bottom,
-                                      shade(@theme_bg_color, 0.86),
-                                      shade(@theme_bg_color, 1.00));
+    background-color: @theme_bg_color;
     box-shadow: inset  0px -1px alpha(shade(@bg_color, 0.82), 0.90);
 }
 
@@ -1472,27 +1470,21 @@ dialog.background.solid-csd > box.vertical.dialog-vbox > notebook > header.top {
 notebook header.bottom {
     border-width: 1px 0px 0px 0px;
     border-radius: 0px 0px 4px 4px;
-    background-image: linear-gradient(to top,
-                                      shade(@theme_bg_color, 0.86),
-                                      shade(@theme_bg_color, 1.00));
+    background-color: @theme_bg_color;
     box-shadow: inset  0px  1px alpha(shade(@bg_color, 0.82), 0.90);
 }
 
 notebook header.left {
     border-width: 0px 1px 0px 0px;
     border-radius: 4px 0px 0px 4px;
-    background-image: linear-gradient(to right,
-                                      shade(@theme_bg_color, 0.86),
-                                      shade(@theme_bg_color, 1.00));
+    background-color: @theme_bg_color;
     box-shadow: inset -1px  0px alpha(shade(@bg_color, 0.82), 0.90);
 }
 
 notebook header.right {
     border-width: 0px 0px 0px 1px;
     border-radius: 0px 4px 4px 0px;
-    background-image: linear-gradient(to left,
-                                      shade(@theme_bg_color, 0.86),
-                                      shade(@theme_bg_color, 1.00));
+    background-color: @theme_bg_color;
     box-shadow: inset  1px  0px alpha(shade(@bg_color, 0.82), 0.90);
 }
 
