@@ -1567,6 +1567,10 @@ paned.horizontal > notebook > header label {
     padding: 4px;
 }
 
+paned.horizontal > notebook > header tab {
+    border-width: 1px 1px 1px 1px;
+}
+
 paned.horizontal > notebook > header button.flat.small-button {
     padding: 1px;
 }
