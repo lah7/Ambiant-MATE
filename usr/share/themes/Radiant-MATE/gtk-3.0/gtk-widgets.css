@@ -1563,7 +1563,7 @@ paned.horizontal > paned.vertical > notebook > header.top tab:checked:hover {
                                       shade(@notebook_bg_color, 1.18),
                                       shade(@notebook_bg_color, 1.00));
     border-radius: 4px 4px 0 0;
-    border-width: 0px 1px 0 1px;
+    border-width: 1px 1px 0 1px;
     border-style: solid;
     box-shadow: none;
 }
