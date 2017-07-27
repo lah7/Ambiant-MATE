@@ -1614,7 +1614,7 @@ printdialog notebook > header.top tab,
 notebook.frame > header.top tab,
 notebook.frame > header.bottom tab {
     margin: 0px 0px 0px -1px;
-    border-width: 0px 1px 1px 1px;
+    border-width: 1px 1px 1px 1px;
     border-style: solid;
 }
 
@@ -1649,7 +1649,7 @@ notebook.frame > header.top tab:checked:hover {
                                       shade(@notebook_bg_color, 1.18),
                                       shade(@notebook_bg_color, 1.00));
     border-radius: 4px 4px 0px 0px;
-    border-width: 0px 1px 0px 1px;
+    border-width: 1px 1px 0px 1px;
     border-style: solid;
 }
 
@@ -1664,7 +1664,7 @@ notebook.frame > header.bottom tab:checked:hover {
                                       shade(@notebook_bg_color, 1.00));
     border-radius: 0px 0px 4px 4px;
     border-style: solid;
-    border-width: 0px 1px 0px 1px;
+    border-width: 0px 1px 1px 1px;
 }
 
 /* vertical tabs */
@@ -1672,7 +1672,7 @@ notebook.frame > header.left tab,
 notebook.frame > header.right tab {
     padding: 6px;
     margin: -1px 0px 0px 0px;
-    border-width: 1px 0px 1px 0px;
+    border-width: 1px 1px 1px 1px;
     border-style: solid;
 }
 
@@ -1687,7 +1687,7 @@ notebook.frame > header.left tab:checked:hover {
                                       shade(@notebook_bg_color, 1.18),
                                       shade(@notebook_bg_color, 1.00));
     border-style: solid;
-    border-width: 1px 0px 1px 0px;
+    border-width: 1px 0px 1px 1px;
     border-radius: 4px 0px 0px 4px;
 }
 
@@ -1701,7 +1701,7 @@ notebook.frame > header.right tab:checked:hover {
                                       shade(@notebook_bg_color, 1.18),
                                       shade(@notebook_bg_color, 1.00));
     border-style: solid;
-    border-width: 1px 0px 1px 0px;
+    border-width: 1px 1px 1px 0px;
     border-radius: 0px 4px 4px 0px;
 }
 
