@@ -267,6 +267,10 @@ PanelApplet.wnck-applet .wnck-pager {
     border-image: none;
 }
 
+na-tray-applet {
+    -NaTrayApplet-icon-padding: 1px; /*any more and outlines get cut off*/
+}
+
 /* Classic icon style */
 .mate-panel-menu-bar {
     -PanelMenuBar-icon-visible: true;

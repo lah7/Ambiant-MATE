@@ -146,6 +146,10 @@ PanelWidget > PanelSeparator {
     color: shade (@theme_bg_color, 0.85);
 }
 
+na-tray-applet {
+    -NaTrayApplet-icon-padding: 1px; /*any more and outlines get cut off*/
+}
+
 /* volume applet */
 .mate-panel-applet-slider,
 .mate-panel-applet-slider.background {
