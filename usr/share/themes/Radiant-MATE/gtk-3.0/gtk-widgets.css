@@ -3164,6 +3164,11 @@ headerbar button.titlebutton.toggle.popup:checked {
     padding: 5px;
 }
 
+/* workaround for metacity-theme-viewer */
+headerbar.titlebar {
+    min-height: 30px;
+}
+
 headerbar.titlebar entry,
 headerbar.titlebar button:not(.titlebutton) {
     padding: 5px 6px;
