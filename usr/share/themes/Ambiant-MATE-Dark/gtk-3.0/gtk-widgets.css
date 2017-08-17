@@ -148,7 +148,7 @@ button.flat {
     background-image: none;
     border-image-source: none;
 }
-
+/*
 button:backdrop {
     background-image: none;
     background-color: @bg_color;
@@ -162,7 +162,7 @@ button:backdrop {
 button.flat:backdrop {
     border-image-source: none;
 }
-
+*/
 button:focus {
     border-image-source: -gtk-scaled(url("assets/button-toolbar-focused.png"),
                                      url("assets/button-toolbar-focused@2.png"));
@@ -175,13 +175,13 @@ button:hover {
     border-image-source: -gtk-scaled(url("assets/backdrop-button-toolbar.png"),
                                      url("assets/backdrop-button-toolbar@2.png"));
 }
-
+/*
 button:hover:backdrop {
     background-color: shade (@bg_color, 1.04);
     border-image-source: -gtk-scaled(url("assets/backdrop-button-toolbar-active.png"),
                                      url("assets/backdrop-button-toolbar-active@2.png"));
 }
-
+*/
 button:hover:focus {
     border-image-source: -gtk-scaled(url("assets/button-toolbar-focused.png"),
                                      url("assets/button-toolbar-focused@2.png"));
@@ -195,7 +195,7 @@ button:disabled {
     border-image-source: -gtk-scaled(url("assets/button-toolbar.png"),
                                      url("assets/button-toolbar@2.png"));
 }
-
+/*
 button:disabled:backdrop {
     background-color: #4E4C46;
 
@@ -203,9 +203,8 @@ button:disabled:backdrop {
     border-image-source: -gtk-scaled(url("assets/backdrop-button-toolbar.png"),
                                      url("assets/backdrop-button-toolbar@2.png"));
 }
-
-button.flat:disabled,
-button.flat:disabled:backdrop {
+*/
+button.flat:disabled {
     background-color: transparent;
     border-image-source: none;
 }
@@ -239,7 +238,7 @@ button:active:disabled {
     border-image-source: -gtk-scaled(url("assets/button-active-disabled.png"),
                                      url("assets/button-active-disabled@2.png"));
 }
-
+/*
 button:checked:backdrop {
     border-image-source: -gtk-scaled(url("assets/backdrop-button-toolbar-active.png"),
                                      url("assets/backdrop-button-toolbar-active@2.png"));
@@ -257,7 +256,7 @@ button:checked:disabled:backdrop {
     border-image-source: -gtk-scaled(url("assets/backdrop-button-toolbar.png"),
                                      url("assets/backdrop-button-toolbar@2.png"));
 }
-
+*/
 /*
 .button.default {
     border-image-source: -gtk-scaled(url("assets/button-default.png"),
@@ -531,7 +530,7 @@ row.activatable:selected {
     border-style: solid;
     border-width: 0;
 }
-
+/*
 row:selected:backdrop,
 row.activatable:backdrop {
     background-image: -gtk-gradient (linear, left bottom, left top,
@@ -539,7 +538,7 @@ row.activatable:backdrop {
                                      to (shade (@backdrop_selected_bg_color, 0.94)));
     border-top-color: shade (@backdrop_selected_bg_color, 0.9);
 }
-
+*/
 /*******************
  * check and radio *
  *******************/
