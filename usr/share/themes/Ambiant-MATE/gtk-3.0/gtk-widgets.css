@@ -2406,7 +2406,6 @@ scrollbar.horizontal {
 
 scrollbar trough {
     border-style: none;
-    border-color: shade (@theme_bg_color, 0.94);
     border-radius: 0;
     border-image: none;
 }
