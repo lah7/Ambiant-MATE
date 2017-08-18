@@ -474,40 +474,26 @@ headerbar .linked button:only-child {
     box-shadow: none;
 }
 
-messagedialog .linked.dialog-action-area button {
-    border-image: none;
-    border-width: 1px 0px 1px 0px;
+messagedialog .linked.dialog-action-area > button,
+messagedialog .linked.dialog-action-area > button:first-child,
+messagedialog .linked.dialog-action-area > button:last-child,
+messagedialog .linked.dialog-action-area > button:only-child {
     border-color: shade (@bg_color, 0.82);
     border-style: solid;
-    border-radius: 0px;
-    padding: 5px 0px;
-    box-shadow: inset 1px 0 @inset_light_color, inset -1px 0 @inset_dark_color;
-}
-
-messagedialog .linked.dialog-action-area button:first-child {
-    border-image: none;
-    border-width: 1px 0px 1px 1px;
-    border-radius: 7px 0px 0px 7px;
-    box-shadow: inset -1px 0 @inset_dark_color;
-}
-
-messagedialog .linked.dialog-action-area button:last-child {
-    border-image: none;
-    border-width: 1px 1px 1px 0px;
-    border-radius: 0px 7px 7px 0px;
-    box-shadow: inset 1px 0 @inset_light_color;
-}
-
-messagedialog .linked.dialog-action-area button:only-child {
-    border-image: none;
-    border-radius: 7px;
+    border-radius: 8px;
     border-width: 1px;
+    margin: 8px 4px;
+    box-shadow: none;
+    /* all button border images have the same size and are sliced in the same way */
+    border-image-width: 10px 12px 10px 12px;
+    border-image-slice: 10 12 10 12;
+    border-image-repeat: stretch;
 }
 
-messagedialog .linked.dialog-action-area button.default,
-messagedialog .linked.dialog-action-area button:hover,
-messagedialog .linked.dialog-action-area button:focus,
-messagedialog .linked.dialog-action-area button.default:focus {
+messagedialog .linked.dialog-action-area > button.default,
+messagedialog .linked.dialog-action-area > button:hover,
+messagedialog .linked.dialog-action-area > button:focus,
+messagedialog .linked.dialog-action-area > button.default:focus {
     border-color: @focus_color_dialog;
     border-style: solid;
 }
