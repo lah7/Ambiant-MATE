@@ -3,39 +3,26 @@
  ********/
 
 /* caja sidebar */
-.caja-navigation-window .caja-side-pane FMTreeView.frame .view,
-.caja-navigation-window .caja-side-pane FMTreeView.frame .view .row,
-.caja-navigation-window .caja-side-pane CajaNotesViewer.frame GtkTextView,
-.caja-navigation-window .caja-side-pane CajaPlacesSidebar .view,
-.caja-navigation-window .caja-side-pane CajaHistorySidebar .view,
-.caja-navigation-window .caja-side-pane CajaInformationPanel,
-.caja-navigation-window .caja-side-pane CajaEmblemSidebar {
+/* places, treeview, history, information, emblems and notes */
+.caja-side-pane > notebook treeview.view,
+.caja-side-pane > notebook textview.view text,
+.caja-side-pane > notebook viewport.frame,
+.caja-side-pane > notebook widget .vertical {
     background-color: shade (@bg_color, 0.98);
+    color: @theme_fg_color;
 }
 
-.caja-navigation-window .caja-side-pane CajaInformationPanel > GtkBox,
-.caja-navigation-window .caja-side-pane CajaEmblemSidebar > GtkScrolledWindow {
+.caja-side-pane > notebook treeview.view:selected,
+.caja-side-pane > notebook treeview.view:selected:hover {
+    background-color: shade (@theme_selected_bg_color, 1.00);
+    color: shade (@theme_selected_fg_color, 1.00);
+}
+
+.caja-side-pane > notebook widget.view > box.vertical,
+.caja-side-pane > notebook box.vertical > scrolledwindow {
     border-color: shade (@bg_color, 0.82);
     border-style: solid;
     border-width: 1px;
-}
-
-/* notebook */
-.caja-notebook .header {
-    border-width: 1px 1px 0px 1px;
-    border-radius: 3px 3px 0px 0px;
-}
-
-.caja-notebook tab.top {
-    padding: 6px 4px 6px 6px;
-    border-width: 1px 1px 0px 1px;
-}
-
-/* avoid double borders with caja views, as this was set for ff locationbar */
-/* event boxes, ie. trash-, search-boxes */
-.caja-notebook box.vertical > frame > border {
-    border-width: 1px 1px 0px 1px;
-    border-radius: 3px 3px 0px 0px;
 }
 
 /* inactive-pane caja */
