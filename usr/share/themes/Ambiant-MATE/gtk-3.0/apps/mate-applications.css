@@ -186,6 +186,7 @@ PanelApplet.wnck-applet .wnck-pager {
 /* set normal menubar menuitem */
 .mate-panel-menu-bar menubar > menuitem {
     background-image: none;
+    box-shadow: none;
 }
 
 /* set selected menubar menuitem */
@@ -271,9 +272,33 @@ na-tray-applet {
     -NaTrayApplet-icon-padding: 1px; /*any more and outlines get cut off*/
 }
 
-/* Classic icon style */
-.mate-panel-menu-bar {
-    -PanelMenuBar-icon-visible: true;
+/* clock-applet */
+.mate-panel-menu-bar #PanelApplet #clock-applet-button.flat.toggle,
+.mate-panel-menu-bar #PanelApplet #clock-applet-button.flat.toggle:hover {
+    background-color: @dark_bg_color;
+    background-image: none;
+    border-width: 0;
+    color: @dark_fg_color;
+    text-shadow: 0 -1px shade (@dark_bg_color, 0.6);
+    padding: 3px 5px 3px 5px;
+    border: 1px solid transparent;
+}
+
+.mate-panel-menu-bar #PanelApplet #clock-applet-button.flat.toggle:checked,
+.mate-panel-menu-bar #PanelApplet #clock-applet-button.flat.toggle:checked:hover {
+    background-color: transparent;
+    background-clip: border-box;
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@dark_bg_color, 1.38)),
+                                     to (shade (@dark_bg_color, 1.11)));
+    box-shadow: none;
+    color: shade (@dark_fg_color, 1.1);
+    text-shadow: 0 -1px shade (@dark_bg_color, 0.7);
+}
+
+/* clock window */
+#MatePanelPopupWindow {
+	border-radius: 3px;
 }
 
 /* volume applet */
@@ -314,15 +339,15 @@ na-tray-applet {
     margin: 0px;
 }
 
-/* clock window */
-#MatePanelPopupWindow {
-	border-radius: 3px;
-}
-
 /* mate-indicator-applet */
 /* needed for a transparent panel */
 #fast-user-switch-applet > #fast-user-switch-menubar {
     background-color: transparent;
+}
+
+/* Classic icon style */
+.mate-panel-menu-bar {
+    -PanelMenuBar-icon-visible: true;
 }
 
 /*****************
