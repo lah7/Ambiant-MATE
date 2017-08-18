@@ -181,6 +181,11 @@ na-tray-applet {
 	border-radius: 3px;
 }
 
+/* Weird, this sets the border color of the clockmap */
+#MatePanelPopupWindow > frame > box > box > box > widget {
+    color: @borders;
+}
+
 /* volume applet */
 .mate-panel-applet-slider,
 .mate-panel-applet-slider.background {
