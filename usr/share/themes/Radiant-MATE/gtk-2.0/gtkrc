@@ -64,7 +64,7 @@ style "default" {
 
 	GtkProgressBar::min-horizontal-bar-height = 20
 	GtkProgressBar::min-vertical-bar-width = 20
-	
+
 	GtkImage::x-ayatana-indicator-dynamic = 1
 	GtkMenuBar::window-dragging = 1
 
@@ -234,7 +234,7 @@ style "notebook_bg" {
 style "notebook" {
 	xthickness = 3
 	ythickness = 3
-	
+
 	engine "murrine" {
 		roundness = 3
 		contrast = 0.8
@@ -253,7 +253,7 @@ style "statusbar" {
 style "comboboxentry" = "notebook_button" {
 	xthickness = 3
 	ythickness = 3
-	
+
 	engine "murrine" {
 		textstyle = 1
 		glowstyle = 5
@@ -767,5 +767,4 @@ widget_class "*GimpToolbox*"		style "performance-fix"
 widget_class "*GimpMenuDock*"		style "performance-fix"
 
 # Includes
-include "apps/chromium.rc"
 include "apps/panel.rc"
