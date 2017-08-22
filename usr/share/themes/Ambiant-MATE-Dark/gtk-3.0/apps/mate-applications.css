@@ -25,6 +25,11 @@
     border-width: 1px;
 }
 
+/* sidebars treeview rows */
+.caja-side-pane > notebook treeview.view {
+    padding: 2px 0px;
+}
+
 /* inactive-pane caja */
 .caja-notebook .view:disabled {
     background-color: @inactive-pane_bg_color;
@@ -39,6 +44,11 @@
     background-image: linear-gradient(to bottom,
                                       shade (@theme_selected_bg_color, 1.00),
                                       shade (@theme_selected_bg_color, 1.00));
+}
+
+/* set height of rows in listview */
+.caja-notebook treeview.view {
+    padding: 1px;
 }
 
 .caja-canvas-item {
@@ -193,13 +203,13 @@ PanelApplet.wnck-applet .wnck-pager {
 
 /* set normal menubar menu menuitem */
 .mate-panel-menu-bar menubar > menuitem > .popup.csd > menu > menuitem {
-    padding: 3px 5px 3px 5px;
+    padding: 4px 5px 4px 5px;
     border-width: 0px;
 }
 
 /* set Mate menu menuitem */
 .mate-panel-menu-bar menu menuitem {
-    padding: 3px 5px 3px 5px;
+    padding: 4px 5px 4px 5px;
     border-width: 0px;
 }
 

@@ -25,6 +25,11 @@
     border-width: 1px;
 }
 
+/* sidebars treeview rows */
+.caja-side-pane > notebook treeview.view {
+    padding: 2px 0px;
+}
+
 /* background-image is needed for inactiv-pane (list-view). bg color don't work here */
 .caja-notebook treeview.view:selected,
 .caja-notebook treeview.view:selected:hover {
@@ -33,6 +38,11 @@
     background-image: linear-gradient(to bottom,
                                       shade (@theme_selected_bg_color, 1.00),
                                       shade (@theme_selected_bg_color, 1.00));
+}
+
+/* set height of rows in listview */
+.caja-notebook treeview.view {
+    padding: 1px;
 }
 
 .caja-canvas-item {

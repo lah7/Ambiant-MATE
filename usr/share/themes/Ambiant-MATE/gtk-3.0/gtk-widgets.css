@@ -558,7 +558,7 @@ checkbutton:disabled {
 checkbutton.text-button,
 radiobutton.text-button {
 	padding: 1px 2px 4px;
-	outline-offset: 0; 
+	outline-offset: 0;
 }
 
 /*****************
@@ -1135,7 +1135,7 @@ menubar menuitem:hover,
 
 menubar > menuitem,
 .menubar > menuitem {
-    padding: 3px 5px 3px 5px;
+    padding: 4px 5px 4px 5px;
     border: 1px solid transparent;
 }
 
@@ -1143,21 +1143,18 @@ menubar > menuitem,
  * menuitem *
  ************/
 
-menuitem,
 menu > menuitem {
-/*    -GtkMenuItem-horizontal-padding: 0; deprecated */
     background: transparent;
     border-radius: 0;
-    padding: 3px 5px 3px 5px;
+    padding: 4px 5px 4px 5px;
     text-shadow: none;
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) menu menuitem {
-/*    -GtkMenuItem-horizontal-padding: 0; deprecated */
     background-image: none;
     background-color: shade (@dark_bg_color, 1.08);
     border-radius: 0;
-    padding: 3px 5px 3px 5px;
+    padding: 4px 5px 4px 5px;
     text-shadow: none;
     color: @dark_fg_color;
 }
