@@ -711,6 +711,14 @@ entry progressbar {
     color: @selected_fg_color;
 }
 
+entry image.left {
+	padding-right: 6px;
+}
+
+entry image.right {
+	padding-left: 6px;
+}
+
 /*********************
  * App Notifications *
  *********************/
