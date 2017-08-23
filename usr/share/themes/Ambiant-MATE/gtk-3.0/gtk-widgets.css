@@ -1329,6 +1329,11 @@ menuitem > arrow {
     color: @dark_fg_color;
 }
 
+menuitem:disabled > arrow {
+	color: mix (@dark_fg_color, shade (@dark_bg_color, 1.08), 0.6);
+   -gtk-icon-shadow: none;
+}
+
 menu > menuitem > arrow:dir(ltr),
 .menu > menuitem > arrow:dir(ltr) {
 	-gtk-icon-source: -gtk-icontheme("pan-end-symbolic");
