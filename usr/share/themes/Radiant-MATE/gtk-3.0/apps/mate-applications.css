@@ -105,6 +105,14 @@
     color: @theme_fg_color;
 }
 
+/* the grid left from wnckpager and wncktasklist */
+MatePanelAppletFrameDBus > MatePanelAppletFrameDBus {
+    background-image: -gtk-scaled(url("assets/panel-grid.svg"));
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: left;
+}
+
 /* outlines */
 window.background, /* selector where outlines are writen on GtkTrayIcon */
 .mate-panel-menu-bar menubar,
