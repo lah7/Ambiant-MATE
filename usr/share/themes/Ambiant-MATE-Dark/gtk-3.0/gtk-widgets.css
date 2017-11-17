@@ -1725,15 +1725,13 @@ notebook header.right tab:checked {
 /* close button styling */
 notebook > header > tabs > tab > box > button.flat,
 notebook > header > tabs > tab > box > button.flat.small-button {
-    border-image: none;
-    background-image: none;
-    background-color: transparent;
-    border-radius: 3px;
-    border-style: none;
-    border-color: transparent;
-    border-width: 0px;
-    -gtk-icon-shadow: none;
     padding: 0px;
+    border-radius: 3px;
+}
+
+notebook > header > tabs > tab > box > button.flat > image,
+notebook > header > tabs > tab > box > button.flat.small-button > image {
+    padding: 1px;
 }
 
 notebook > header > tabs > tab > box > button.flat:hover,
