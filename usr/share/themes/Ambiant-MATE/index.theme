@@ -8,5 +8,5 @@ Encoding=UTF-8
 GtkTheme=Ambiant-MATE
 MetacityTheme=Ambiant-MATE
 IconTheme=Ambiant-MATE
-CursorTheme=DMZ-White
-ButtonLayout=close,minimize,maximize:
+CursorTheme=breeze_cursors
+ButtonLayout=menu:minimize,maximize,close
