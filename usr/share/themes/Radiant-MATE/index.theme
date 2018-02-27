@@ -8,5 +8,5 @@ Encoding=UTF-8
 GtkTheme=Radiant-MATE
 MetacityTheme=Radiant-MATE
 IconTheme=Radiant-MATE
-CursorTheme=Breeze_Snow
+CursorTheme=whiteglass
 ButtonLayout=menu:minimize,maximize,close
