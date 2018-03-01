@@ -8,5 +8,5 @@ Encoding=UTF-8
 GtkTheme=Ambiant-MATE
 MetacityTheme=Ambiant-MATE
 IconTheme=Ambiant-MATE
-CursorTheme=whiteglass
+CursorTheme=DMZ-Black
 ButtonLayout=menu:minimize,maximize,close
