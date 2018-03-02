@@ -278,7 +278,7 @@ na-tray-applet {
 /* clock-applet */
 .mate-panel-menu-bar #PanelApplet #clock-applet-button.flat.toggle,
 .mate-panel-menu-bar #PanelApplet #clock-applet-button.flat.toggle:hover {
-    background-color: @dark_bg_color;
+    background-color: transparent;
     background-image: none;
     border-width: 0;
     color: @dark_fg_color;
