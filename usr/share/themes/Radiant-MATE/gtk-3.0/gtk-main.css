@@ -67,6 +67,11 @@
 
 @define-color shadow_color alpha(black, 0.5);
 
+/* app-notification */
+@define-color button_gradient_color_a #69696c;
+@define-color button_gradient_color_b #3c3b37;
+@define-color button_border #2a2a2a;
+
 /*************
  * Mate-Menu *
  *************/
