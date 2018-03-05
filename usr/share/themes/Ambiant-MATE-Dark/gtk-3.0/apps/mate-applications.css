@@ -68,19 +68,20 @@
 }
 
 /* EelEditableLabel (icon labels) */
-.caja-desktop.view entry,
-.caja-desktop.view entry:focus,
-.caja-desktop.view entry:backdrop,
-.caja-navigation-window .view entry,
-.caja-navigation-window .view entry:active,
-.caja-navigation-window .view entry:focus,
-.caja-navigation-window .view entry:backdrop {
+.caja-desktop.view > .entry,
+.caja-desktop.view > .entry:focus,
+.caja-desktop.view > .entry:backdrop,
+.caja-navigation-window .view > .entry,
+.caja-navigation-window .view > .entry:active,
+.caja-navigation-window .view > .entry:focus,
+.caja-navigation-window .view > .entry:backdrop {
     border-image: none;
     border-style: solid;
     border-width: 1px;
     border-color: #000000;
     border-radius: 3px;
-    color: #000000;
+    color: @light_entry_fg_color;
+    caret-color: shade (@light_caret_cursor_color, 1.00);
     text-shadow: none;
     background-image: -gtk-gradient(linear,
                                     left top, left bottom,
@@ -90,15 +91,16 @@
                                     to         (shade(rgba(255,255,255,1), 1.00)));
 }
 
-.caja-desktop.view entry:selected,
-.caja-desktop.view entry:focus:selected,
-.caja-desktop.view entry:backdrop:selected
-.caja-navigation-window .view entry:active,
-.caja-navigation-window .view entry:selected,
-.caja-navigation-window .view entry:focus:selected,
-.caja-navigation-window .view entry:backdrop:selected {
+.caja-desktop.view > .entry:selected,
+.caja-desktop.view > .entry:focus:selected,
+.caja-desktop.view > .entry:backdrop:selected
+.caja-navigation-window .view > .entry:active,
+.caja-navigation-window .view > .entry:selected,
+.caja-navigation-window .view > .entry:focus:selected,
+.caja-navigation-window .view > .entry:backdrop:selected {
     background-color: @theme_selected_bg_color;
     color: @theme_selected_fg_color;
+    caret-color: shade (@light_caret_cursor_color, 1.00);
     text-shadow: none;
 }
 

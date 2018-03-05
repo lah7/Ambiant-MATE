@@ -68,6 +68,9 @@
 
 @define-color shadow_color alpha(black, 0.5);
 
+@define-color light_entry_fg_color #000000;
+@define-color light_caret_cursor_color @dark_entry_fg_color;
+
 /************
  * notebook *
  ************/
