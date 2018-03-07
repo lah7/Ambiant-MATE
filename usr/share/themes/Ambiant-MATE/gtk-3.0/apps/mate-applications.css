@@ -352,6 +352,18 @@ na-tray-applet {
     -PanelMenuBar-icon-visible: true;
 }
 
+/* system-monitor-applet, kill light frame border */
+.multiload-applet > box.horizontal > box.vertical > frame > border {
+    border-color: transparent;
+}
+
+.multiload-applet > box.horizontal > box.vertical > frame {
+    box-shadow: inset  0px  1px shade (@dark_bg_color, 1.2),
+                inset  1px  0px shade (@dark_bg_color, 1.2),
+                inset -1px  0px shade (@dark_bg_color, 1.2),
+                inset  0px -1px shade (@dark_bg_color, 1.2);
+}
+
 /*****************
  * Mate-terminal *
  *****************/
