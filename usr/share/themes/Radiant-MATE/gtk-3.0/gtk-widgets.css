@@ -1271,25 +1271,17 @@ menu menuitem radio:hover,
 }
 
 treemenu menu menuitem:disabled,
-treemenu menu menuitem *:disabled,
 toolbar headerbar menu menuitem:disabled,
-toolbar headerbar menu menuitem *:disabled,
 toolbutton menu menuitem:disabled,
-toolbutton menu menuitem *:disabled,
 .primary-toolbar:not(.libreoffice-toolbar) button menu menuitem:disabled,
-.primary-toolbar:not(.libreoffice-toolbar) button menu menuitem *:disabled,
 headerbar button menu menuitem:disabled,
-headerbar button menu menuitem *:disabled,
-menuitem:disabled,
-menuitem *:disabled {
+menuitem:disabled {
     color: mix (@dark_fg_color, @dark_bg_color, 0.5);
     text-shadow: 0 -1px shade (@dark_bg_color, 0.6);
 }
 
 toolbar menu menuitem:disabled,
-toolbar menu menuitem *:disabled,
-combobox menu menuitem:disabled,
-combobox menu menuitem *:disabled {
+combobox menu menuitem:disabled {
     color: mix (@fg_color, @bg_color, 0.5);
     text-shadow: 0 1px shade (@bg_color, 1.14);
 }
@@ -1355,7 +1347,7 @@ menu > menuitem:hover > label > accelerator,
 menu > menuitem:disabled > label > accelerator,
 .menu > menuitem:disabled > label > accelerator {
     color: alpha (mix (@dark_fg_color, @dark_bg_color, 0.5), 0.5);
-    text-shadow: 0 -1px shade (@dark_bg_color, 0.7);
+    text-shadow: none;
 }
 
 menuitem > box > image + label {
