@@ -967,6 +967,10 @@ iconview.view.cell:selected:focus {
     border-style: dashed;
 }
 
+iconview .cell:hover {
+    border-radius: 5px;
+}
+
 .view.rubberband,
 .rubberband,
 flowbox rubberband,
