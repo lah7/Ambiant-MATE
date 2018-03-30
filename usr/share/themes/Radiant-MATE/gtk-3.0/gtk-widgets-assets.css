@@ -460,8 +460,7 @@ toolbar menubar menu menuitem check:hover,
 headerbar menu menuitem check:hover,
 menu menuitem check:hover,
 menu menuitem .check:hover {
-    -gtk-icon-source: -gtk-scaled(url("assets/check-menuitem-unselected.png"),
-                                  url("assets/check-menuitem-unselected@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("assets/check-unselected.svg"));
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) menu menuitem radio,
@@ -474,8 +473,7 @@ toolbar menubar menu menuitem radio:hover,
 headerbar menu menuitem radio:hover,
 menu menuitem radio:hover,
 menu menuitem .radio:hover {
-    -gtk-icon-source: -gtk-scaled(url("assets/check-menuitem-unselected.png"),
-                                  url("assets/check-menuitem-unselected@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-unselected.svg"));
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) menu menuitem check:checked,
@@ -486,8 +484,8 @@ menu menuitem check:checked,
 menu menuitem check:checked:hover,
 menu menuitem .check:checked,
 menu menuitem .check:checked:hover {
-    -gtk-icon-source: -gtk-scaled(url("assets/check-menuitem.png"),
-                                  url("assets/check-menuitem@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("assets/check-menuitem-dark.png"),
+                                  url("assets/check-menuitem-dark@2.png"));
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) menu menuitem check:checked:disabled,
@@ -498,8 +496,8 @@ menu menuitem check:checked:disabled,
 menu menuitem check:checked:hover:disabled,
 menu menuitem .check:checked:disabled,
 menu menuitem .check:checked:hover:disabled {
-    -gtk-icon-source: -gtk-scaled(url("assets/check-menuitem-insensitive.png"),
-                                  url("assets/check-menuitem-insensitive@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("assets/check-menuitem-insensitive-dark.png"),
+                                  url("assets/check-menuitem-insensitive-dark@2.png"));
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) menu menuitem radio:checked,
@@ -510,8 +508,8 @@ menu menuitem radio:checked,
 menu menuitem radio:checked:hover,
 menu menuitem .radio:checked,
 menu menuitem .radio:checked:hover {
-    -gtk-icon-source: -gtk-scaled(url("assets/radio-menuitem.png"),
-                                  url("assets/radio-menuitem@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-menuitem-dark.png"),
+                                  url("assets/radio-menuitem-dark@2.png"));
 }
 
 .primary-toolbar:not(.libreoffice-toolbar) menu menuitem radio:checked:disabled,
@@ -522,9 +520,50 @@ menu menuitem radio:checked:disabled,
 menu menuitem radio:checked:hover:disabled,
 menu menuitem .radio:checked:disabled,
 menu menuitem .radio:checked:hover:disabled {
-    -gtk-icon-source: -gtk-scaled(url("assets/radio-menuitem-insensitive.png"),
-                                  url("assets/radio-menuitem-insensitive@2.png"));
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-menuitem-insensitive-dark.png"),
+                                  url("assets/radio-menuitem-insensitive-dark@2.png"));
 }
+
+menu menuitem check:disabled,
+menu menuitem .check:disabled {
+    -gtk-icon-source: -gtk-scaled(url("assets/check-unselected-disabled.svg"));
+}
+
+menu menuitem radio:disabled,
+menu menuitem .radio:disabled {
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-unselected-disabled.svg"));
+}
+
+menu menuitem check:indeterminate,
+menu menuitem .check:indeterminate {
+    -gtk-icon-source: -gtk-scaled(url("assets/check-mixed.svg"));
+}
+
+menu menuitem check:indeterminate:hover,
+menu menuitem .check:indeterminate:hover {
+    -gtk-icon-source: -gtk-scaled(url("assets/check-mixed-hover.svg"));
+}
+
+menu menuitem check:indeterminate:disabled,
+menu menuitem .check:indeterminate:disabled {
+    -gtk-icon-source: -gtk-scaled(url("assets/check-mixed-disabled.svg"));
+}
+
+menu menuitem radio:indeterminate,
+menu menuitem .radio:indeterminate {
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed.svg"));
+}
+
+menu menuitem radio:indeterminate:hover,
+menu menuitem .radio:indeterminate:hover {
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-hover.svg"));
+}
+
+menu menuitem radio:indeterminate:disabled,
+menu menuitem .radio:indeterminate:disabled {
+    -gtk-icon-source: -gtk-scaled(url("assets/radio-mixed-disabled.svg"));
+}
+
 
 toolbar menu menuitem check {
     -gtk-icon-source: -gtk-scaled(url("assets/check-menuitem-unselected.png"),
