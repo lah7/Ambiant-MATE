@@ -491,6 +491,27 @@ MsdOsdWindow.background.osd.msd-osd-window-solid progressbar progress {
     text-shadow: 0 -1px shade (@selected_bg_color, 0.7);
 }
 
+/* classic session button */
+.background.brisk-menu button.flat.session-button {
+    padding: 5px 6px;
+    border-radius: 8px;
+    min-width: 24px;
+}
+
+.background.brisk-menu button.flat.session-button:hover {
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@button_bg_color, 1.12)),
+                                     color-stop (0.5, @button_bg_color),
+                                     to (shade (@button_bg_color, 0.96)));
+    border-image-source: -gtk-scaled(url("../assets/button-hover.png"),
+                                     url("../assets/button-hover@2.png"));
+    border-image-width: 10px 12px 10px 12px;
+    border-image-slice: 10 12 10 12;
+    border-image-repeat: stretch;
+    box-shadow: none;
+    color: @dark_fg_color;
+}
+
 .background.brisk-menu separator {
     border-width: 1px;
     border-style: solid;
