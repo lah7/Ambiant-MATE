@@ -9,4 +9,5 @@ GtkTheme=Radiant-MATE
 MetacityTheme=Radiant-MATE
 IconTheme=Radiant-MATE
 CursorTheme=mate
+CursorSize=24
 ButtonLayout=menu:minimize,maximize,close

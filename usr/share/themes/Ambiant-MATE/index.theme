@@ -9,4 +9,5 @@ GtkTheme=Ambiant-MATE
 MetacityTheme=Ambiant-MATE
 IconTheme=Ambiant-MATE
 CursorTheme=mate
+CursorSize=24
 ButtonLayout=menu:minimize,maximize,close
