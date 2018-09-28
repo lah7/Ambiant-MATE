@@ -3128,6 +3128,12 @@ headerbar .subtitle {
     padding: 0;
     box-shadow: none;
     background-image: linear-gradient(to top, #5a5955, #75746d 50%, #8e8d88);
+    margin-left: -2px;
+    margin-right: -2px;
+    min-width: 15px;
+    min-height: 15px;
+    max-width: 15px;
+    max-height: 15px;
 }
 
 .titlebar button.titlebutton.close {
