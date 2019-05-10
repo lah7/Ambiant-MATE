@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg3014"
+   height="24"
+   width="24"
+   version="1.1">
+  <defs
+     id="defs3016" />
+  <metadata
+     id="metadata3019">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <path
+     style="display:inline;overflow:visible;visibility:visible;opacity:0.3;fill:#000000;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
+     id="rect2401-5"
+     d="M 2,7 C 0.892,7 0,7.892 0,9 l 0,8 c 0,1.108 0.892,2 2,2 l 18,0 c 1.108,0 2,-0.892 2,-2 l 0,-1 0.384328,0 C 23.492328,16 24,15.108 24,14 l 0,-2 c 0,-1.108 -0.425582,-2 -1.533582,-2 L 22,10 22,9 C 22,7.892 21.108,7 20,7 Z m 0,1 18,0 c 0.554,0 1,0.446 1,1 l 0,8 c 0,0.554 -0.446,1 -1,1 L 2,18 C 1.446,18 1,17.554 1,17 L 1,9 C 1,8.446 1.446,8 2,8 Z m 20,3 c 0.597415,0 1,0.051 1,1 l 0,2 c 0,0.9914 -0.406448,1 -1,1 z" />
+  <rect
+     style="display:inline;overflow:visible;visibility:visible;opacity:0.3;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.69999993;marker:none;enable-background:accumulate"
+     id="rect3190-4"
+     transform="matrix(0,1,-1,0,0,0)"
+     y="-13"
+     x="9"
+     ry="0.5"
+     rx="0.5"
+     height="11"
+     width="8" />
+  <path
+     style="display:inline;overflow:visible;visibility:visible;fill:#dfdbd2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
+     id="rect2401"
+     d="M 2,6 C 0.892,6 0,6.892 0,8 l 0,8 c 0,1.108 0.892,2 2,2 l 18,0 c 1.108,0 2,-0.892 2,-2 l 0,-1 0.384328,0 C 23.492328,15 24,14.108 24,13 l 0,-2 C 24,9.892 23.574418,9 22.466418,9 L 22,9 22,8 C 22,6.892 21.108,6 20,6 Z m 0,1 18,0 c 0.554,0 1,0.446 1,1 l 0,8 c 0,0.554 -0.446,1 -1,1 L 2,17 C 1.446,17 1,16.554 1,16 L 1,8 C 1,7.446 1.446,7 2,7 Z m 20,3 c 0.597415,0 1,0.051 1,1 l 0,2 c 0,0.9914 -0.406448,1 -1,1 z" />
+  <rect
+     style="display:inline;overflow:visible;visibility:visible;opacity:0.3;fill:none;stroke:#dfdbd2;stroke-width:0.49999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate"
+     id="rect3192"
+     y="7.25"
+     x="1.25"
+     ry="0.75"
+     rx="0.75"
+     height="9.500001"
+     width="19.5" />
+  <rect
+     style="display:inline;overflow:visible;visibility:visible;fill:#dfdbd2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1.69999993;marker:none;enable-background:accumulate"
+     id="rect3190"
+     transform="matrix(0,1,-1,0,0,0)"
+     y="-13"
+     x="8"
+     ry="0.5"
+     rx="0.5"
+     height="11"
+     width="8" />
+</svg>
