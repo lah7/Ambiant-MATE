@@ -1006,6 +1006,40 @@ iconview .cell {
     background-color: transparent;
 }
 
+/*********
+ * label *
+ *********/
+
+/* for firefox and probably other apps */
+label:selected,
+label selection,
+label selection:focus,
+label selection:hover,
+label:backdrop:selected,
+label selection:backdrop {
+    background-color: alpha (@theme_selected_bg_color, 0.9);
+    color: @theme_selected_fg_color;
+}
+
+label:disabled:selected,
+label selection:disabled,
+label:backdrop:disabled:selected,
+label selection:backdrop:disabled {
+	color: shade (@theme_bg_color, 0.6);
+}
+
+/*
+label:backdrop:selected,
+label selection:backdrop {
+	color: @theme_fg_color;
+}
+
+label:backdrop:disabled:selected,
+label selection:backdrop:disabled {
+	color: @insensitive_fg_color;
+}
+*/
+
 /***********
  * infobar *
  ***********/
