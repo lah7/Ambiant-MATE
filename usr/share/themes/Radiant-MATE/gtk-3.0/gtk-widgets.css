@@ -3124,6 +3124,22 @@ headerbar {
     border-radius: 7px 7px 0 0;
 }
 
+.horizontal.titlebar headerbar:first-child,
+paned.horizontal.titlebar headerbar:first-child {
+	border-top-right-radius: 0px;
+}
+
+.horizontal.titlebar headerbar:last-child,
+paned.horizontal.titlebar headerbar:last-child {
+	border-top-left-radius: 0px;
+}
+
+paned.horizontal.titlebar separator,
+.horizontal.titlebar separator.vertical.tilix-title-separator {
+    background-color: shade(@theme_bg_color, 1.0);
+    border-color: shade(@theme_bg_color, 1.0);
+}
+
 .titlebar .title,
 headerbar .title {
     font-weight: bold;
