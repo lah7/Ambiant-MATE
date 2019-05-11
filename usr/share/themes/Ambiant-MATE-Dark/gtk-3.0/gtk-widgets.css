@@ -4234,6 +4234,23 @@ modelbutton.flat *:disabled {
     border-radius: 6px;
 }
 
+.linked button.image-button.model:checked,
+.linked button.image-button.model:hover,
+.linked button.image-button.model:focus:hover,
+.linked button.image-button.model:hover:active,
+.linked button.image-button.model:focus:hover:active,
+.linked button.image-button.model:checked:hover,
+.linked button.image-button.model:checked:hover:active {
+    color: @selected_fg_color;
+    text-shadow: 0 -1px shade (@selected_bg_color, 0.7);
+    background-image: -gtk-gradient (linear, left top, left bottom,
+                                     from (shade (@selected_bg_color, 1.1)),
+                                     to (shade (@selected_bg_color, 0.9)));
+    border-image: -gtk-gradient (linear, left top, left bottom,
+                                 from (shade (@selected_bg_color, 0.7)),
+                                 to (shade (@selected_bg_color, 0.7))) 1;
+}
+
 /* middle button*/
 .linked button.image-button.model,
 .linked button.image-button.model:hover,
@@ -4248,7 +4265,8 @@ modelbutton.flat *:disabled {
 .linked button.image-button.model,
 .linked button.image-button.model:focus {
     box-shadow: inset  0px  1px shade (@theme_bg_color, 0.6),
-                        inset  0px -1px shade (@theme_bg_color, 0.6);
+                inset -1px  0px shade (@theme_bg_color, 0.6),
+                inset  0px -1px shade (@theme_bg_color, 0.6);
 }
 
 .linked button.image-button.model:checked,
@@ -4257,11 +4275,13 @@ modelbutton.flat *:disabled {
 .linked button.image-button.model:checked:hover,
 .linked button.image-button.model:checked:hover:active {
     box-shadow: inset 0 1px shade (@selected_bg_color, 1.16),
-                        inset 0 -1px shade (@selected_bg_color, 0.96);
+                inset -1px 0 shade (@selected_bg_color, 1.02),
+                inset 0 -1px shade (@selected_bg_color, 0.96);
 }
 
 /* left button*/
 .linked button.image-button.model:first-child,
+.linked button.image-button.model:focus:first-child,
 .linked button.image-button.model:hover:first-child,
 .linked button.image-button.model:hover:active:first-child,
 .linked button.image-button.model:checked:hover:first-child,
@@ -4273,13 +4293,25 @@ modelbutton.flat *:disabled {
 .linked button.image-button.model:first-child,
 .linked button.image-button.model:focus:first-child {
     box-shadow: inset  0px  1px shade (@theme_bg_color, 0.6),
-                        inset  1px  0px shade (@theme_bg_color, 0.6),
-                        inset -1px  0px shade (@theme_bg_color, 0.6),
-                        inset  0px -1px shade (@theme_bg_color, 0.6);
+                inset  1px  0px shade (@theme_bg_color, 0.6),
+                inset -1px  0px shade (@theme_bg_color, 0.6),
+                inset  0px -1px shade (@theme_bg_color, 0.6);
+}
+
+.linked button.image-button.model:checked:first-child,
+.linked button.image-button.model:hover:first-child,
+.linked button.image-button.model:hover:active:first-child,
+.linked button.image-button.model:checked:hover:first-child,
+.linked button.image-button.model:checked:hover:active:first-child {
+    box-shadow: inset 1px 0 shade (@selected_bg_color, 1.02),
+                inset -1px 0 shade (@selected_bg_color, 1.02),
+                inset 0 1px shade (@selected_bg_color, 1.16),
+                inset 0 -1px shade (@selected_bg_color, 0.96);
 }
 
 /* right button*/
 .linked button.image-button.model:last-child,
+.linked button.image-button.model:focus:last-child,
 .linked button.image-button.model:hover:last-child,
 .linked button.image-button.model:hover:active:last-child,
 .linked button.image-button.model:checked:hover:last-child,
@@ -4291,41 +4323,18 @@ modelbutton.flat *:disabled {
 .linked button.image-button.model:last-child,
 .linked button.image-button.model:focus:last-child {
     box-shadow: inset  0px  1px shade (@theme_bg_color, 0.6),
-                        inset  1px  0px shade (@theme_bg_color, 0.6),
-                        inset -1px  0px shade (@theme_bg_color, 0.6),
-                        inset  0px -1px shade (@theme_bg_color, 0.6);
+                inset -1px  0px shade (@theme_bg_color, 0.6),
+                inset  0px -1px shade (@theme_bg_color, 0.6);
 }
 
-.linked button.image-button.model:checked:first-child,
-.linked button.image-button.model:hover:first-child,
-.linked button.image-button.model:hover:active:first-child,
-.linked button.image-button.model:checked:hover:first-child,
-.linked button.image-button.model:checked:hover:active:first-child,
 .linked button.image-button.model:checked:last-child,
 .linked button.image-button.model:hover:last-child,
 .linked button.image-button.model:hover:active:last-child,
 .linked button.image-button.model:checked:hover:last-child,
 .linked button.image-button.model:checked:hover:active:last-child {
     box-shadow: inset 1px 0 shade (@selected_bg_color, 1.02),
-                        inset -1px 0 shade (@selected_bg_color, 1.02),
-                        inset 0 1px shade (@selected_bg_color, 1.16),
-                        inset 0 -1px shade (@selected_bg_color, 0.96);
-}
-
-
-.linked button.image-button.model:checked,
-.linked button.image-button.model:hover,
-.linked button.image-button.model:hover:active,
-.linked button.image-button.model:checked:hover,
-.linked button.image-button.model:checked:hover:active {
-    color: @selected_fg_color;
-    text-shadow: 0 -1px shade (@selected_bg_color, 0.7);
-    background-image: -gtk-gradient (linear, left top, left bottom,
-                                     from (shade (@selected_bg_color, 1.1)),
-                                     to (shade (@selected_bg_color, 0.9)));
-    border-image: -gtk-gradient (linear, left top, left bottom,
-                                 from (shade (@selected_bg_color, 0.7)),
-                                 to (shade (@selected_bg_color, 0.7))) 1;
+                inset -1px 0 shade (@selected_bg_color, 1.02),
+                inset 0 -1px shade (@selected_bg_color, 0.96);
 }
 
 /* override theme_bg color */

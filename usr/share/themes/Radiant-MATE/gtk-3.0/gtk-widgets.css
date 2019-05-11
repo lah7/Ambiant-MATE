@@ -4225,6 +4225,59 @@ modelbutton.flat *:disabled {
     background: none;
 }
 
+.linked button.image-button.model,
+.linked button.image-button.model:focus,
+.linked button.image-button.model:first-child,
+.linked button.image-button.model:focus:first-child,
+.linked button.image-button.model:last-child,
+.linked button.image-button.model:focus:last-child {
+    border-color: transparent;
+    box-shadow: none;
+    border-radius: 6px;
+}
+
+/* middle button*/
+.linked button.image-button.model,
+.linked button.image-button.model:focus,
+.linked button.image-button.model:hover,
+.linked button.image-button.model:hover:active,
+.linked button.image-button.model:checked:hover,
+.linked button.image-button.model:checked:hover:active {
+    border-left-width: 0px;
+    border-radius: 0;
+}
+
+/* left button*/
+.linked button.image-button.model:first-child,
+.linked button.image-button.model:focus:first-child,
+.linked button.image-button.model:hover:first-child,
+.linked button.image-button.model:hover:active:first-child,
+.linked button.image-button.model:checked:hover:first-child,
+.linked button.image-button.model:checked:hover:active:first-child {
+    border-radius: 6px 0 0 6px;
+    box-shadow: inset -1px  0px shade (@theme_bg_color, 0.75);
+}
+
+.linked button.image-button.model:focus:first-child,
+.linked button.image-button.model:checked:first-child,
+.linked button.image-button.model:hover:first-child,
+.linked button.image-button.model:hover:active:first-child,
+.linked button.image-button.model:checked:hover:first-child,
+.linked button.image-button.model:checked:hover:active:first-child {
+    box-shadow: inset -1px 0 shade (@selected_bg_color, 1.02);
+}
+
+/* right button*/
+.linked button.image-button.model:last-child,
+.linked button.image-button.model:focus:last-child,
+.linked button.image-button.model:hover:last-child,
+.linked button.image-button.model:hover:active:last-child,
+.linked button.image-button.model:checked:hover:last-child,
+.linked button.image-button.model:checked:hover:active:last-child {
+    border-left-width:  0px;
+    border-radius: 0 6px 6px 0;
+}
+
 /* Floating bars */
 .floating-bar {
     background-color: @info_bg_color;
