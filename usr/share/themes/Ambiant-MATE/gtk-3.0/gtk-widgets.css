@@ -1171,8 +1171,8 @@ menu button,
 }
 
 .context-menu {
-    font-size: medium;
-    font-weight: normal;
+	font: initial;
+	text-shadow: none;
 }
 
 /***********
