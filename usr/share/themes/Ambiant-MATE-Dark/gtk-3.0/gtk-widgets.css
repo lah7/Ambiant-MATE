@@ -3683,6 +3683,13 @@ treeview.view {
 	outline-color: alpha(currentColor, 0.6);
 }
 
+treeview header button {
+	background: linear-gradient(to bottom,
+			shade(@bg_color, 1.04),
+			shade(@bg_color, 1.02));
+	padding: 4px 4px;
+}
+
 /* ie. ubiquity */
 scrolledwindow.frame > treeview.view > check {
     background-color: transparent;
