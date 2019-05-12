@@ -1562,9 +1562,9 @@ notebook header tab {
     border-width: 1px;
     background-color: transparent;
     background-image: linear-gradient(to bottom,
-                      @notebook_tab_gradient_a,
-                      @notebook_tab_gradient_d);
-    padding: 6px;
+                      @notebook_tab_gradient_b,
+                      @notebook_tab_gradient_a);
+    padding: 4px 8px;
 }
 
 notebook header tab label {
@@ -1695,7 +1695,7 @@ dialog.background.ssd > box.vertical.dialog-vbox > notebook > header.top tab,
 dialog.background.solid-csd > box.vertical.dialog-vbox > notebook > header.top tab,
 printdialog notebook > header.top tab,
 notebook.frame > header.top tab {
-    padding: 6px;
+    padding: 4px 8px;
     border-radius: 4px 4px 0px 0px;
 }
 
@@ -1722,7 +1722,7 @@ notebook.frame > header.top tab:checked:hover {
 }
 
 notebook.frame > header.bottom tab {
-    padding: 6px;
+    padding: 4px 8px;
 }
 
 notebook.frame > header.bottom tab:checked,
