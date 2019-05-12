@@ -555,8 +555,8 @@ radio:disabled {
 check,
 radio {
 	padding: 0px 6px 0px 0px;
-	min-height: 12px;
-	min-width: 12px;
+	min-height: 16px;
+	min-width: 16px;
 }
 
 checkbutton:hover,
