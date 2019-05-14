@@ -3321,6 +3321,10 @@ toolbar:backdrop {
     color: @backdrop_fg_color;
 }
 
+toolbar separator {
+    margin: 0 4px;
+}
+
 /*******************
  * primary-toolbar *
  *******************/
