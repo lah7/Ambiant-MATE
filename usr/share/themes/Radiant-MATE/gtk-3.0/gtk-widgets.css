@@ -1406,8 +1406,9 @@ menu separator,
 .menu separator,
 menuitem separator {
     min-height: 1px;
-    background-color: shade(@bg_color, 0.9);
+    background: shade(@bg_color, 0.9);
     border-style: none;
+    margin: 3px 0;
 }
 
 /* fix for broken firefox */
