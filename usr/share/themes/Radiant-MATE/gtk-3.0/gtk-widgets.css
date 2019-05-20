@@ -1589,8 +1589,8 @@ notebook header tab {
     border-width: 1px;
     background-color: transparent;
     background-image: linear-gradient(to bottom,
-                      @notebook_tab_gradient_b,
-                      @notebook_tab_gradient_a);
+                      @notebook_tab_gradient_a,
+                      @notebook_tab_gradient_c);
     padding: 4px 8px;
 }
 
