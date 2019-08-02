@@ -295,13 +295,6 @@ button.destructive-action:hover {
 		shade(#e03d3d, 1.05));
 }
 
-button.destructive-action:hover:active,
-button.destructive-action:checked {
-	background-image: linear-gradient(to bottom,
-		shade(#e03d3d, 0.89),
-		shade(#e03d3d, 0.96));
-}
-
 button.suggested-action {
     background-image: linear-gradient(to bottom, #6699CC, #5C83AA);
     border-color: #314A62;
@@ -316,13 +309,6 @@ button.suggested-action:hover {
 	background-image: linear-gradient(to bottom,
 		shade(#6699CC, 1.10),
 		shade(#6699CC, 1.05));
-}
-
-button.suggested-action:hover:active,
-button.suggested-action:checked {
-	background-image: linear-gradient(to bottom,
-		shade(#6699CC, 0.89),
-		shade(#6699CC, 0.96));
 }
 
 /* eg. mate-appearance-properties */
