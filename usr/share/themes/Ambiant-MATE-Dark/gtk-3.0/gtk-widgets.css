@@ -289,26 +289,14 @@ button.destructive-action {
     text-shadow: 0 1px shade(#9d4242, 1.15);
 }
 
-button.destructive-action:hover {
-	background-image: linear-gradient(to bottom,
-		shade(#e03d3d, 1.10),
-		shade(#e03d3d, 1.05));
-}
-
 button.suggested-action {
     background-image: linear-gradient(to bottom, #6699CC, #5C83AA);
-    border-color: #314A62;
+    border-color: #055200;
     border-image: none;
     color: white;
-    -gtk-icon-shadow: 0 1px shade(#4D7EAF, 1.15);
+    -gtk-icon-shadow: 0 1px shade(#9d4242, 1.15);
     outline-color: rgba(255, 255, 255, 0.3);
-    text-shadow: 0 1px shade(#4D7EAF, 1.15);
-}
-
-button.suggested-action:hover {
-	background-image: linear-gradient(to bottom,
-		shade(#6699CC, 1.10),
-		shade(#6699CC, 1.05));
+    text-shadow: 0 1px shade(#4F9D42, 1.15);
 }
 
 /* eg. mate-appearance-properties */
