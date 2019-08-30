@@ -294,13 +294,13 @@ button.destructive-action {
 }
 
 button.suggested-action {
-    background-image: linear-gradient(to bottom, #6699CC, #5C83AA);
-    border-color: #055200;
+    background-image: linear-gradient(to bottom, #9AB271, #87A556);
+    border-color: #5A6943;
     border-image: none;
     color: white;
-    -gtk-icon-shadow: 0 1px shade(#9d4242, 1.15);
+    -gtk-icon-shadow: 0 1px shade(#608A21, 1.15);
     outline-color: rgba(255, 255, 255, 0.3);
-    text-shadow: 0 1px shade(#4F9D42, 1.15);
+    text-shadow: 0 1px shade(#608A21, 1.15);
 }
 
 /* eg. mate-appearance-properties */
