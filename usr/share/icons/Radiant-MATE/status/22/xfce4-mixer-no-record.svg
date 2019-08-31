@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   version="1.1"
-   width="14"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0alpha2 (ba7fb61f5a, 2019-08-31)"
+   sodipodi:docname="xfce4-mixer-no-record.svg"
+   id="svg3330"
    height="22"
-   id="svg3330">
+   width="22"
+   version="1.1">
+  <sodipodi:namedview
+     inkscape:current-layer="svg3330"
+     inkscape:window-maximized="1"
+     inkscape:window-y="30"
+     inkscape:window-x="0"
+     inkscape:cy="11"
+     inkscape:cx="7"
+     inkscape:zoom="44"
+     showgrid="false"
+     id="namedview9"
+     inkscape:window-height="1379"
+     inkscape:window-width="2560"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     inkscape:document-rotation="0"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
   <defs
      id="defs3332" />
   <metadata
@@ -26,21 +49,27 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0,6)"
-     id="layer1">
+     transform="translate(4)"
+     id="g838">
     <g
-       transform="translate(-4,0)"
-       id="g3788"
-       style="opacity:0.4">
-      <path
-         d="m 11,-4 c -1.662,0 -3,1.338 -3,3 l 0,8 c 0,1.662 1.338,3 3,3 1.662,0 3,-1.338 3,-3 l 0,-8 c 0,-1.662 -1.338,-3 -3,-3 z M 5,3 5,4 6,4 6,7 c 0,2.42375 1.717481,4.441543 4,4.90625 L 10,14 l -1,0 0,1 4,0 0,-1 -1,0 0,-2.09375 C 14.28252,11.441543 16,9.42375 16,7 l 0,-3 1,0 0,-1 -1,0 -1,0 0,4 c 0,2.216 -1.784,4 -4,4 C 8.784,11 7,9.216 7,7 L 7,3 6,3 5,3 z"
-         id="path3122-6"
-         style="opacity:0.3;color:#ffffff;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-      <path
-         d="M 11,1 C 9.338,1 8,2.338 8,4 l 0,8 c 0,1.662 1.338,3 3,3 1.662,0 3,-1.338 3,-3 L 14,4 C 14,2.338 12.662,1 11,1 z m -6,7 0,1 1,0 0,3 c 0,2.42375 1.717481,4.441543 4,4.90625 L 10,19 l -1,0 0,1 4,0 0,-1 -1,0 0,-2.09375 C 14.28252,16.441543 16,14.42375 16,12 l 0,-3 1,0 0,-1 -1,0 -1,0 0,4 c 0,2.216 -1.784,4 -4,4 C 8.784,16 7,14.216 7,12 L 7,8 6,8 5,8 z"
-         transform="translate(0,-6)"
-         id="path3122"
-         style="color:#ffffff;fill:#3c3c3c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       transform="translate(0,6)"
+       id="layer1">
+      <g
+         transform="translate(-4)"
+         id="g3788"
+         style="opacity:0.4">
+        <path
+           inkscape:connector-curvature="0"
+           d="m 11,-4 c -1.662,0 -3,1.338 -3,3 v 8 c 0,1.662 1.338,3 3,3 1.662,0 3,-1.338 3,-3 v -8 c 0,-1.662 -1.338,-3 -3,-3 z M 5,3 v 1 h 1 v 3 c 0,2.42375 1.717481,4.441543 4,4.90625 V 14 H 9 v 1 h 4 V 14 H 12 V 11.90625 C 14.28252,11.441543 16,9.42375 16,7 V 4 h 1 V 3 h -1 -1 v 4 c 0,2.216 -1.784,4 -4,4 C 8.784,11 7,9.216 7,7 V 3 H 6 Z"
+           id="path3122-6"
+           style="color:#ffffff;display:inline;overflow:visible;visibility:visible;opacity:0.3;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;enable-background:accumulate" />
+        <path
+           inkscape:connector-curvature="0"
+           d="M 11,1 C 9.338,1 8,2.338 8,4 v 8 c 0,1.662 1.338,3 3,3 1.662,0 3,-1.338 3,-3 V 4 C 14,2.338 12.662,1 11,1 Z M 5,8 v 1 h 1 v 3 c 0,2.42375 1.717481,4.441543 4,4.90625 V 19 H 9 v 1 h 4 V 19 H 12 V 16.90625 C 14.28252,16.441543 16,14.42375 16,12 V 9 h 1 V 8 h -1 -1 v 4 c 0,2.216 -1.784,4 -4,4 C 8.784,16 7,14.216 7,12 V 8 H 6 Z"
+           transform="translate(0,-6)"
+           id="path3122"
+           style="color:#ffffff;display:inline;overflow:visible;visibility:visible;fill:#3c3c3c;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;enable-background:accumulate" />
+      </g>
     </g>
   </g>
 </svg>
