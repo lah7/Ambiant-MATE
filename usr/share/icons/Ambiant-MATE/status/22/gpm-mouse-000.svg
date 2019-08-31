@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   version="1.0"
-   width="15"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0alpha2 (ba7fb61f5a, 2019-08-31)"
+   sodipodi:docname="gpm-mouse-000.svg"
+   id="svg3215"
    height="22"
-   id="svg3215">
+   width="22"
+   version="1.0">
+  <sodipodi:namedview
+     inkscape:current-layer="svg3215"
+     inkscape:window-maximized="1"
+     inkscape:window-y="28"
+     inkscape:window-x="0"
+     inkscape:cy="11"
+     inkscape:cx="7.5"
+     inkscape:zoom="44"
+     showgrid="false"
+     id="namedview10"
+     inkscape:window-height="1381"
+     inkscape:window-width="2560"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     inkscape:document-rotation="0"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
   <metadata
      id="metadata10">
     <rdf:RDF>
@@ -25,31 +48,38 @@
   </metadata>
   <defs
      id="defs3217" />
-  <path
-     d="m 6.5,4.499999 2,0 c 2.216,0 4,1.338 4,3 L 12.5,16.5 c 0,1.662 -1.784,3 -4,3 l -2,0 c -2.2160001,0 -4,-1.338 -4,-3 l 0,-9.000001 c 0,-1.662 1.7839999,-3 4,-3 z m 1.041885,1e-6 0,4"
-     id="rect2406-4"
-     style="opacity:0.3;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
   <g
-     transform="translate(-5,-1)"
-     id="g3195"
-     style="opacity:0.3;stroke:#df382c;stroke-opacity:1">
+     transform="translate(3.5)"
+     id="g3758">
     <path
-       d="m 12.5,5.3333332 0,3.3333331"
-       id="path3193"
-       style="fill:none;stroke:#df382c;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-    <rect
-       width="13.5"
-       height="8.5"
-       rx="2.3"
-       ry="3.3000903"
-       x="-18.75"
-       y="8.25"
-       transform="matrix(0,-1,1,0,0,0)"
-       id="rect3236"
-       style="fill:none;stroke:#df382c;stroke-width:0.49999994;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+       inkscape:connector-curvature="0"
+       d="m 6.5,4.499999 h 2 c 2.216,0 4,1.338 4,3 V 16.5 c 0,1.662 -1.784,3 -4,3 h -2 c -2.2160001,0 -4,-1.338 -4,-3 V 7.499999 c 0,-1.662 1.7839999,-3 4,-3 z M 7.541885,4.5 v 4"
+       id="rect2406-4"
+       style="display:inline;overflow:visible;visibility:visible;opacity:0.3;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate" />
+    <g
+       transform="translate(-5,-1)"
+       id="g3195"
+       style="opacity:0.3;stroke:#df382c;stroke-opacity:1">
+      <path
+         inkscape:connector-curvature="0"
+         d="M 12.5,5.3333332 V 8.6666663"
+         id="path3193"
+         style="display:inline;overflow:visible;visibility:visible;fill:none;stroke:#df382c;stroke-width:2;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate" />
+      <rect
+         width="13.5"
+         height="8.5"
+         rx="2.3"
+         ry="3.3000903"
+         x="-18.75"
+         y="8.25"
+         transform="rotate(-90)"
+         id="rect3236"
+         style="display:inline;overflow:visible;visibility:visible;fill:none;stroke:#df382c;stroke-width:0.5;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate" />
+    </g>
+    <path
+       inkscape:connector-curvature="0"
+       d="m 6.5,3.499999 h 2 c 2.216,0 4,1.338 4,3 V 15.5 c 0,1.662 -1.784,3 -4,3 h -2 c -2.2160001,0 -4,-1.338 -4,-3 V 6.499999 c 0,-1.662 1.7839999,-3 4,-3 z M 7.541885,3.5 v 4"
+       id="rect2406"
+       style="display:inline;overflow:visible;visibility:visible;fill:none;stroke:#df382c;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:accumulate" />
   </g>
-  <path
-     d="m 6.5,3.499999 2,0 c 2.216,0 4,1.338 4,3 L 12.5,15.5 c 0,1.662 -1.784,3 -4,3 l -2,0 c -2.2160001,0 -4,-1.338 -4,-3 l 0,-9.000001 c 0,-1.662 1.7839999,-3 4,-3 z m 1.041885,1e-6 0,4"
-     id="rect2406"
-     style="fill:none;stroke:#df382c;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
 </svg>
