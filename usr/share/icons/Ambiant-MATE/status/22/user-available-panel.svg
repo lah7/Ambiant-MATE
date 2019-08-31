@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    version="1.1"
-   width="20"
+   width="22"
    height="22"
-   id="svg3795">
+   id="svg3795"
+   sodipodi:docname="empathy-available.svg"
+   inkscape:version="1.0alpha2 (ba7fb61f5a, 2019-08-31)">
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     inkscape:document-rotation="0"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="2560"
+     inkscape:window-height="1379"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="44"
+     inkscape:cx="10"
+     inkscape:cy="11.922622"
+     inkscape:window-x="2560"
+     inkscape:window-y="30"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg3795" />
   <defs
      id="defs3797" />
   <metadata
@@ -26,15 +49,27 @@
     </rdf:RDF>
   </metadata>
   <g
-     transform="translate(0,6)"
-     id="layer1">
-    <path
-       d="M 9.5,-1 C 5.36,-1 2.0000001,2.3599999 2,6.5 2,10.64 5.3600001,14 9.5,14 c 1.964788,0 3.756106,-0.76222 5.09375,-2 L 20,12 16.65625,8.65625 C 16.864192,7.968633 17,7.255184 17,6.5 17,2.36 13.64,-0.9999999 9.5,-1 z"
-       id="path2396-2"
-       style="opacity:0.3;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-    <path
-       d="M 9.5,-2 C 5.36,-2 2.0000001,1.3599999 2,5.5 2,9.64 5.3600001,13 9.5,13 c 1.964788,0 3.756106,-0.76222 5.09375,-2 L 20,11 16.65625,7.65625 C 16.864192,6.968633 17,6.255184 17,5.5 17,1.36 13.64,-1.9999999 9.5,-2 z"
-       id="path2396"
-       style="fill:#dfdbd2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+     id="g3119">
+    <g
+       id="g3112">
+      <g
+         id="g836"
+         transform="translate(0,-1)">
+        <g
+           id="layer1"
+           transform="translate(0,6)">
+          <path
+             style="display:inline;overflow:visible;visibility:visible;opacity:0.3;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
+             id="path2396-2"
+             d="M 9.5,-1 C 5.36,-1 2.0000001,2.3599999 2,6.5 2,10.64 5.3600001,14 9.5,14 c 1.964788,0 3.756106,-0.76222 5.09375,-2 H 20 L 16.65625,8.65625 C 16.864192,7.968633 17,7.255184 17,6.5 17,2.36 13.64,-0.9999999 9.5,-1 Z"
+             inkscape:connector-curvature="0" />
+          <path
+             style="display:inline;overflow:visible;visibility:visible;fill:#dfdbd2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;enable-background:accumulate"
+             id="path2396"
+             d="M 9.5,-2 C 5.36,-2 2.0000001,1.3599999 2,5.5 2,9.64 5.3600001,13 9.5,13 c 1.964788,0 3.756106,-0.76222 5.09375,-2 H 20 L 16.65625,7.65625 C 16.864192,6.968633 17,6.255184 17,5.5 17,1.36 13.64,-1.9999999 9.5,-2 Z"
+             inkscape:connector-curvature="0" />
+        </g>
+      </g>
+    </g>
   </g>
 </svg>
