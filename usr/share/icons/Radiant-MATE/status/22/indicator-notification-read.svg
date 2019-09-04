@@ -7,16 +7,16 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   inkscape:version="1.0alpha2 (ba7fb61f5a, 2019-08-31)"
-   height="22"
-   width="22"
-   sodipodi:docname="indicator-notification-read.svg"
-   xml:space="preserve"
-   viewBox="0 0 22 22"
-   y="0px"
-   x="0px"
+   version="1.1"
    id="Capa_1"
-   version="1.1"><metadata
+   x="0px"
+   y="0px"
+   viewBox="0 0 22 22"
+   xml:space="preserve"
+   sodipodi:docname="indicator-notification-read.svg"
+   width="22"
+   height="22"
+   inkscape:version="1.0alpha2 (0e866e7627, 2019-09-03)"><metadata
    id="metadata47">
   <rdf:RDF>
     <cc:Work
@@ -24,61 +24,132 @@
       <dc:format>image/svg+xml</dc:format>
 
 
+
       <dc:type
    rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+
 
 
       <dc:title />
 
 
+
     </cc:Work>
+
 
 
   </rdf:RDF>
 
 
+
 </metadata>
+
 
 
 <defs
    id="defs45" />
 
 
+
 <sodipodi:namedview
-   inkscape:current-layer="Capa_1"
-   inkscape:window-maximized="0"
-   inkscape:window-y="30"
-   inkscape:window-x="0"
-   inkscape:cy="11.99982"
-   inkscape:cx="1.09375"
-   inkscape:zoom="16"
-   fit-margin-bottom="0"
-   fit-margin-right="0"
-   fit-margin-left="0"
-   fit-margin-top="0"
-   showgrid="false"
-   id="namedview43"
-   inkscape:window-height="1378"
-   inkscape:window-width="1278"
-   inkscape:pageshadow="2"
-   inkscape:pageopacity="0"
-   guidetolerance="10"
-   gridtolerance="10"
-   objecttolerance="10"
-   borderopacity="1"
-   inkscape:document-rotation="0"
+   pagecolor="#ffffff"
    bordercolor="#666666"
-   pagecolor="#ffffff" />
+   inkscape:document-rotation="0"
+   borderopacity="1"
+   objecttolerance="10"
+   gridtolerance="10"
+   guidetolerance="10"
+   inkscape:pageopacity="0"
+   inkscape:pageshadow="2"
+   inkscape:window-width="1278"
+   inkscape:window-height="1016"
+   id="namedview43"
+   showgrid="false"
+   fit-margin-top="0"
+   fit-margin-left="0"
+   fit-margin-right="0"
+   fit-margin-bottom="0"
+   inkscape:zoom="16"
+   inkscape:cx="-10.6875"
+   inkscape:cy="11.99982"
+   inkscape:window-x="70"
+   inkscape:window-y="27"
+   inkscape:window-maximized="0"
+   inkscape:current-layer="Capa_1" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <g
-   style="fill:#3c3c3c;fill-opacity:1"
-   id="g2629">
+   transform="matrix(0.90001318,0,0,0.90001318,1.099855,1.099855)"
+   id="g322">
   <g
      style="fill:#3c3c3c;fill-opacity:1"
-     transform="matrix(0.83333337,0,0,0.83333337,0.99999956,0.99999956)"
-     id="g1535">
+     id="g2629">
+  <g
+   style="fill:#3c3c3c;fill-opacity:1"
+   transform="matrix(0.83333337,0,0,0.83333337,0.99999956,0.99999956)"
+   id="g1535">
   <g
    transform="matrix(0.05769146,0,0,0.05769146,2.0516573e-4,1.7632e-4)"
    style="fill:#3c3c3c;fill-opacity:1"
@@ -97,6 +168,7 @@
 
 
 
+
 			<path
    inkscape:connector-curvature="0"
    style="fill:#3c3c3c;fill-opacity:1"
@@ -105,7 +177,9 @@
 
 
 
+
 		</g>
+
 
 
 
@@ -113,115 +187,75 @@
 
 
 
+
+</g>
+
+
 </g>
 
 </g>
+  <g
+     transform="translate(-198.1535,-196.00018)"
+     id="g12">
+</g>
+  <g
+     transform="translate(-198.1535,-196.00018)"
+     id="g14">
+</g>
+  <g
+     transform="translate(-198.1535,-196.00018)"
+     id="g16">
+</g>
+  <g
+     transform="translate(-198.1535,-196.00018)"
+     id="g18">
+</g>
+  <g
+     transform="translate(-198.1535,-196.00018)"
+     id="g20">
+</g>
+  <g
+     transform="translate(-198.1535,-196.00018)"
+     id="g22">
+</g>
+  <g
+     transform="translate(-198.1535,-196.00018)"
+     id="g24">
+</g>
+  <g
+     transform="translate(-198.1535,-196.00018)"
+     id="g26">
+</g>
+  <g
+     transform="translate(-198.1535,-196.00018)"
+     id="g28">
+</g>
+  <g
+     transform="translate(-198.1535,-196.00018)"
+     id="g30">
+</g>
+  <g
+     transform="translate(-198.1535,-196.00018)"
+     id="g32">
+</g>
+  <g
+     transform="translate(-198.1535,-196.00018)"
+     id="g34">
+</g>
+  <g
+     transform="translate(-198.1535,-196.00018)"
+     id="g36">
+</g>
+  <g
+     transform="translate(-198.1535,-196.00018)"
+     id="g38">
+</g>
+  <g
+     transform="translate(-198.1535,-196.00018)"
+     id="g40">
+</g>
 </g>
 
-
-
-<g
-   transform="translate(-198.1535,-196.00018)"
-   id="g12">
-</g>
-
-
-
-<g
-   transform="translate(-198.1535,-196.00018)"
-   id="g14">
-</g>
-
-
-
-<g
-   transform="translate(-198.1535,-196.00018)"
-   id="g16">
-</g>
-
-
-
-<g
-   transform="translate(-198.1535,-196.00018)"
-   id="g18">
-</g>
-
-
-
-<g
-   transform="translate(-198.1535,-196.00018)"
-   id="g20">
-</g>
-
-
-
-<g
-   transform="translate(-198.1535,-196.00018)"
-   id="g22">
-</g>
-
-
-
-<g
-   transform="translate(-198.1535,-196.00018)"
-   id="g24">
-</g>
-
-
-
-<g
-   transform="translate(-198.1535,-196.00018)"
-   id="g26">
-</g>
-
-
-
-<g
-   transform="translate(-198.1535,-196.00018)"
-   id="g28">
-</g>
-
-
-
-<g
-   transform="translate(-198.1535,-196.00018)"
-   id="g30">
-</g>
-
-
-
-<g
-   transform="translate(-198.1535,-196.00018)"
-   id="g32">
-</g>
-
-
-
-<g
-   transform="translate(-198.1535,-196.00018)"
-   id="g34">
-</g>
-
-
-
-<g
-   transform="translate(-198.1535,-196.00018)"
-   id="g36">
-</g>
-
-
-
-<g
-   transform="translate(-198.1535,-196.00018)"
-   id="g38">
-</g>
-
-
-
-<g
-   transform="translate(-198.1535,-196.00018)"
-   id="g40">
-</g>
 
 
 
