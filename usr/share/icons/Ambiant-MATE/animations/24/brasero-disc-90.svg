@@ -1,16 +1,39 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!-- Created with Inkscape (http://www.inkscape.org/) -->
-
 <svg
    xmlns:dc="http://purl.org/dc/elements/1.1/"
    xmlns:cc="http://creativecommons.org/ns#"
    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
    xmlns:svg="http://www.w3.org/2000/svg"
    xmlns="http://www.w3.org/2000/svg"
-   version="1.0"
-   width="20"
-   height="24"
-   id="svg3252">
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   inkscape:version="1.0alpha2 (48e7c74405, 2019-09-05)"
+   sodipodi:docname="brasero-disc-90.svg"
+   id="svg3252"
+   height="22"
+   width="22"
+   version="1.0">
+  <sodipodi:namedview
+     inkscape:current-layer="svg3252"
+     inkscape:window-maximized="1"
+     inkscape:window-y="30"
+     inkscape:window-x="0"
+     inkscape:cy="11"
+     inkscape:cx="10"
+     inkscape:zoom="44"
+     showgrid="false"
+     id="namedview9942"
+     inkscape:window-height="1379"
+     inkscape:window-width="2560"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     guidetolerance="10"
+     gridtolerance="10"
+     objecttolerance="10"
+     borderopacity="1"
+     inkscape:document-rotation="0"
+     bordercolor="#666666"
+     pagecolor="#ffffff" />
   <metadata
      id="metadata11">
     <rdf:RDF>
@@ -25,16 +48,23 @@
   </metadata>
   <defs
      id="defs3254" />
-  <path
-     d="m 10,5 c -4.4159999,0 -8.0000002,3.5840001 -8,8 0,4.416 3.5840002,8 8,8 4.416,0 8,-3.584 8,-8 0,-4.4159999 -3.584,-7.9999998 -8,-8 z m 0,5 c 1.656,0 3,1.344 3,3 0,1.656 -1.344,3 -3,3 -1.656,0 -3,-1.344 -3,-3 1e-7,-1.656 1.344,-3 3,-3 z"
-     id="path3170-4"
-     style="opacity:0.3;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-  <path
-     d="m 10,4 c -4.4159999,0 -8.0000002,3.5840001 -8,8 0,4.416 3.5840002,8 8,8 4.416,0 8,-3.584 8,-8 0,-4.4159999 -3.584,-7.9999998 -8,-8 z m 0,5 c 1.656,10e-8 3,1.344 3,3 0,1.656 -1.344,3 -3,3 -1.656,0 -3,-1.344 -3,-3 1e-7,-1.656 1.344,-3 3,-3 z"
-     id="path3170"
-     style="opacity:0.4;fill:#dfdbd2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
-  <path
-     d="m 10,4 0,5 c 1.656,10e-8 3,1.344 3,3 0,1.656 -1.344,3 -3,3 C 8.344,15 7,13.656 7,12 7,11.012488 7.4817321,10.140527 8.21875,9.59375 L 5.25,5.5625 C 3.2790485,7.020065 2.0000001,9.362255 2,12 c 0,4.416 3.5840002,8 8,8 4.416,0 8,-3.584 8,-8 0,-4.4159999 -3.584,-7.9999998 -8,-8 z"
-     id="path3933"
-     style="fill:#dfdbd2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;visibility:visible;display:inline;overflow:visible;enable-background:accumulate" />
+  <g
+     transform="translate(1,-0.5)"
+     id="g12215">
+    <path
+       inkscape:connector-curvature="0"
+       d="m 10,4 c -4.4159999,0 -8.0000002,3.5840001 -8,8 0,4.416 3.5840002,8 8,8 4.416,0 8,-3.584 8,-8 0,-4.4159999 -3.584,-7.9999998 -8,-8 z m 0,5 c 1.656,0 3,1.344 3,3 0,1.656 -1.344,3 -3,3 -1.656,0 -3,-1.344 -3,-3 1e-7,-1.656 1.344,-3 3,-3 z"
+       id="path3170-4"
+       style="display:inline;overflow:visible;visibility:visible;opacity:0.3;fill:#000000;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;enable-background:accumulate" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 10,3 c -4.4159999,0 -8.0000002,3.5840001 -8,8 0,4.416 3.5840002,8 8,8 4.416,0 8,-3.584 8,-8 0,-4.4159999 -3.584,-7.9999998 -8,-8 z m 0,5 c 1.656,10e-8 3,1.344 3,3 0,1.656 -1.344,3 -3,3 -1.656,0 -3,-1.344 -3,-3 1e-7,-1.656 1.344,-3 3,-3 z"
+       id="path3170"
+       style="display:inline;overflow:visible;visibility:visible;opacity:0.4;fill:#dfdbd2;fill-opacity:1;fill-rule:evenodd;stroke:none;stroke-width:1;marker:none;enable-background:accumulate" />
+    <path
+       inkscape:connector-curvature="0"
+       d="m 10,3 v 5 c 1.656,10e-8 3,1.344 3,3 0,1.656 -1.344,3 -3,3 C 8.344,14 7,12.656 7,11 7,10.012488 7.4817321,9.140527 8.21875,8.59375 L 5.25,4.5625 C 3.2790485,6.020065 2.0000001,8.362255 2,11 c 0,4.416 3.5840002,8 8,8 4.416,0 8,-3.584 8,-8 0,-4.4159999 -3.584,-7.9999998 -8,-8 z"
+       id="path3933"
+       style="display:inline;overflow:visible;visibility:visible;fill:#dfdbd2;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:1;marker:none;enable-background:accumulate" />
+  </g>
 </svg>
