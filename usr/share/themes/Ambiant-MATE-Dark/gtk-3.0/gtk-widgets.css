@@ -279,7 +279,9 @@ button:checked:disabled:backdrop {
 }
 */
 
-button.destructive-action {
+button.destructive-action,
+button.destructive-action:active,
+button.destructive-action:backdrop {
     background-image: linear-gradient(to bottom, #e03d3d, #ef2929);
     border-color: #8e0b0b;
     border-image: none;
@@ -289,14 +291,28 @@ button.destructive-action {
     text-shadow: 0 1px shade(#9d4242, 1.15);
 }
 
-button.suggested-action {
+button.destructive-action:hover {
+    background-image: linear-gradient(to bottom,
+        shade(#8e0b0b, 1.10),
+        shade(#8e0b0b, 1.05));
+}
+
+button.suggested-action,
+button.suggested-action:active,
+button.suggested-action:backdrop {
     background-image: linear-gradient(to bottom, #9AB271, #87A556);
-    border-color: #5A6943;
+    border-color: #738C49;
     border-image: none;
     color: white;
     -gtk-icon-shadow: 0 1px shade(#608A21, 1.15);
     outline-color: rgba(255, 255, 255, 0.3);
     text-shadow: 0 1px shade(#608A21, 1.15);
+}
+
+button.suggested-action:hover {
+    background-image: linear-gradient(to bottom,
+        shade(#738C49, 1.10),
+        shade(#738C49, 1.05));
 }
 
 /* eg. mate-appearance-properties */
