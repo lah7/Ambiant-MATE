@@ -12,7 +12,7 @@
   <linearGradient id="linearGradient3839">
    <stop id="stop3841" style="stop-color:#D9EDB9" offset="0"/>
    <stop id="stop3843" style="stop-color:#ADC980" offset=".26238"/>
-   <stop id="stop3845" style="stop-color:#87A752" offset=".66094"/>
+   <stop id="stop3845" style="stop-color:#87A556" offset=".66094"/>
    <stop id="stop3847" style="stop-color:#688933" offset="1"/>
   </linearGradient>
   <radialGradient id="radialGradient2561" xlink:href="#linearGradient3839" gradientUnits="userSpaceOnUse" cy="10.291" cx="12.011" gradientTransform="matrix(3.1327e-8 1.0767 -1.5448 0 25.333 -7.4463)" r="20"/>

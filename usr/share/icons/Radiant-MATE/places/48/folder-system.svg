@@ -178,7 +178,7 @@
          offset="0" />
       <stop
          id="stop3270"
-         style="stop-color:#87A752"
+         style="stop-color:#87A556"
          offset="0.6875183" />
       <stop
          id="stop3620"
@@ -346,7 +346,7 @@
      height="2"
      ry="1"
      rx="1"
-     style="display:block;fill:#87a752"
+     style="display:block;fill:#87A556"
      id="rect3562" />
   <path
      d="M 48,44.5 C 48,46.432997 40.836636,48 32.00018,48 23.163723,48 16.00036,46.432997 16.00036,44.5 16.00036,42.567004 23.163723,41 32.00018,41 40.836636,41 48,42.567004 48,44.5 Z"

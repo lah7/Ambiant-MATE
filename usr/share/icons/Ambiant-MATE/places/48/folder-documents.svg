@@ -189,7 +189,7 @@
          id="stop3618" />
       <stop
          offset="0.6875183"
-         style="stop-color:#87A752"
+         style="stop-color:#87A556"
          id="stop3270" />
       <stop
          offset="1"
@@ -374,7 +374,7 @@
      style="opacity:0.3;fill:none;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dashoffset:0;stroke-opacity:1" />
   <rect
      id="rect3562"
-     style="display:block;fill:#87a752"
+     style="display:block;fill:#87A556"
      rx="1"
      ry="1"
      height="2"

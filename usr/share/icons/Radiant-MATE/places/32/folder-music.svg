@@ -187,7 +187,7 @@
          id="stop3618" />
       <stop
          offset="0.6875183"
-         style="stop-color:#87A752"
+         style="stop-color:#87A556"
          id="stop3270" />
       <stop
          offset="1"
@@ -326,7 +326,7 @@
      height="1"
      ry="0.5"
      rx="0.5"
-     style="display:block;fill:#87a752"
+     style="display:block;fill:#87A556"
      id="rect2892" />
   <g
      id="layer1-1"

@@ -12,7 +12,7 @@
   </linearGradient>
   <linearGradient id="linearGradient2887" y2="43" gradientUnits="userSpaceOnUse" x2="23.965" gradientTransform="translate(-1.405e-5,-1.18e-5)" y1="11.358" x1="23.965">
    <stop id="stop3618" style="stop-color:#ADC980" offset="0"/>
-   <stop id="stop3270" style="stop-color:#87A752" offset=".5"/>
+   <stop id="stop3270" style="stop-color:#87A556" offset=".5"/>
    <stop id="stop3620" style="stop-color:#688933" offset="1"/>
   </linearGradient>
   <linearGradient id="linearGradient3670" y2="7.9502" gradientUnits="userSpaceOnUse" x2="18.39" y1="43" x1="18.39">
@@ -28,7 +28,7 @@
   <path id="path2579" style="opacity:.16292;fill:url(#radialGradient3718)" d="m44 40.5a20 5.5 0 0 1 -40 0 20 5.5 0 1 1 40 0z"/>
   <path id="path2581" style="stroke:url(#linearGradient3670);fill:url(#linearGradient2887)" d="m7.5 27.504 16.506-19.004 16.423 19.004h-7.8698v14.996h-17.055v-14.996h-8.0043z"/>
   <path id="path2583" style="opacity:.4;stroke:url(#linearGradient2884);fill:none" d="m9.6411 26.433 14.386-16.516 14.2 16.516h-6.7384v15.067h-14.978v-15.067h-6.8689z"/>
-  <rect id="rect4242" style="stroke:#688933;fill:#87A752" height="4" width="33" y="3.5" x="7.5"/>
+  <rect id="rect4242" style="stroke:#688933;fill:#87A556" height="4" width="33" y="3.5" x="7.5"/>
   <rect id="rect6697" style="opacity:.4;stroke:url(#linearGradient3678);fill:#ADC980" height="2" width="31" y="4.5" x="8.5"/>
  </g>
 </svg>

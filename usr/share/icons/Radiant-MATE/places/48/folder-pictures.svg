@@ -189,7 +189,7 @@
          offset="0" />
       <stop
          id="stop3270"
-         style="stop-color:#87A752"
+         style="stop-color:#87A556"
          offset="0.6875183" />
       <stop
          id="stop3620"
@@ -439,7 +439,7 @@
      height="2"
      ry="1"
      rx="1"
-     style="display:block;fill:#87a752"
+     style="display:block;fill:#87A556"
      id="rect3562" />
   <rect
      x="-0.37849167"

@@ -37,7 +37,7 @@
   </radialGradient>
   <radialGradient id="radialGradient3453" gradientUnits="userSpaceOnUse" cy="10.898" cx="14.766" gradientTransform="matrix(-2.2703e-8 2.1357 -3.5601 -3.7845e-8 54.621 -24.438)" r="18">
    <stop id="stop3618" style="stop-color:#ADC980" offset="0"/>
-   <stop id="stop3270" style="stop-color:#87A752" offset=".5"/>
+   <stop id="stop3270" style="stop-color:#87A556" offset=".5"/>
    <stop id="stop3620" style="stop-color:#688933" offset="1"/>
   </radialGradient>
   <linearGradient id="linearGradient3455" y2="2.9062" gradientUnits="userSpaceOnUse" x2="-51.786" gradientTransform="matrix(.80750 0 0 .89483 59.41 -2.9806)" y1="53.624" x1="-51.786">

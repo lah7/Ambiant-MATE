@@ -4,7 +4,7 @@
  <defs id="defs3752">
   <linearGradient id="linearGradient2894" y2="22.687" gradientUnits="userSpaceOnUse" x2="12.299" gradientTransform="matrix(1.0407 0 0 .94322 -2.2997 -5.3988)" y1=".42284" x1="12.299">
    <stop id="stop3618" style="stop-color:#ADC980" offset="0"/>
-   <stop id="stop3270" style="stop-color:#87A752" offset=".5"/>
+   <stop id="stop3270" style="stop-color:#87A556" offset=".5"/>
    <stop id="stop3620" style="stop-color:#688933" offset="1"/>
   </linearGradient>
   <radialGradient id="radialGradient2897" xlink:href="#linearGradient259" gradientUnits="userSpaceOnUse" cy="35.737" cx="33.967" gradientTransform="matrix(.45689 0 0 .50789 -.24387 -6.2788)" r="86.708"/>

@@ -59,7 +59,7 @@
          offset="0" />
       <stop
          id="stop2449"
-         style="stop-color:#87A752;stop-opacity:1"
+         style="stop-color:#87A556;stop-opacity:1"
          offset="0.5" />
       <stop
          id="stop3620"
@@ -185,6 +185,6 @@
     <path
        d="M 13.663861,13.821288 C 13.663861,14.472272 13.136134,15 12.48515,15 C 11.834165,15 11.306438,14.472272 11.306438,13.821288 C 11.306438,13.170304 11.834165,12.642577 12.48515,12.642577 C 13.136134,12.642577 13.663861,13.170304 13.663861,13.821288 L 13.663861,13.821288 z"
        id="path3347"
-       style="fill:#87A752;fill-opacity:1;stroke:#688933;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
+       style="fill:#87A556;fill-opacity:1;stroke:#688933;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1" />
   </g>
 </svg>

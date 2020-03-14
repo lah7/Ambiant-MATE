@@ -54,7 +54,7 @@
   <linearGradient id="linearGradient3098" y2="20.663" xlink:href="#linearGradient2532" gradientUnits="userSpaceOnUse" x2="76.337" gradientTransform="translate(-58 -21.006)" y1="51.096" x1="80.292"/>
   <radialGradient id="radialGradient3096" gradientUnits="userSpaceOnUse" cy="12.904" cx="19.126" gradientTransform="matrix(1.1062 -.0037037 .0029629 .89853 -9.1962 -3.0978)" r="22.464">
    <stop id="stop2541" style="stop-color:#ADC980" offset="0"/>
-   <stop id="stop2543" style="stop-color:#87A752" offset=".5"/>
+   <stop id="stop2543" style="stop-color:#87A556" offset=".5"/>
    <stop id="stop2545" style="stop-color:#688933" offset="1"/>
   </radialGradient>
   <radialGradient id="radialGradient3740" gradientUnits="userSpaceOnUse" cy="5.8834" cx="16.961" gradientTransform="matrix(0 2 -1.3459 0 28.919 -35.008)" r="22.105">
