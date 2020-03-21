@@ -1242,6 +1242,7 @@ combobox menuitem *:hover {
     color: @selected_fg_color;
 }
 
+.primary-toolbar:not(.libreoffice-toolbar) menu menuitem:hover,
 popover menuitem:checked:hover,
 menuitem:hover,
 menu menuitem:hover,
