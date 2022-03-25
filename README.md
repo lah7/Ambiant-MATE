@@ -17,8 +17,8 @@ GTK 3 applications and integration with the MATE desktop and panel.
 
 ## Status
 
-The theme still works today for MATE and similar desktop environments,
-good news for fans of skeuomorphic design!
+The theme still works today for MATE and similar desktop environments.
+Good news for fans of skeuomorphic design!
 
 However, the theme is not actively maintained. Improvements relies on community
 contributions. Please send a pull request if you'd like to fix something!
@@ -34,7 +34,10 @@ Ubuntu users can add this PPA for convenience:
 Alternately, [download a ZIP](https://github.com/lah7/Ambiant-MATE/archive/refs/heads/master.zip)
 of this repository and extract to your `~/.local/share/` folder.
 
-There are colours available! See the [ubuntu-mate-colours](https://github.com/lah7/ubuntu-mate-colours/) project.
+## Colours
+
+A separate project, [Ambiant-MATE-Colours](https://github.com/lah7/Ambiant-MATE-Colours/),
+can create colour variants of this theme by patching the MATE green for something else.
 
 ## License
 
