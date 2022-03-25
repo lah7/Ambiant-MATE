@@ -1,0 +1,27 @@
+Source: ambiant-mate-themes
+Section: x11
+Priority: optional
+Maintainer: Luke Horwell <code@horwell.me>
+Build-Depends: debhelper (>= 11),
+Standards-Version: 4.1.3
+Homepage: https://github.com/lah7/Ambiant-MATE
+Vcs-Git: https://github.com/lah7/Ambiant-MATE.git
+Vcs-Browser: https://github.com/lah7/Ambiant-MATE
+
+Package: ambiant-mate-gtk-themes
+Architecture: all
+Depends: ${misc:Depends},
+Description: Ambiant-MATE and Radiant-MATE GTK Theme
+ Ubuntu MATE's fork of the Ambiance and Radiance GTK theme
+ .
+ This theme was used for Ubuntu MATE since it's debut in
+ 14.10 until 20.10. It is now community supported.
+
+Package: ambiant-mate-icon-themes
+Architecture: all
+Depends: ${misc:Depends},
+Description: Ambiant-MATE and Radiant-MATE Icon Theme
+ Ubuntu MATE's fork of the Humanity icon theme
+ .
+ This theme was used for Ubuntu MATE since it's debut in
+ 14.10 until 20.10. It is now community supported.

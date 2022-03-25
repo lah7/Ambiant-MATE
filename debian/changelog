@@ -1,0 +1,949 @@
+ambiant-mate-themes (22.04.0) jammy; urgency=low
+
+  * Initial re-release of Ambiant-MATE split from ubuntu-mate-artwork
+    (commit a9385777717a431e41ed864b45237950d57d3c6f)
+
+ -- Luke Horwell <code@horwell.me>  Fri, 25 Mar 2022 21:28:25 +0000
+
+ubuntu-mate-artwork (20.10.0) groovy; urgency=medium
+
+  * Add Ayatana Notifcation icons.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Mon, 24 Aug 2020 23:14:08 +0100
+
+ubuntu-mate-artwork (20.04.2) focal; urgency=medium
+
+  * Themes: Fix highlight colour for toolbar menu items.
+  * Themes: Fix unfocused label on Caja desktop. (LP: #1868369)
+  * Correct the Ubuntu MATE hex colour in icons.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Sun, 22 Mar 2020 23:20:44 +0000
+
+ubuntu-mate-artwork (20.04.0) focal; urgency=medium
+
+  * Add missing warning panel icon.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Fri, 14 Feb 2020 01:48:47 +0000
+
+ubuntu-mate-artwork (19.10.10) eoan; urgency=medium
+
+  * Add high resolution window buttons. (LP: #1773653)
+  * Define the base button dimensions to determine whether the image needs
+    to be re-scaled when rendering on different DPI densities.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Sun, 06 Oct 2019 21:09:53 +0100
+
+ubuntu-mate-artwork (19.10.9) eoan; urgency=medium
+
+  * Add brand colour to start-here.svg
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Tue, 24 Sep 2019 13:39:54 +0100
+
+ubuntu-mate-artwork (19.10.8) eoan; urgency=medium
+
+  * Remove all gpm-battery-*.svg icons and update all battery-*.svg icons.
+    + Ensures applications correctly use full colour icons while indicators
+      use mono icons.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Mon, 16 Sep 2019 12:51:16 +0100
+
+ubuntu-mate-artwork (19.10.7) eoan; urgency=medium
+
+  * Add full color microphone icons for use in applications.
+  * Add full color volume icons for use in applications and the OSD.
+  * A&AD&R: Drop all button.destructive-action and button.suggested-action
+    styling. The standard button style does a fine job.
+  * Add icon theme for MATE Optimus.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Sat, 07 Sep 2019 23:30:10 +0100
+
+ubuntu-mate-artwork (19.10.6) eoan; urgency=medium
+
+  * Drop obsolete libreoffice application icon overrides.
+  * Drop erroneous audio input/volume application icon overrides.
+    (LP: #1630913)
+  * Drop erroneous input-keyboard.svg application icon override.
+  * Drop erroneous blueman.svg application icon override.
+  * Make consistent blueman-*.svg symlinks to corresponding bluetooth-*.svg
+    master set icons.
+  * Add missing system-file-manager.svg to Radiant-MATE icon theme.
+  * Correct the dimensions of gpm-battery-* icons. Symlink all the other
+    battery icons to the gpm-battery-* master set.
+  * Correct the dimensions of Brasero animation icons.
+  * Resize indicator-notifications status icons. Add 'do not disturb'
+    variants.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Fri, 06 Sep 2019 18:25:15 +0100
+
+ubuntu-mate-artwork (19.10.5) eoan; urgency=medium
+
+  * Update indicator-notifications status icons. Add 'do not disturb'
+    variants.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Sun, 01 Sep 2019 10:14:24 +0100
+
+ubuntu-mate-artwork (19.10.4) eoan; urgency=medium
+
+  * Resize new IM status icon.
+  * Resize XFCE mouse power status icons.
+  * Resize keyboard status icons.
+  * Resize network status icons.
+  * Resize audio status icons.
+  * Resize user status icons.
+  * Resize message status icons.
+  * Resize Ubuntu One status icons.
+  * Resize mouse power status icons.
+  * Resize auth status icons.
+  * Resize bluetooth status icons.
+  * Add themed icons for indicator-notifications.
+  * Correctly color button.suggested-action.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Sat, 31 Aug 2019 19:07:19 +0100
+
+ubuntu-mate-artwork (19.10.3) eoan; urgency=medium
+
+  * Restore notebook padding to 6px.
+  * Remove obsolete mate-window-applet icons.
+  * Remove suggested-action button style.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Tue, 18 Jun 2019 18:00:12 +0100
+
+ubuntu-mate-artwork (19.10.2) eoan; urgency=medium
+
+  * Add suggested-action button style.
+  * Add -secure icons required for correct VPN icon display in
+    AppIndicator mode. (LP: #1681654)
+  * Add Apport icons.
+  * Optimise all .png and .jpg image assets.
+  * De-duplicate icon themes.
+  * Fix low contrast text selection in dialog windows. (LP: #1763942)
+  * Fix inconsistent OK buttons.
+  * Fix model buttons popovers.
+  * Fix styling of paned headerbars.
+  * Increase treeview expander size.
+  * Increase minimum size of checkbox/radio buttons.
+  * Improve font and font-size for context-menu. (LP: #1823550)
+  * Improve spacing and padding for tabs, toolbars, menu items and column
+    headers.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Mon, 20 May 2019 08:12:40 +0100
+
+ubuntu-mate-artwork (19.10.1) eoan; urgency=medium
+
+  * Fix XML mark up error in mate-background-properties.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Thu, 09 May 2019 12:04:13 +0100
+
+ubuntu-mate-artwork (19.10.0) eoan; urgency=medium
+
+  * Add community contributed wallpapers for 19.10.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Fri, 03 May 2019 12:53:49 +0100
+
+ubuntu-mate-artwork (19.04.0) disco; urgency=medium
+
+  * Add community contributed wallpapers for 19.04.
+  * A&AD&R: Fix theme parsing error in gtk-widgets.css. max-width and
+    max-height are not valid property names.
+  * A&AD&R: Fix unusual scrolling in some GTK+3 applications, such as Firefox.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Tue, 13 Nov 2018 16:22:39 +0000
+
+ubuntu-mate-artwork (18.10.1) cosmic; urgency=medium
+
+  * Add Ubuntu MATE 18.10 community contributed wallpaper.
+  * A&AD&R: Render window controls are circles in header bar applications.
+    (LP: #1737591)
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Fri, 28 Sep 2018 03:00:20 +0100
+
+ubuntu-mate-artwork (18.04.11) bionic; urgency=medium
+
+  * A&AD&R: Set default xcursor size so mouse pointers are a sensible
+    size for regular DPI and HiDPI displays.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Tue, 24 Apr 2018 16:07:37 +0100
+
+ubuntu-mate-artwork (18.04.10) bionic; urgency=medium
+
+  * A&AD&R: Style brisk-menu classic session buttons.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Wed, 04 Apr 2018 09:23:49 +0100
+
+ubuntu-mate-artwork (18.04.9) bionic; urgency=medium
+
+  * Use noawait trigger variant when tracking lsb-release. LP: #1750465
+
+ -- Dimitri John Ledkov <xnox@ubuntu.com>  Tue, 03 Apr 2018 15:22:45 +0100
+
+ubuntu-mate-artwork (18.04.8) bionic; urgency=medium
+
+  * A&AD&R: Make mate xcursor theme the default.
+  * A&AD&R: some improvements for WebKitGtk2
+  * A&AD&R: use a border-radius for hovered icons in iconview
+  * Radiant: improve check and radio buttons in menu (LP: #1749749)
+  * Radiant: drop text-shadow from menu accelerator (LP: #1749750)
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Fri, 30 Mar 2018 10:58:58 +0100
+
+ubuntu-mate-artwork (18.04.7) bionic; urgency=medium
+
+  * debian/control:
+    + Drop D breeze-cursor-theme.
+  * Add styling for the multi-load applet.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Wed, 07 Mar 2018 10:01:09 +0100
+
+ubuntu-mate-artwork (18.04.6) bionic; urgency=medium
+
+  * Make sure the clock applet honors transparent panel backgrounds.
+    (LP: #1750952)
+  * Fix Ambiant-MATE-Dark caret-cursor color for Caja (LP: #1728881)
+  * Style app-notifications.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Fri, 02 Mar 2018 21:28:44 +0000
+
+ubuntu-mate-artwork (18.04.5) bionic; urgency=medium
+
+  * Make DMZ-Black the default xcursor.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Thu, 01 Mar 2018 03:27:31 +0000
+
+ubuntu-mate-artwork (18.04.4) bionic; urgency=medium
+
+  * Make whiteglass the default xcursor theme.
+  * A&AD&R: Remove vala-panel-appmenu bold label styling. It is now
+    implemented as an applet preference.
+  * Do not suggest mate-backgrounds.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Tue, 27 Feb 2018 22:02:03 +0000
+
+ubuntu-mate-artwork (18.04.3) bionic; urgency=medium
+
+  * debian/control: Add Depends: breeze-cursor-theme to ubuntu-mate-themes.
+  * A&AD&R: Make Breeze cursors default. Correct default window button layout.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Sat, 20 Jan 2018 11:03:15 +0000
+
+ubuntu-mate-artwork (18.04.2) bionic; urgency=medium
+
+  * Add new photos to backgrounds collection.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Thu, 18 Jan 2018 22:42:59 +0000
+
+ubuntu-mate-artwork (18.04.1) bionic; urgency=medium
+
+  * A&AD&R: Enable small notebook buttons.
+  * Add status icons for Deluge, Steam and Twitch.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Sat, 30 Dec 2017 18:00:41 +0000
+
+ubuntu-mate-artwork (18.04.0) bionic; urgency=medium
+
+  * Add new wallpapers for Ubuntu MATE 18.04.
+  * Add photo wallpapers.
+  * Add mate-window-applets themes.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Sun, 29 Oct 2017 11:57:09 +0000
+
+ubuntu-mate-artwork (17.10.10) artful; urgency=medium
+
+  * mate-panel: re-style outlines for keyboard navigation. (LP: #1709013)
+  * Add missing icons for Folder Color (LP: #1713254)
+  * Make search match color in GtkSourceView easier to read (LP: #1711783)
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Mon, 04 Sep 2017 19:40:13 +0100
+
+ubuntu-mate-artwork (17.10.9) artful; urgency=medium
+
+  * Add missing panel-grid.svg to Radiant-MATE.
+  * Add syntax for panel-grid image to support MATE 1.20.
+  * Add top borderradius for .titlebar > headerbar
+  * Update Plymouth background color.
+  * Update sourceview themes so unfocused selection uses correct color.
+  * Use FRAMEBUFFER=y in initramfs for Plymouth splash.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Sun, 27 Aug 2017 20:53:17 +0100
+
+ubuntu-mate-artwork (17.10.8) artful; urgency=medium
+
+  * Correct names of backgrops in the common collection.
+  * Fix color of grey-out arrows in menus.
+  * Fix padding of primary/secondary image in GtkEntry.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Wed, 23 Aug 2017 16:20:44 +0100
+
+ubuntu-mate-artwork (17.10.7) artful; urgency=medium
+
+  * Improve linked button styling for message dialogs.
+  * Improve menu items by adding slightly more padding.
+  * Improve clock-applet-button so it is consistent with other buttons.
+  * Improve notebook styling.
+  * Add bold style classes for Global Menu.
+  * Add a minimal padding to na-tray-applets.
+  * Add the Ubuntu MATE logo as the distributor-logo.
+  * Fix incorrect CSS syntax for Caja.
+  * Fix world-map border color in clock-applet.
+  * Fix GtkScale slider mouse-selection if slider is out of range.
+  * Fix height of headerbar for metacity-theme-viewer.
+  * Fix border color of scrollbars.
+  * Remove obsolete chrom{e|ium} styling.
+  * Remove unwanted backdrop states.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Tue, 22 Aug 2017 13:31:52 +0100
+
+ubuntu-mate-artwork (17.10.6) artful; urgency=medium
+
+  * Make competition winning wallpaper the default.
+  * Tweak the LightDM configuration. Left align login dialogue. Expose
+  Keyboard layout and Langugage selection.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Wed, 19 Jul 2017 22:39:15 +0100
+
+ubuntu-mate-artwork (17.10.5) artful; urgency=medium
+
+  * Add the 17.10 wallpaper competition entries.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Sun, 16 Jul 2017 17:48:33 +0100
+
+ubuntu-mate-artwork (17.10.4) artful; urgency=medium
+
+  * Add Ubuntu MATE Splash Grey.
+
+ -- Martin Wimpress <martin.wimpress@canonical.com>  Tue, 13 Jun 2017 14:52:26 +0100
+
+ubuntu-mate-artwork (17.10.3) artful; urgency=medium
+
+  * Replace ubuntu-mate-circles.png with Ubuntu-MATE-Splash.jpg.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Tue, 13 Jun 2017 01:04:12 +0100
+
+ubuntu-mate-artwork (17.10.2) artful; urgency=medium
+
+  * Re-upload to include missing icon references.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Sun, 11 Jun 2017 22:05:41 +0100
+
+ubuntu-mate-artwork (17.10.1) artful; urgency=medium
+
+  * Add support for Caja inactive pane.
+  * Add support for flags in the keyboard applet.
+  * Update border color for Ambiant-MATE and Ambiant-MATE-Dark.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Sun, 11 Jun 2017 21:35:26 +0100
+
+ubuntu-mate-artwork (17.10.0) artful; urgency=medium
+
+  * Add community contributed wallpapers to ubuntu-mate-wallpapers-artful.
+  * Add new default wallpapers to ubuntu-mate-wallpapers-artful.
+  * Move old default wallpapers to ubuntu-mate-wallpapers-legacy.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Fri, 21 Apr 2017 05:57:30 +0100
+
+ubuntu-mate-artwork (17.04.12) zesty; urgency=medium
+
+  * Correct keyboard layout styling and add missing border to the keys.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Fri, 07 Apr 2017 02:20:09 +0100
+
+ubuntu-mate-artwork (17.04.11) zesty; urgency=medium
+
+  * Fix keyboard layout styling.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Wed, 05 Apr 2017 22:56:18 +0100
+
+ubuntu-mate-artwork (17.04.10) zesty; urgency=medium
+
+  * Fix Brisk Menu button styling to match the other menu applets.
+  * Fix scale troughs for inactive windows for Ambiant-MATE Dark.
+  * Fix keyboard layout view.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Thu, 30 Mar 2017 22:35:34 +0100
+
+ubuntu-mate-artwork (17.04.9) zesty; urgency=medium
+
+  * Fix GTK2+ radio and checkbox assets to match GTK3+. (LP: #1046129)
+  * Fix GTK2+ Notebooks, Progress bars and Sliders so they match GTK3+.
+  * Fix GTK2+ Ambiant-MATE so that Qt4/Qt5 applications are styled correctly.
+  * Fix GTK2+ runtime warnings.
+  * Fix GTK2+ and GTK3+ Notebook background and font colours.
+  * Fix GTK3+ switches, particularly in headerbars.
+  * Fix GTK3+ button hover focus.
+  * Fix background and colours for MATE Terminal and GNOME Terminal.
+  * Fix box-shadow on desktop windows.
+  * Fix styling for Brisk Menu and MATE Menu.
+  * Fix popover modelbuttons.
+  * Fix solid-csd border colors.
+  * Fix border images for Ambiant-MATE Dark.
+  * Add missing gtkstyle-fallback settings.
+  * Add missing GtkSourceView styles for Ambiant-MATE-Dark.
+  * Add Ubuntu MATE community contributed wallpaper, Ubuntu MATE Wet.
+  * Remove obsolete GTK2+ styling.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Sun, 26 Mar 2017 21:38:38 +0100
+
+ubuntu-mate-artwork (17.04.8) zesty; urgency=medium
+
+  * Fix Buttons and Notebooks for Ambiant-MATE-Dark.
+  * Fix levelbar throughs and size.
+  * Fix the colour of Notebook leading edge in all themes.
+  * Fix the border of the sound applet in Ambiant-MATE.
+  * Fix the button highlights in the shutdown dialogue for all themes.
+  * Fix separators in Firefox.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Thu, 23 Mar 2017 19:28:42 +0000
+
+ubuntu-mate-artwork (17.04.7) zesty; urgency=medium
+
+  * Fix Brisk Menu styling to match the other menus.
+  * Fix toolbar styling and drop GTK2+ alpha channel.
+  * Fix button highlights in Shutdown dialogue.
+  * Fix corners on the lock screen credentials dialogue.
+  * Fix check boxes in Ubiquity partition tool.
+  * Fix borders around toolbars from "faux" headerbars.
+  * Fix colour of headerbar dividers.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Tue, 21 Mar 2017 00:28:15 +0000
+
+ubuntu-mate-artwork (17.04.6) zesty; urgency=medium
+
+  * Fix windows borders in Radiant-MATE when no compositor is present.
+  * Fix the height of switches in the header bar.
+  * Fix scrollbars so they are properly consistent in GTK2+ and GTK3+.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Sun, 19 Mar 2017 21:52:58 +0000
+
+ubuntu-mate-artwork (17.04.5) zesty; urgency=medium
+
+  * Fix overlapping icons in applications with header bars. (LP: #1630773)
+  * Fix blurred fonts in headerbar search boxes.
+  * Fix incorrect borders for buttons in headerbars.
+  * Fix visual hints when navigating applications with keyboard only.
+  * Fix Notebooks for AMbiant-MATE and Radiant-MATE.
+  * Fix Expander in Ubiquity.
+  * Fix pavucontrol styling.
+  * Fix hover states.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Fri, 17 Mar 2017 15:22:40 +0000
+
+ubuntu-mate-artwork (17.04.4) zesty; urgency=medium
+
+  * Add missing Ambiant-MATE dark variant.
+  * Fix borders on Firefox.
+  * Fix Radiant-MATE by merging missing updates from Ambiant-MATE.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Thu, 16 Mar 2017 17:43:25 +0000
+
+ubuntu-mate-artwork (17.04.3) zesty; urgency=medium
+
+  * Install Zesty backgrounds by default.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Wed, 15 Mar 2017 13:03:38 +0000
+
+ubuntu-mate-artwork (17.04.2) zesty; urgency=medium
+
+  * Add community contributed backgrounds for Zesty. (LP: #1672802)
+  * Add sym-links to the new Nautilus icon name org.gnome.Nautilus. (LP: #1669663)
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Mon, 13 Mar 2017 22:18:12 +0000
+
+ubuntu-mate-artwork (17.04.1) zesty; urgency=medium
+
+  [ Daniel Foré ]
+  * Add Computer, Desktop and Ubiquity icons.
+
+  [ Jack Mohegan ]
+  * Correct battery icon size. (LP: #1637005)
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Mon, 16 Jan 2017 19:27:02 +0000
+
+ubuntu-mate-artwork (17.04.0) zesty; urgency=medium
+
+  [ Daniel Foré ]
+  * Update Folder icons.
+
+  [ Michael Tunnell ]
+  * Update assets with pixel doubled variants.
+
+  [ Martin Wimpress ]
+  * Add CSS for pixel doubled assets.
+  * Fix Monospace fonts.
+  * Fix notebook background color.
+  * Fix dimming of disabled icons.
+  * Fix GTK 3.22 deprecations.
+  * Remove deprecated settings from gtk-widgets.css
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Wed, 21 Dec 2016 13:43:53 +0000
+
+ubuntu-mate-artwork (16.10.9) yakkety; urgency=medium
+
+  * Fix Firefox download progress bars. (LP: #1630224)
+  * Fix Unlock button for Time and Date Settings. (LP: #1630910)
+  * Fix Back/Forward navigation buttons in Yelp. (LP: #1624574)
+  * Fix Firefox Search/Location entry box borders. (LP: #1624738)
+  * Fix Firefox menu items.
+
+ -- Martin Wimpress <martin@ubuntu-mate.org>  Sun, 09 Oct 2016 20:42:40 +0100
+
+ubuntu-mate-artwork (16.10.8) yakkety; urgency=medium
+
+  * Fix Advanced Menu themes to use flat elements. (LP: #1630366, #1624755)
+  * Fix OSD colors. (LP: #1630538)
+  * Fix LibreOffice toolbars and theme. (LP: #1624571, #1550990)
+  * Fix symbolic icons for GtkExpander.
+  * Fix Transmission progress bars. (LP: #1624565)
+  * Fix Indicator Applet on transparent panels. (LP: #1598159)
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Thu, 06 Oct 2016 23:35:00 +0100
+
+ubuntu-mate-artwork (16.10.7) yakkety; urgency=medium
+
+  * Improve GTK 3.20 support. (LP: #1593054)
+  * Fix Advanced Menu theme so colors are consistent. (LP: #1618035)
+  * Fix missing symlink for add-folder-to-archive.svg. (LP: #1579339)
+  * Fix Firefox tool tips. (LP: #1622555)
+  * Fix tabs so they don't appear inactive. (LP: #1624572)
+  * Fix Eye of MATE and Atril theme. (LP: #1624567)
+  * Fix OSD. (LP: #1623197)
+  * Fix Ubiquity theme. (LP: #1623195)
+
+ -- Martin Wimpress <code@flexion.org>  Wed, 14 Sep 2016 12:03:23 +0100
+
+ubuntu-mate-artwork (16.10.6) yakkety; urgency=medium
+
+  * Update Ubuntu MATE themes to support GTK 3.20. (LP: #1593048)
+
+ -- Martin Wimpress <code@flexion.org>  Wed, 17 Aug 2016 13:10:02 +0100
+
+ubuntu-mate-artwork (16.10.5) yakkety; urgency=medium
+
+  * Update community contributed wallpapers.
+
+ -- Martin Wimpress <code@flexion.org>  Mon, 27 Jun 2016 23:29:43 +0100
+
+ubuntu-mate-artwork (16.10.4) yakkety; urgency=medium
+
+  * Update community contributed wallpapers.
+  * Correct accidental downgrade of themes.
+
+ -- Martin Wimpress <code@flexion.org>  Sat, 25 Jun 2016 11:04:19 +0100
+
+ubuntu-mate-artwork (16.10.3) yakkety; urgency=medium
+
+  * Update community contributed wallpapers.
+
+ -- Martin Wimpress <code@flexion.org>  Fri, 24 Jun 2016 13:54:05 +0100
+
+ubuntu-mate-artwork (16.10.2) yakkety; urgency=medium
+
+  * Fix broken battery icon.
+
+ -- Martin Wimpress <code@flexion.org>  Wed, 22 Jun 2016 21:04:00 +0100
+
+ubuntu-mate-artwork (16.10.1) yakkety; urgency=medium
+
+  * Update Ambiant-MATE and Radiant-MATE to support MATE built
+    against GTK 3.18.
+
+ -- Martin Wimpress <code@flexion.org>  Wed, 25 May 2016 23:32:35 +0100
+
+ubuntu-mate-artwork (16.10.0) yakkety; urgency=medium
+
+  * Add gtksourceview 3.0 styles.
+  * Add initial community contributed wallpapers.
+  * Drop obsolete Yuyo gtksourceview 2.0 styles.
+
+ -- Martin Wimpress <code@flexion.org>  Tue, 17 May 2016 22:21:59 +0100
+
+ubuntu-mate-artwork (16.04.6.1) xenial; urgency=medium
+
+  [ Adolfo Jayme Barrientos ]
+  * Add 1px padding to calendar widget elements; looks better. Thanks,
+    Khurshid Alam. (LP: #1537794)
+
+  [ Will Cooke ]
+  * Adds these fixes for Calendar: (LP: #1551744, #1558659)
+
+  [ Martin Wimpress ]
+  * Merged fixes from ubuntu-themes.
+  * Closes (LP: #1572120)
+
+ -- Martin Wimpress <code@flexion.org>  Tue, 19 Apr 2016 13:26:03 +0100
+
+ubuntu-mate-artwork (16.04.6) xenial; urgency=medium
+
+  [ Marco Trevisan (Treviño) ]
+  * Ambiance, Radiance: use inverted gradient in headerbar when in
+    toolbar-mode (LP: #1515810)
+
+  [ Sebastien Bacher ]
+  * reduce the padding on flat entries, that's needed with gtk 3.18
+    otherwise the entry is displayed over new rows in listview when
+    editing, that's also what the gtk upstream themes are doing.
+  * show the cursor index better in totem videos (LP: #1545026)
+
+  [ Will Cooke ]
+  * Override box shadow and border settings for linked dialog buttons so
+    they don't looked mashed together. Extra border radius is required
+    to stop the button background bleeding through the border. (LP:
+    #1513856)
+
+  [ Martin Wimpress ]
+  * Merge with ubuntu-themes. Closes (LP: #1563971)
+
+ -- Martin Wimpress <code@flexion.org>  Wed, 30 Mar 2016 02:02:18 +0100
+
+ubuntu-mate-artwork (16.04.5) xenial; urgency=medium
+
+  * Reupload to add art assets missing from version 16.04.4.
+
+ -- Martin Wimpress <code@flexion.org>  Mon, 21 Mar 2016 12:10:08 +0000
+
+ubuntu-mate-artwork (16.04.4) xenial; urgency=medium
+
+  * Fix incorrect Appearance icon. Closes (LP: #1556618)
+  * Fix lintian errors in debian/changelog
+  * Correct buttons and scrollbars so GTK2 and GTK3 themes are more
+  closely aligned.
+  * Add resize area and shadows for CSD windows.
+  * Add minimal style for CSD windows running without a compositor.
+  * Add Synapse indicator icons.
+  * Add community contributed wallpaper.
+  * Closes (LP: #1557229)
+
+ -- Martin Wimpress <code@flexion.org>  Sun, 13 Mar 2016 15:38:23 +0000
+
+ubuntu-mate-artwork (16.04.3) xenial; urgency=medium
+
+  * Fix icon inheritance. Closes (LP: #1552363, LP: #1549079)
+  * Fix incorrect Open icon. Closes (LP: #1541929)
+  * Fix LibreOffice icons in Ambiant-MATE and Radiant-MATE icon themes.
+  Closes (LP: #1551029, LP: #1499521)
+  * Fix incorrect theming for Mozo dialogues. Closes (LP: #1442738)
+  * Closes (LP: #1552712)
+
+ -- Martin Wimpress <code@flexion.org>  Wed, 02 Mar 2016 22:41:06 +0000
+
+ubuntu-mate-artwork (16.04.2) xenial; urgency=medium
+
+  * Added new community contributed wallpapers.
+  * Added parcellite icons.
+  * Remove symlink.sh, it is obsolete.
+  * Removed the "hushed" variations of the Solar System wallpapers.
+  * Closes (LP: #1547947)
+
+ -- Martin Wimpress <code@flexion.org>  Fri, 19 Feb 2016 13:33:17 +0000
+
+ubuntu-mate-artwork (16.04.1) xenial; urgency=medium
+
+  [ Sebastien Bacher ]
+  * Basic "app-notification" theming to avoid weirdness in nautilus
+  * Update the nautilus.css with the current upstream one, it could
+    probably be tweaked a bit and has references to color used upstream
+    but those don't look out of place with our theme and is better than
+    what we have now
+
+  [ Luke Horwell ]
+  * Added MATE colourised icons for categories. (LP: #1530446)
+
+  [ Martin Wimpress ]
+  * Added new community contributed wallpapers.
+  * Closes (LP: #1535927)
+
+ -- Martin Wimpress <code@flexion.org>  Tue, 19 Jan 2016 21:37:53 +0000
+
+ubuntu-mate-artwork (16.04.0) xenial; urgency=medium
+
+  [ Will Cooke ]
+  * Adds padding to sidebar icons (LP: #1515557)
+  * Revised theme support for new version of Gedit.
+
+  [ Lars Uebernickel ]
+  * osd: style free-floating osd buttons (LP: #1466890, #1500844)
+
+  [ Martin Wimpress ]
+  * Added new community contributed wallpapers.
+  * Added MATE colourised icons for devices and places. (LP: #1509712)
+  * Closes (LP: #1525896)
+
+ -- Martin Wimpress <code@flexion.org>  Mon, 14 Dec 2015 10:33:02 +0000
+
+ubuntu-mate-artwork (15.12.1) xenial; urgency=medium
+
+  * Transition with new plymouth from /usr/share to /lib:
+    - replace /lib instances by /usr/share
+    - move lib/plymouth to usr/share/plymouth
+    - breaks against older plymouth.
+    - ensure we can transition the alternatives to the new version
+  * Fixing a removal in ubuntu mate on a file that isn't part of this
+    package.
+
+ -- Didier Roche <didrocks@ubuntu.com>  Wed, 09 Dec 2015 08:33:41 +0100
+
+ubuntu-mate-artwork (15.10.4) wily; urgency=medium
+
+  [ Martin Wimpress ]
+  * Sync with ubuntu-themes 14.04+15.10.20150910-0ubuntu1
+  * Add missing symlinks for icons required by Blueman 2.0.
+  * Closes (LP: #)
+
+  [ Iain Lane ]
+  * Style software-center's action bar again
+
+ -- Martin Wimpress <code@flexion.org>  Tue, 22 Sep 2015 09:31:41 +0100
+
+ubuntu-mate-artwork (15.10.3) wily; urgency=medium
+
+  * New release. Closes (LP: #1493065)
+    + Add Keep Calm themed backdrops contributed by Tim Apple.
+    + Update GTK3 scrollbars to be always visible so they fit with
+    the MATE desktop.
+
+ -- Martin Wimpress <code@flexion.org>  Mon, 07 Sep 2015 13:54:54 +0100
+
+ubuntu-mate-artwork (15.10.2) wily; urgency=medium
+
+  * New release. Closes (LP: #1490930)
+    + Add Wily Werewolf themed backdrops contributed by Ghost
+    Sixtyseven.
+
+ -- Martin Wimpress <code@flexion.org>  Tue, 01 Sep 2015 11:38:23 +0100
+
+ubuntu-mate-artwork (15.10.1) wily; urgency=medium
+
+  [ Martin Wimpress]
+  * New release. Closes (LP: #1486932)
+    + Integrate relevant updates from ubuntu-themes
+    14.04+15.10.20150813-0ubuntu1.
+  * debian/changelog:
+    + Bump version to track Ubuntu release cycle.
+
+  [ Lars Uebernickel ]
+  * Clean up nautilus theming. Mostly, this consists of moving from
+    nautilus-specific widgets and classes to more generic gtk ones. (LP:
+    #1463848)
+  * Theme GTK overlay-scrollbars to be more ubuntu-ish
+
+ -- Martin Wimpress <code@flexion.org>  Wed, 19 Aug 2015 23:05:32 +0100
+
+ubuntu-mate-artwork (0.4.12) wily; urgency=medium
+
+  * debian/control:
+    + Add missing entry for ubuntu-mate-wallpapers-common.
+  * Closes (LP: #1479352)
+
+ -- Martin Wimpress <code@flexion.org>  Wed, 29 Jul 2015 11:40:23 +0100
+
+ubuntu-mate-artwork (0.4.11) wily; urgency=medium
+
+  * Add community contributed wallpapers from David Chadderton.
+  * Add community contributed wallpaper from quidsup.
+  * Update Plymouth boot animation.
+  * Update lib/plymouth/themes/ubuntu-mate-logo/ubuntu--mate-logo.script
+  to support fsckd systemd service protocol.
+  * debian/control: Correctly mark ubuntu-mate-wallpapers-complete as a
+  metapackage.
+  * Process debian folder with wrap-and-sort.
+  * Closes (LP: #1476611)
+
+ -- Martin Wimpress <code@flexion.org>  Mon, 20 Jul 2015 23:33:54 +0100
+
+ubuntu-mate-artwork (0.4.10) wily; urgency=medium
+
+  * Update the LighDM GTK Greeter configuration to conform with recent
+  changes to handle multiple configuration files. Closes (LP: #1466191)
+
+ -- Martin Wimpress <code@flexion.org>  Thu, 25 Jun 2015 02:42:43 +0100
+
+ubuntu-mate-artwork (0.4.9.1) wily; urgency=medium
+
+  * Upload fixed tarball. (LP: #1466521)
+
+ -- Daniel Holbach <daniel.holbach@ubuntu.com>  Wed, 24 Jun 2015 08:45:34 +0200
+
+ubuntu-mate-artwork (0.4.9) wily; urgency=medium
+
+  [ Martin Wimpress ]
+  * Add ubuntu-mate-wallpaper-common package.
+  * Add ubuntu-mate-wallpaper-complete package.
+  * Add community contributed wallpapers from David Chadderton.
+  * Add community contributed wallpaper from João Pedro Coli.
+  * Add missging files to debian/copyright.
+  * Improve GTK3 progress bar color blending.
+  * Align with ubuntu-themes 14.04+15.10.20150603.1-0ubuntu1.
+  * Closes (LP: #1466521)
+
+  [ Lars Uebernickel ]
+  * Set :link color
+  * Style under- and overshoot
+
+ -- Martin Wimpress <code@flexion.org>  Thu, 18 June 2015 12:54:43 +0000
+
+ubuntu-mate-artwork (0.4.8) wily; urgency=medium
+
+  * Fixed the progress bar colours in GTK3 applications. (LP: #1437690)
+  * Added ubuntu-mate-wallpaper-wily package.
+  * Closes (LP: #1456591)
+
+ -- Martin Wimpress <code@flexion.org>  Wed, 13 May 2015 23:25:43 +0000
+
+ubuntu-mate-artwork (0.4.7) vivid; urgency=medium
+
+  [ Martin Wimpress ]
+  * Aligned with ubuntu-themes (14.04+15.04.20150410-0ubuntu1) incorporating
+    many bugs fixes.
+
+  [ Iain Lane ]
+  * Draw shadows for menus - thanks to Simon Steinbeiß (LP: #1441975)
+
+  [ Lars Uebernickel ]
+  * Don't use symbolic colors for style (LP: #1436428)
+
+  [ Alberts Muktupāvels ]
+  * Add some style info for unity-greeter buttons. (LP: #1423542) (LP:
+    #1423542)
+
+  [ Iain Lane ]
+  * Style geary's compose view to get a background with overlay-
+    scrollbars added: Ambiant-MATE/gtk-3.0/apps/geary.css
+    Radiant-MATE/gtk-3.0/apps/geary.css
+  * Theme software-center's action bar so it gets a background. added:
+    Ambiant-MATE/gtk-3.0/apps/software-center.css Radiant-MATE/gtk-
+    3.0/apps/software-center.css
+
+  [ Lars Uebernickel ]
+  * Radiant-MATE: fix radio mark coloring in menus
+
+  [ William Hua ]
+  * Set the background on GtkStack widgets. (LP: #1285783)
+
+  [ Lars Uebernickel ]
+  * Set and animate spinner icon for password entry in unity-greeter and
+    sound menu's playback item.
+
+  [ Iain Lane ]
+  * Switch gnome-icon-theme to adwaita-icon-theme, which is its
+    successor.
+
+  [ Dmitry Shachnev ]
+  * gnome-panel.css: Fix styling for checked GtkToggleButtons.
+
+  [ Alberts Muktupāvels ]
+  * metacity-theme: remove unsupported properties.
+
+  [ Lars Uebernickel ]
+  * Stop using the unico gtk engine
+  * A few more fixes and cleanups for gtk 3.14 (combo boxes, spinners)
+
+ -- Martin Wimpress <code@flexion.org>  Sun, 12 Apr 2015 14:27:15 +0000
+
+ubuntu-mate-artwork (0.4.6) vivid; urgency=medium
+
+  * Define active-monitor in lightdm-gtk-greeter.conf to prevent
+    white screen on multi-monitor configurations. (LP: #1426664,
+    LP: #1433147)
+
+ -- Martin Wimpress <code@flexion.org>  Tue, 17 Mar 2015 03:15:27 +0000
+
+ubuntu-mate-artwork (0.4.5) vivid; urgency=medium
+
+  * Remove distored background images and replaces with good alternatives.
+
+ -- Martin Wimpress <code@flexion.org>  Mon, 02 Mar 2015 22:32:43 +0000
+
+ubuntu-mate-artwork (0.4.4) vivid; urgency=medium
+
+  * Add fsck report and cancel support with systemd to the logo them
+    (LP: #1425434)
+
+ -- Didier Roche <didrocks@ubuntu.com>  Wed, 25 Feb 2015 11:22:09 +0100
+
+ubuntu-mate-artwork (0.4.3ubuntu1) vivid; urgency=medium
+
+  * Override symbolic icons.
+  * Remove indicator-sound.
+
+ -- Martin Wimpress <code@flexion.org>  Tue, 08 Feb 2015 05:00:43 +0000
+
+ubuntu-mate-artwork (0.4.2ubuntu1) vivid; urgency=medium
+
+  * Closes needs-packaging (LP: #1368218)
+
+ -- Adam Stokes <adam.stokes@ubuntu.com>  Fri, 13 Feb 2015 11:04:51 -0500
+
+ubuntu-mate-artwork (0.4.2) vivid; urgency=medium
+
+  * Improved Debian packaging.
+
+ -- Martin Wimpress <code@flexion.org>  Wed, 04 Feb 2015 01:21:37 +0000
+
+ubuntu-mate-artwork (0.4.1~15.04~11) vivid; urgency=medium
+
+  * Added Yuyo themes to Pluma.
+  * Merged with ubuntu-themes.
+  * Added community contributed desktop backgrounds.
+  * Fixed status icons (LP: #1392943).
+  * Tweaked LightDM theme.
+
+ -- Martin Wimpress <code@flexion.org>  Sat, 24 Jan 2015 21:19:41 +0000
+
+ubuntu-mate-artwork (0.4.0) vivid; urgency=medium
+
+  * Correct indicator configuration for LightDM. (lp: #1390013)
+
+ -- Martin Wimpress <code@flexion.org>  Tue, 25 Nov 2014 21:49:13 +0000
+
+ubuntu-mate-artwork (0.3.7~utopic8) utopic; urgency=medium
+
+  * Enable grub theme activation.
+  * Added Ubuntu MATE Gray wallpaper contributed by Gerard Aalders.
+  * Added screen reader key binding and indicator selection to LightDM.
+  * Updated Terminal and Pluma background colour to #33322f.
+  * Updated Ambiant-MATE and Radiant-MATE icons themes with green icons.
+
+ -- Martin Wimpress <code@flexion.org>  Fri, 31 Oct 2014 22:32:52 +0100
+
+ubuntu-mate-artwork (0.3.6) utopic; urgency=medium
+
+  * Split grub2-themes-ubuntu-mate into a seperate package.
+
+ -- Martin Wimpress <code@flexion.org>  Sun, 21 Sep 2014 08:21:50 +0100
+
+ubuntu-mate-artwork (0.3.5) utopic; urgency=medium
+
+  * Added grub-theme-ubuntu-mate transitional package.
+  * Added accessibility features to LightDM.
+  * Remove Plymouth themes from the meta packages.
+
+ -- Martin Wimpress <code@flexion.org>  Mon, 15 Sep 2014 21:18:27 +0100
+
+ubuntu-mate-artwork (0.3.4) utopic; urgency=medium
+
+  * Added Déjà Dup mono icons.
+  * Renamed Ubuntu MATE GRUB2 themes.
+
+ -- Martin Wimpress <code@flexion.org>  Sun, 14 Sep 2014 03:14:10 +0100
+
+ubuntu-mate-artwork (0.3.3) utopic; urgency=medium
+
+  * Added Ubuntu MATE theme for GRUB.
+
+ -- Martin Wimpress <code@flexion.org>  Thu, 04 Sep 2014 01:13:10 +0100
+
+ubuntu-mate-artwork (0.3.2~utopic1) utopic; urgency=medium
+
+  * Fixed index.theme for Ambiant-MATE and Radiant-MATE.
+
+ -- Martin Wimpress <code@flexion.org>  Mon, 01 Sep 2014 05:13:28 +0100
+
+ubuntu-mate-artwork (0.3.1~utopic1) utopic; urgency=medium
+
+  * Merged all mono icons.
+
+ -- Martin Wimpress <code@flexion.org>  Mon, 01 Sep 2014 02:54:41 +0100
+
+ubuntu-mate-artwork (0.3.0~utopic1) utopic; urgency=medium
+
+  * Added LightDM themes.
+
+ -- Martin Wimpress <code@flexion.org>  Wed, 20 Aug 2014 00:53:18 +0100

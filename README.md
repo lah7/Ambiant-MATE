@@ -25,8 +25,14 @@ contributions. Please send a pull request if you'd like to fix something!
 
 ## Download
 
-There is not currently a package or PPA set up. To use the theme, [download a ZIP](https://github.com/lah7/Ambiant-MATE/archive/refs/heads/master.zip)
-and extract to your `~/.local/share/` folder.
+Ubuntu users can add this PPA for convenience:
+
+    sudo add-apt-repository ppa:lah7/ambiant-mate
+    sudo apt install ambiant-mate-gtk-themes ambiant-mate-icon-themes
+
+
+Alternately, [download a ZIP](https://github.com/lah7/Ambiant-MATE/archive/refs/heads/master.zip)
+of this repository and extract to your `~/.local/share/` folder.
 
 There are colours available! See the [ubuntu-mate-colours](https://github.com/lah7/ubuntu-mate-colours/) project.
 
