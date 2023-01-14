@@ -15,13 +15,15 @@ Description: Ambiant-MATE and Radiant-MATE GTK Theme
  Ubuntu MATE's fork of the Ambiance and Radiance GTK theme
  .
  This theme was used for Ubuntu MATE since it's debut in
- 14.10 until 20.10. It is now community supported.
+ 14.10 until 20.10. It is now supported by community contributions.
 
 Package: ambiant-mate-icon-themes
 Architecture: all
-Depends: ${misc:Depends},
+Depends: humanity-icon-theme,
+         ubuntu-mono,
+         ${misc:Depends},
 Description: Ambiant-MATE and Radiant-MATE Icon Theme
  Ubuntu MATE's fork of the Humanity icon theme
  .
  This theme was used for Ubuntu MATE since it's debut in
- 14.10 until 20.10. It is now community supported.
+ 14.10 until 20.10. It is now supported by community contributions.
