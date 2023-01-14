@@ -1,3 +1,11 @@
+ambiant-mate-themes (22.04.1) jammy; urgency=low
+
+  * Fix missing icon for MATE Tweak.
+  * Add "system-component-addon" category icon.
+  * Add dependency on "humanity-icon-theme" and "ubuntu-mono"
+
+ -- Luke Horwell <code@horwell.me>  Sat, 14 Jan 2023 15:56:28 +0000
+
 ambiant-mate-themes (22.04.0) jammy; urgency=low
 
   * Initial re-release of Ambiant-MATE split from ubuntu-mate-artwork
