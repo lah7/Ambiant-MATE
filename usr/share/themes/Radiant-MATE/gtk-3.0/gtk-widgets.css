@@ -3165,6 +3165,14 @@ headerbar .subtitle {
     min-height: 15px;
 }
 
+.titlebar button.titlebutton:first-child {
+    margin-left: 0;
+}
+
+.titlebar button.titlebutton:last-child {
+    margin-right: 0;
+}
+
 .titlebar button.titlebutton.close {
     color: #7f4025;
     -gtk-icon-shadow: 0 1px rgba(255, 255, 255, 0.25);
