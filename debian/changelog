@@ -1,3 +1,9 @@
+ambiant-mate-themes (22.04.2) jammy; urgency=low
+
+  * Improve title bar button margins for CSD applications (#10)
+
+ -- Luke Horwell <code@horwell.me>  Fri, 21 Apr 2023 19:30:30 +0100
+
 ambiant-mate-themes (22.04.1) jammy; urgency=low
 
   * Fix missing icon for MATE Tweak.
