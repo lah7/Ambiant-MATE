@@ -30,9 +30,14 @@ Ubuntu users can add this PPA for convenience:
     sudo add-apt-repository ppa:lah7/ambiant-mate
     sudo apt install ambiant-mate-gtk-themes ambiant-mate-icon-themes
 
+For other distributions, [download a ZIP](https://github.com/lah7/Ambiant-MATE/archive/refs/heads/master.zip)
+of this repository, extract and copy `usr/share/icons` and `usr/share/themes` into your `~/.local/share/` folder.
 
-Alternately, [download a ZIP](https://github.com/lah7/Ambiant-MATE/archive/refs/heads/master.zip)
-of this repository and extract to your `~/.local/share/` folder.
+The icon theme depends on icons from Ubuntu's Humanity theme.
+
+* On Ubuntu, this package is installed automatically.
+* On Arch, install [`humanity-icon-theme` from AUR.](https://aur.archlinux.org/packages/humanity-icon-theme)
+* For other distros, [download and extract the *.deb from Ubuntu](https://packages.ubuntu.com/jammy/humanity-icon-theme) into your `~/.local/share/` folder.
 
 ## Colours
 
