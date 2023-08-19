@@ -1,3 +1,9 @@
+ambiant-mate-themes (22.04.2-2) jammy; urgency=low
+
+  * Fix missing cursors for new 22.04 installations (#12)
+
+ -- Luke Horwell <code@horwell.me>  Sat, 19 Aug 2023 20:56:50 +0100
+
 ambiant-mate-themes (22.04.2) jammy; urgency=low
 
   * Improve title bar button margins for CSD applications (#10)
