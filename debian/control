@@ -20,6 +20,7 @@ Description: Ambiant-MATE and Radiant-MATE GTK Theme
 Package: ambiant-mate-icon-themes
 Architecture: all
 Depends: humanity-icon-theme,
+         mate-icon-theme,
          ubuntu-mono,
          ${misc:Depends},
 Description: Ambiant-MATE and Radiant-MATE Icon Theme
