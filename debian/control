@@ -10,7 +10,8 @@ Vcs-Browser: https://github.com/lah7/Ambiant-MATE
 
 Package: ambiant-mate-gtk-themes
 Architecture: all
-Depends: ${misc:Depends},
+Depends: ambiant-mate-icon-themes,
+         ${misc:Depends},
 Description: Ambiant-MATE and Radiant-MATE GTK Theme
  Ubuntu MATE's fork of the Ambiance and Radiance GTK theme
  .
