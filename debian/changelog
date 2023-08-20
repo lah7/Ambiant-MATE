@@ -1,4 +1,4 @@
-ambiant-mate-themes (22.04.2-2) jammy; urgency=low
+ambiant-mate-themes (22.04.2-3) jammy; urgency=low
 
   * Fix missing cursors for new 22.04 installations (#12)
 
